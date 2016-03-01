@@ -1,0 +1,16 @@
+# Site settings
+title: Chris Bamborough
+email: bamborough.c@gmail.com
+description: The personal website of Chris Bamborough
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://chrisbamborough.com" # the base hostname & protocol for your site
+twitter_username: chrisbamborough
+github_username:  chrisbamborough
+behance_username: chrisbamborough
+medium_username: @chrisbamborough
+
+# Build settings
+markdown: kramdown
+paginate: 100
+author: Chris Bamborough
+gems: [jekyll-paginate]
