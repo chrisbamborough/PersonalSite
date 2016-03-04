@@ -5,12 +5,13 @@ description: The personal website of Chris Bamborough
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://chrisbamborough.com" # the base hostname & protocol for your site
 twitter_username: chrisbamborough
-github_username:  chrisbamborough
+github_username: chrisbamborough
 behance_username: chrisbamborough
-medium_username: @chrisbamborough
+medium_username: "@chrisbamborough"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 paginate: 100
 author: Chris Bamborough
 gems: [jekyll-paginate]
