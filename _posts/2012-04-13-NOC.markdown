@@ -1,0 +1,141 @@
+---
+layout: post
+title:  "The Nature Of Canvas"
+date:   2012-04-13 12:00:00
+categories: blog
+tags: Creative Code
+image:
+---
+<canvas id="myCanvas" width="845px" height="450px"
+style="border:1px solid #000000;">
+</canvas>
+<script>
+// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    var width = canvas.width;
+    var height = canvas.height;
+    var x = 100;
+    var y = 100;
+    var xspeed = 5;
+    var yspeed = 5;
+
+
+    setInterval(draw,10);
+
+
+
+    function draw () {
+
+        context.clearRect(0,0,width,height);
+        context.beginPath();
+        context.fillStyle = "#000ff";
+        context.arc(x, y, 20,0, Math.PI * 2, true);
+        context.fill();
+
+        if (x > width || x < 0) {
+            xspeed = -xspeed;
+        }
+        if (y > height || y < 0) {
+            yspeed = -yspeed;
+        }
+
+        x+=xspeed;
+        y+=yspeed;
+    }
+}
+</script>
+
+When I first started learning [Processing](http://processing.org) a few years ago I was drawn to Daniel Shiffman's book ["Learning Processing"](http://www.learningprocessing.com/) because he did such a great job at explaining the basics without you feeling like a dumb ass. After this first book Shiffman developed a self published [Nature Of Code](http://natureofcode.com/) project shaped as a sylabus for his Introduction to Computational media course at [ITP New York](http://admin.tisch.nyu.edu/object/ShiffmanD.html) .
+
+His Nature Of Code course simply aims to simulate things that naturally occur in the physical world via Processing. As Processing is based on the java script language I've became interested in using it to learn Javascript programing in Canvas.
+
+I'm going to work through the examples Shiffman uses in the book so to start,
+
+Chapter 1 Vectors
+1_bouncingball_novectors
+
+This first example in the book aims to move a book around the screen using a constant updating of the ball's x and y location.
+
+To start off an html file must link to a javascript file in the head tags, before setting up a canvas in the body, in this case sized 500px x 500px.
+
+~~~ html
+    <html>
+    <head>
+        <script type="text/javascript" src="NOC_1_1_BouncingBall_NoVectors.js"></script>
+    </head>
+    <body>
+        <canvas id = "myCanvas" width = "500" height = "500"></canvas>
+    </body>  
+    </html>
+~~~
+
+
+Within the javascript file firstly the script needs to be launched on loading of the webpage. A variable canvas which fetches the myCanvas element in the html must allways be called, and a context must be set up, in this case it is using the built in HTML5 2d library.
+
+    // put code in an overall function
+    window.onload = function () {
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+    }
+
+The neccessary variables must be set up for a bounding ball.
+
+    // put code in an overall function
+    window.onload = function () {
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var width = canvas.width = window.innerWidth;
+        var height = canvas.height = window.innerHeight;
+        var x = 100;
+        var y = 100;
+        var xspeed = 5;
+        var yspeed = 5;
+
+which will be used in a draw function similar to a processing sketch. In order for the run function to work though a setInterval(draw,10); command must be used to set up the drawing routine "draw" with a framerate of 10.
+
+Then the draw function can be called. Comments are after the // marks.
+
+    // put code in an overall function
+    window.onload = function () {
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var width = canvas.width = window.innerWidth;
+        var height = canvas.height = window.innerHeight;
+        var x = 100;
+        var y = 100;
+        var xspeed = 5;
+        var yspeed = 5;
+
+
+        setInterval(draw,10);
+
+        // function to draw
+        function draw () {
+
+        	//clear the background each frame              		
+        	context.clearRect(0,0,width,height);
+            // Start the path for the circle
+            context.beginPath();
+            // Indicate what colour to fill the circle
+            context.fillStyle = "#000ff";
+            // describe the circle using the arc function
+            context.arc(x, y, 20,0, Math.PI * 2, true);
+            // Fill the shape
+            context.fill();
+
+            // if statements to detect the shapes proximity to the edge of the canvas
+            to make object rebound with opposite change in x and y direction.
+            if (x > width || x < 0) {
+                xspeed = -xspeed;
+            }
+            if (y > height || y < 0) {
+                yspeed = -yspeed;
+            }
+
+			// finally make the ball move by adding a variable "speed" to the x and y position
+            x+=xspeed;
+            y+=yspeed;
+        }
+    }
