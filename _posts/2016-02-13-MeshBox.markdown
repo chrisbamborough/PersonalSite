@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Mesh Box"
+date:   2016-02-13 12:00:00
+categories: blog
+tags: Creative Code, Three.js
+image:
+---
+While I have been experimenting with the HTML5 Canvas and WebGL capabilities I've had trouble sharing the graphical output of my code. So after messing around trying to get Three.js and Jekyll to play nice, I opted for embedding a code pen player.
+
+The outcome is pretty good and means the HTML, CSS and Javascript can be referenced along with the animation.
+
+<p data-height="319" data-theme-id="8227" data-slug-hash="aIbeu" data-default-tab="result" data-user="chrisbamborough" class="codepen">See the Pen <a href="http://codepen.io/chrisbamborough/pen/aIbeu/">Simple Green Box</a> by Chris Bamborough (<a href="http://codepen.io/chrisbamborough">@chrisbamborough</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>

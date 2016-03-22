@@ -86,22 +86,129 @@
             <article class="post">
               <header>
                 <div class="title">
-                  <h2><a href="/about/">About</a></h2>
+                  <h2><a href="/blog/2012/04/13/CanvasVectors.html">Canvas Vectors</a></h2>
                 <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
                 </div>
+
                 <div class="meta">
-                  <time class="published" datetime=""></time>
+                  <time class="published" datetime="2012-04-13">April, 2012</time>
                   
-        <!--
-        <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-        -->
+                    <a href="#">blog</a>
+                  
+                  <!--
+                  <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+                -->
                 </div>
               </header>
               
-              <p>Hello World!</p>
+              <p>The Nature of code introduces the use of vectors through a bouncing ball animation created via Processing’s inbuilt PVector library. The first snag with Javascript is that this PVector library is not accessible (well it is through <a href="http://processingjs.org/">processing.js</a>) so I have had to write my own.</p>
+
+<p>The exercise is to rewrite the previous example but using vectors to update the position instead of x/y coordinates. So the html part is the same as before but this time we reference another javascript file “vectorMathsLib.js”. My library was based on the excellent resource <a href="http://codingmath.com/">Coding Math</a> by <a href="http://www.patreon.com/codingmath">Keith Peters</a></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    <span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"vectorMathsLib.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"NOC_1_2_BouncingBall_Vectors.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;canvas</span> <span class="na">id =</span><span class="err"> </span><span class="s">"myCanvas"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>  
+    <span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>In NOC_1_2_BouncingBall_Vectors.js we use the same structure but when declaring variables two vectors must be initialised, location and velocity. This time instead of the X and Y position being updated by adding xspeed and yspeed, the vector of the ball (location) gets added to the vector of direction (velocity). The edge test is then able to just reverse the vector in the x or y direction to make the ball bounce.</p>
+
+<pre><code class="language-Javascript">    // put code in an overall function
+    window.onload = function () {
+        var canvas = document.getElementById('myCanvas'),
+            context = canvas.getContext('2d'),
+            width = canvas.width = window.innerWidth,
+            height = canvas.height = window.innerHeight,
+            x = 10,
+            y = 10,    
+            location = vector.create(10, 10),
+            velocity = vector.create(2.5, 5);
+
+        setInterval(draw, 10);
+
+        function draw() {
+            // redraw background every frame
+            context.clearRect(0, 0, width, height);
+
+            // add current speed to the location
+            location.addTo(velocity);
+
+            // draw a circle at the location
+            context.beginPath();
+            context.fillStyle = "#000ff";
+            context.arc(location.getX(), location.getY(), 20, 0, Math.PI * 2, true);
+            context.fill();
+
+            // Edge Testing
+            if (location.getX() &gt; width || location.getX() &lt; 0) {
+                velocity._x *= -1;
+            }
+            if (location.getY() &gt; height || location.getY() &lt; 0) {
+                velocity._y *= -1;
+            }
+
+        }
+
+    };
+</code></pre>
+
+<p>Making the vector library is the tricky thing, in Javascript they appear to be just like functions (I come from a Python background) and by simply creating functions within an overall variable the vector math can be calculated. The biggest difference is that to make it behave like an object its attributes must be this. rather than var.</p>
+
+<p>~~~ Javascript
+    var vector = {
+    	// x and y variables of the vector
+        _x: 1,
+        _y: 0,</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	// initialise and return the vector object
+    create: function(x, y) {
+        var obj = Object.create(this);
+        obj.setX(x);
+        obj.setY(y);
+        return obj;
+    },
+
+    setX: function(value) {
+		this._x = value;
+	},
+
+    getX: function() {
+        return this._x;
+    },
+
+    setY: function(value) {
+        this._y = value;
+    },
+
+    getY: function() {
+        return this._y;
+    },
+
+    addTo: function(v2) {
+      	this._x += v2.getX();
+      	this._y += v2.getY();
+	},
+};
+~~~
+</code></pre>
+</div>
+
+<p>From this a ball bounces around the screen as before, but it is much smarter. Unlike me who hasn’t got an example to show yet.</p>
+
 
               <footer>
                 <ul class="stats">
+                
+                  <li><a href="#">Creative</a></li>
+                
+                  <li><a href="#">Code</a></li>
                 
         <!--
         <li><a href="#">General</a></li>
@@ -111,6 +218,14 @@
                 </ul>
               </footer>
            </article>
+  					<ul class="actions pagination">
+  					  
+  	  				  <li><a href="/blog/2011/12/01/BondiTrainStation.html" class="button big previous">Previous Post</a></li>
+  						
+							
+  						  <li><a href="/blog/2012/04/13/CrowdsDIYWeb.html" class="button big next">Next Post</a></li>
+  						
+  					</ul>
 					</div>
 
 				<!-- Sidebar -->
@@ -142,7 +257,6 @@
 	  <li><a href="/about" class="button">Learn More</a></li>
 	</ul>
 </section>
-
 
 
 						<!-- Mini Posts -->
@@ -407,6 +521,16 @@
 		  </article>
     
   </div>
+</section>
+
+
+            <!-- About -->
+            <section class="blurb">
+	<ul class="actions">
+		<!--
+	  <li><a href="/archive" class="button">Archive</a></li>
+	-->
+	</ul>
 </section>
 
 

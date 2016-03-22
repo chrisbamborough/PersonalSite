@@ -86,22 +86,166 @@
             <article class="post">
               <header>
                 <div class="title">
-                  <h2><a href="/about/">About</a></h2>
+                  <h2><a href="/blog/2016/01/12/NOC.html">The Nature Of Canvas</a></h2>
                 <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
                 </div>
+
                 <div class="meta">
-                  <time class="published" datetime=""></time>
+                  <time class="published" datetime="2016-01-12">January, 2016</time>
                   
-        <!--
-        <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-        -->
+                    <a href="#">blog</a>
+                  
+                  <!--
+                  <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+                -->
                 </div>
               </header>
               
-              <p>Hello World!</p>
+              <canvas id="myCanvas" width="845px" height="450px" style="border:1px solid #000000;">
+</canvas>
+<script>
+// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    var width = canvas.width;
+    var height = canvas.height;
+    var x = 100;
+    var y = 100;
+    var xspeed = 5;
+    var yspeed = 5;
+
+
+    setInterval(draw,10);
+
+
+
+    function draw () {
+
+        context.clearRect(0,0,width,height);
+        context.beginPath();
+        context.fillStyle = "#000ff";
+        context.arc(x, y, 20,0, Math.PI * 2, true);
+        context.fill();
+
+        if (x > width || x < 0) {
+            xspeed = -xspeed;
+        }
+        if (y > height || y < 0) {
+            yspeed = -yspeed;
+        }
+
+        x+=xspeed;
+        y+=yspeed;
+    }
+}
+</script>
+
+<p>When I first started learning <a href="http://processing.org">Processing</a> a few years ago I was drawn to Daniel Shiffman’s book <a href="http://www.learningprocessing.com/">“Learning Processing”</a> because he did such a great job at explaining the basics without you feeling like a dumb ass. After this first book Shiffman developed a self published <a href="http://natureofcode.com/">Nature Of Code</a> project shaped as a sylabus for his Introduction to Computational media course at <a href="http://admin.tisch.nyu.edu/object/ShiffmanD.html">ITP New York</a> .</p>
+
+<p>His Nature Of Code course simply aims to simulate things that naturally occur in the physical world via Processing. As Processing is based on the java script language I’ve became interested in using it to learn Javascript programing in Canvas.</p>
+
+<p>I’m going to work through the examples Shiffman uses in the book so to start,</p>
+
+<p>Chapter 1 Vectors
+1_bouncingball_novectors</p>
+
+<p>This first example in the book aims to move a book around the screen using a constant updating of the ball’s x and y location.</p>
+
+<p>To start off an html file must link to a javascript file in the head tags, before setting up a canvas in the body, in this case sized 500px x 500px.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    <span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"NOC_1_1_BouncingBall_NoVectors.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;canvas</span> <span class="na">id =</span><span class="err"> </span><span class="s">"myCanvas"</span> <span class="na">width =</span><span class="err"> </span><span class="s">"500"</span> <span class="na">height =</span><span class="err"> </span><span class="s">"500"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>  
+    <span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Within the javascript file firstly the script needs to be launched on loading of the webpage. A variable canvas which fetches the myCanvas element in the html must allways be called, and a context must be set up, in this case it is using the built in HTML5 2d library.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+}
+</code></pre>
+</div>
+
+<p>The neccessary variables must be set up for a bounding ball.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    var width = canvas.width = window.innerWidth;
+    var height = canvas.height = window.innerHeight;
+    var x = 100;
+    var y = 100;
+    var xspeed = 5;
+    var yspeed = 5;
+</code></pre>
+</div>
+
+<p>which will be used in a draw function similar to a processing sketch. In order for the run function to work though a setInterval(draw,10); command must be used to set up the drawing routine “draw” with a framerate of 10.</p>
+
+<p>Then the draw function can be called. Comments are after the // marks.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    var width = canvas.width = window.innerWidth;
+    var height = canvas.height = window.innerHeight;
+    var x = 100;
+    var y = 100;
+    var xspeed = 5;
+    var yspeed = 5;
+
+
+    setInterval(draw,10);
+
+    // function to draw
+    function draw () {
+
+    	//clear the background each frame              		
+    	context.clearRect(0,0,width,height);
+        // Start the path for the circle
+        context.beginPath();
+        // Indicate what colour to fill the circle
+        context.fillStyle = "#000ff";
+        // describe the circle using the arc function
+        context.arc(x, y, 20,0, Math.PI * 2, true);
+        // Fill the shape
+        context.fill();
+
+        // if statements to detect the shapes proximity to the edge of the canvas
+        to make object rebound with opposite change in x and y direction.
+        if (x &gt; width || x &lt; 0) {
+            xspeed = -xspeed;
+        }
+        if (y &gt; height || y &lt; 0) {
+            yspeed = -yspeed;
+        }
+
+		// finally make the ball move by adding a variable "speed" to the x and y position
+        x+=xspeed;
+        y+=yspeed;
+    }
+}
+</code></pre>
+</div>
+
 
               <footer>
                 <ul class="stats">
+                
+                  <li><a href="#">Creative</a></li>
+                
+                  <li><a href="#">Code</a></li>
                 
         <!--
         <li><a href="#">General</a></li>
@@ -111,6 +255,14 @@
                 </ul>
               </footer>
            </article>
+  					<ul class="actions pagination">
+  					  
+  	  				  <li><a href="/blog/2014/02/01/GettingArchitectural.html" class="button big previous">Previous Post</a></li>
+  						
+							
+  						  <li><a href="/blog/2016/01/13/RandomWalkers.html" class="button big next">Next Post</a></li>
+  						
+  					</ul>
 					</div>
 
 				<!-- Sidebar -->
@@ -142,7 +294,6 @@
 	  <li><a href="/about" class="button">Learn More</a></li>
 	</ul>
 </section>
-
 
 
 						<!-- Mini Posts -->
@@ -407,6 +558,16 @@
 		  </article>
     
   </div>
+</section>
+
+
+            <!-- About -->
+            <section class="blurb">
+	<ul class="actions">
+		<!--
+	  <li><a href="/archive" class="button">Archive</a></li>
+	-->
+	</ul>
 </section>
 
 

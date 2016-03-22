@@ -86,22 +86,161 @@
             <article class="post">
               <header>
                 <div class="title">
-                  <h2><a href="/about/">About</a></h2>
+                  <h2><a href="/blog/2016/01/13/RandomWalkers.html">Random Walkers</a></h2>
                 <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
                 </div>
+
                 <div class="meta">
-                  <time class="published" datetime=""></time>
+                  <time class="published" datetime="2016-01-13">January, 2016</time>
                   
-        <!--
-        <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-        -->
+                    <a href="#">blog</a>
+                  
+                  <!--
+                  <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+                -->
                 </div>
               </header>
               
-              <p>Hello World!</p>
+              <canvas id="myCanvas" width="845px" height="450px" style="border:1px solid #000000;">
+</canvas>
+
+<script>
+// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    var width = canvas.width;
+    var height = canvas.height;
+    var step = 5;
+
+    // walker object
+    var Walker = function() {
+        this.x = width / 2;
+        this.y = height / 2;
+
+        Walker.prototype.display = function() {
+            ctx.rect(this.x,this.y,1,1);
+            ctx.stroke();
+            ctx.fill();
+        }
+
+        Walker.prototype.walk = function () {
+            var choice = Math.random();
+
+            if (choice >= 0 && choice < 0.25) {
+                this.x = this.x + step;
+            } else if (choice >= 0.25 && choice < 0.5) {
+                this.x = this.x - step;
+            } else if (choice >= 0.5 && choice < 0.75) {
+                this.y += step;
+            } else {
+                this.y -= step;
+            }
+        }
+    }
+    // initialise a walker object
+    var w = new Walker();
+
+    // run draw function
+    setInterval(draw, 10);
+
+    function draw() {
+        w.walk();
+        w.display();
+    }
+
+
+};
+
+</script>
+
+<p>This is a little bit backward but I started with section 1 in Nature Of Code as I didn’t know how to create objects in Java Script but this is the stage where this happened.</p>
+
+<p>As before the html file is set up toreference a javascript file and creates a canvas.
+~~~ html
+    &lt;html&gt;
+    &lt;head&gt;
+        <title>Random Walker</title>
+        <script type="text/javascript" src="NOC_0_1_RandomWalker.js"></script>
+    &lt;/head&gt;
+    &lt;body&gt;
+        <canvas id="canvas"></canvas>
+    &lt;/body&gt;
+    &lt;/html&gt;
+~~~</p>
+
+<p>For the javascript the function is set up to load as the window is opened and then the variables initialised.</p>
+
+<p>~~~ Javascript
+    window.onload = function () {
+        “use strict”;
+        // initialise canvas
+        var canvas = document.getElementById(‘canvas’);
+        var ctx = canvas.getContext(‘2d’);
+        var width = canvas.width = window.innerWidth;
+        var height = canvas.height = window.innerHeight;
+        var step = 1;
+        ~~~</p>
+
+<p>The next step is to create a walker object that has information on how to behave, in this case how to display, and then how to walk. The most significant difference here between processing and javascript is that js does not have a random function that you can input ranges, it only outputs a float between 0-1. As a result the walk function needs a series of conditionals to test wether than random number generated fell between a certain range.</p>
+
+<p>~~~ Javascript
+     // walker object
+        var Walker = function() {
+            this.x = width / 2;
+            this.y = height / 2;</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>        Walker.prototype.display = function() {
+            ctx.rect(this.x,this.y,1,1);
+            ctx.stroke();
+            ctx.fill();
+        }
+
+        Walker.prototype.walk = function () {
+            var choice = Math.random();
+
+            if (choice &gt;= 0 &amp;&amp; choice &lt; 0.25) {
+                this.x = this.x + step;
+            } else if (choice &gt;= 0.25 &amp;&amp; choice &lt; 0.5) {
+                this.x = this.x - step;
+            } else if (choice &gt;= 0.5 &amp;&amp; choice &lt; 0.75) {
+                this.y += step;
+            } else {
+                this.y -= step;
+            }
+        }
+    }  
+    ~~~
+</code></pre>
+</div>
+
+<p>Finally to create a walker the object must be instantiated, a draw function created to call the objects functions, and a call to run the draw function.</p>
+
+<p>~~~ Javascript
+    // initialise a walker object
+        var w = new Walker();</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    // run draw function
+    setInterval(draw, 10);
+
+    function draw() {
+        w.walk();
+        w.display();
+    }
+
+
+};
+~~~
+</code></pre>
+</div>
+
 
               <footer>
                 <ul class="stats">
+                
+                  <li><a href="#">Creative</a></li>
+                
+                  <li><a href="#">Code</a></li>
                 
         <!--
         <li><a href="#">General</a></li>
@@ -111,6 +250,14 @@
                 </ul>
               </footer>
            </article>
+  					<ul class="actions pagination">
+  					  
+  	  				  <li><a href="/blog/2016/01/12/NOC.html" class="button big previous">Previous Post</a></li>
+  						
+							
+  						  <li><a href="/blog/2016/01/16/ImprovedRandomWalkers.html" class="button big next">Next Post</a></li>
+  						
+  					</ul>
 					</div>
 
 				<!-- Sidebar -->
@@ -142,7 +289,6 @@
 	  <li><a href="/about" class="button">Learn More</a></li>
 	</ul>
 </section>
-
 
 
 						<!-- Mini Posts -->
@@ -407,6 +553,16 @@
 		  </article>
     
   </div>
+</section>
+
+
+            <!-- About -->
+            <section class="blurb">
+	<ul class="actions">
+		<!--
+	  <li><a href="/archive" class="button">Archive</a></li>
+	-->
+	</ul>
 </section>
 
 

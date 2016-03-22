@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Random Walkers"
-date:   2012-04-13 12:00:00
+date:   2016-01-13 12:00:00
 categories: blog
 tags: Creative Code
 image:

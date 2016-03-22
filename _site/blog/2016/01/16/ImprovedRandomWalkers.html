@@ -86,22 +86,146 @@
             <article class="post">
               <header>
                 <div class="title">
-                  <h2><a href="/about/">About</a></h2>
+                  <h2><a href="/blog/2016/01/16/ImprovedRandomWalkers.html">Improved Random Walkers</a></h2>
                 <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
                 </div>
+
                 <div class="meta">
-                  <time class="published" datetime=""></time>
+                  <time class="published" datetime="2016-01-16">January, 2016</time>
                   
-        <!--
-        <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-        -->
+                    <a href="#">blog</a>
+                  
+                  <!--
+                  <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+                -->
                 </div>
               </header>
               
-              <p>Hello World!</p>
+              <style>  
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+</style>
+
+<canvas id="myCanvas" width="845px" height="450px" style="border:1px solid #000000;">
+</canvas>
+
+<script>
+// put code in an overall function
+window.onload = function () {
+    "use strict";
+    var canvas = document.getElementById('myCanvas');    
+  	canvas.style.width ='100%';
+  	canvas.style.height='100%';
+  	canvas.width  = canvas.offsetWidth;
+  	canvas.height = canvas.offsetHeight;    
+    var ctx = canvas.getContext('2d');
+    var width = canvas.width;
+    var height = canvas.height;
+    var step = 5;
+
+    // walker object
+    var Walker = function () {
+        this.x = width / 2;
+        this.y = height / 2;
+
+        Walker.prototype.display = function() {
+            ctx.rect(this.x,this.y,2,2);
+            ctx.stroke();
+            ctx.fill();
+        }
+
+        Walker.prototype.walk = function () {
+        	var choice = Math.random();
+
+            var stepx = Math.random(); // value 0-1
+            var stepy = Math.random();
+
+            if (stepx >= 0 && stepx < 0.33) {
+                stepx = -1;
+            } else if (stepx >= 0.33 && stepx < 0.66) {
+                stepx = 0;
+            } else {
+                stepx = 1;
+            }
+
+            if (stepy >= 0 && stepy < 0.33) {
+                stepy = -1;
+            } else if (stepy >= 0.33 && stepy < 0.66) {
+                stepy = 0;
+            } else {
+                stepy = 1;
+            }
+
+            this.x += stepx*step
+            this.y += stepy*step
+        }
+        }
+
+        // initialise a walker object
+        var w = new Walker();
+
+        // run draw function
+        setInterval(draw, 10);
+
+        function draw() {
+            w.walk();
+            w.display();
+        }
+    };
+</script>
+
+<p>The point of improvement in the ImprovedVectorWalker is the conditional that “controls” the randomness. In the previous example the test gave the random walker a choice of 4 directions (2 for x and 2 for y), this time it has 9 choices (3 for x and 3 for y). To do this a separate random number needs to be generated for both x and y, then each is tested to see if it falls within a range between 0 and 1 (remember java script random gives a random number between 0-1).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  // walker object
+  var Walker = function () {
+      this.x = width / 2;
+      this.y = height / 2;
+
+      Walker.prototype.display = function () {
+          ctx.rect(this.x, this.y, 1, 1);
+          ctx.stroke();
+          ctx.fill();
+      }
+
+      Walker.prototype.walk = function () {
+          // improved movement
+          var stepx = Math.random(); // value 0-1
+          var stepy = Math.random();
+
+          if (stepx &gt;= 0 &amp;&amp; stepx &lt; 0.33) {
+              stepx = -1;
+          } else if (stepx &gt;= 0.33 &amp;&amp; stepx &lt; 0.66) {
+              stepx = 0;
+          } else {
+              stepx = 1;
+          }
+
+          if (stepy &gt;= 0 &amp;&amp; stepy &lt; 0.33) {
+              stepy = -1;
+          } else if (stepy &gt;= 0.33 &amp;&amp; stepy &lt; 0.66) {
+              stepy = 0;
+          } else {
+              stepy = 1;
+          }
+
+          this.x += stepx;
+          this.y += stepy;
+
+      }
+</code></pre>
+</div>
+
 
               <footer>
                 <ul class="stats">
+                
+                  <li><a href="#">Creative</a></li>
+                
+                  <li><a href="#">Code</a></li>
                 
         <!--
         <li><a href="#">General</a></li>
@@ -111,6 +235,14 @@
                 </ul>
               </footer>
            </article>
+  					<ul class="actions pagination">
+  					  
+  	  				  <li><a href="/blog/2016/01/13/RandomWalkers.html" class="button big previous">Previous Post</a></li>
+  						
+							
+  						  <li><a href="/blog/2016/02/13/MeshBox.html" class="button big next">Next Post</a></li>
+  						
+  					</ul>
 					</div>
 
 				<!-- Sidebar -->
@@ -142,7 +274,6 @@
 	  <li><a href="/about" class="button">Learn More</a></li>
 	</ul>
 </section>
-
 
 
 						<!-- Mini Posts -->
@@ -407,6 +538,16 @@
 		  </article>
     
   </div>
+</section>
+
+
+            <!-- About -->
+            <section class="blurb">
+	<ul class="actions">
+		<!--
+	  <li><a href="/archive" class="button">Archive</a></li>
+	-->
+	</ul>
 </section>
 
 

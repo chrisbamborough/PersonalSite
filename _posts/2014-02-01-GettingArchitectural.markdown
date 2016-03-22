@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Getting Architectural"
-date:   2015-12-01 12:00:00
+date:   2014-02-01 12:00:00
 categories: blog
 tags: Architecture
-image: https://dl.dropboxusercontent.com/u/20394991/MakingCulture/Adelaide_FabLab_Logo.png
+image:
 ---
 
 The role of the architect is a hot topic these days. The gradual demise of the architect's influence and agency within the building industry even provides enough content for [university course electives](http://handbook.uts.edu.au/subjects/11503.html).

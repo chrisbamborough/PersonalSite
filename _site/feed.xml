@@ -5,9 +5,468 @@
     <description>The personal website of Chris Bamborough</description>
     <link>http://chrisbamborough.com/</link>
     <atom:link href="http://chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 08 Mar 2016 19:26:13 +1100</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2016 19:26:13 +1100</lastBuildDate>
+    <pubDate>Sun, 20 Mar 2016 22:28:22 +1100</pubDate>
+    <lastBuildDate>Sun, 20 Mar 2016 22:28:22 +1100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Mesh Box</title>
+        <description>&lt;p&gt;While I have been experimenting with the HTML5 Canvas and WebGL capabilities I’ve had trouble sharing the graphical output of my code. So after messing around trying to get Three.js and Jekyll to play nice, I opted for embedding a code pen player.&lt;/p&gt;
+
+&lt;p&gt;The outcome is pretty good and means the HTML, CSS and Javascript can be referenced along with the animation.&lt;/p&gt;
+
+&lt;p data-height=&quot;319&quot; data-theme-id=&quot;8227&quot; data-slug-hash=&quot;aIbeu&quot; data-default-tab=&quot;result&quot; data-user=&quot;chrisbamborough&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/chrisbamborough/pen/aIbeu/&quot;&gt;Simple Green Box&lt;/a&gt; by Chris Bamborough (&lt;a href=&quot;http://codepen.io/chrisbamborough&quot;&gt;@chrisbamborough&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 13 Feb 2016 23:00:00 +1100</pubDate>
+        <link>http://chrisbamborough.com/blog/2016/02/13/MeshBox.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/02/13/MeshBox.html</guid>
+        
+        <category>Creative</category>
+        
+        <category>Code,</category>
+        
+        <category>Three.js</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Improved Random Walkers</title>
+        <description>&lt;style&gt;  
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+&lt;/style&gt;
+
+&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;script&gt;
+// put code in an overall function
+window.onload = function () {
+    &quot;use strict&quot;;
+    var canvas = document.getElementById(&#39;myCanvas&#39;);    
+  	canvas.style.width =&#39;100%&#39;;
+  	canvas.style.height=&#39;100%&#39;;
+  	canvas.width  = canvas.offsetWidth;
+  	canvas.height = canvas.offsetHeight;    
+    var ctx = canvas.getContext(&#39;2d&#39;);
+    var width = canvas.width;
+    var height = canvas.height;
+    var step = 5;
+
+    // walker object
+    var Walker = function () {
+        this.x = width / 2;
+        this.y = height / 2;
+
+        Walker.prototype.display = function() {
+            ctx.rect(this.x,this.y,2,2);
+            ctx.stroke();
+            ctx.fill();
+        }
+
+        Walker.prototype.walk = function () {
+        	var choice = Math.random();
+
+            var stepx = Math.random(); // value 0-1
+            var stepy = Math.random();
+
+            if (stepx &gt;= 0 &amp;&amp; stepx &lt; 0.33) {
+                stepx = -1;
+            } else if (stepx &gt;= 0.33 &amp;&amp; stepx &lt; 0.66) {
+                stepx = 0;
+            } else {
+                stepx = 1;
+            }
+
+            if (stepy &gt;= 0 &amp;&amp; stepy &lt; 0.33) {
+                stepy = -1;
+            } else if (stepy &gt;= 0.33 &amp;&amp; stepy &lt; 0.66) {
+                stepy = 0;
+            } else {
+                stepy = 1;
+            }
+
+            this.x += stepx*step
+            this.y += stepy*step
+        }
+        }
+
+        // initialise a walker object
+        var w = new Walker();
+
+        // run draw function
+        setInterval(draw, 10);
+
+        function draw() {
+            w.walk();
+            w.display();
+        }
+    };
+&lt;/script&gt;
+
+&lt;p&gt;The point of improvement in the ImprovedVectorWalker is the conditional that “controls” the randomness. In the previous example the test gave the random walker a choice of 4 directions (2 for x and 2 for y), this time it has 9 choices (3 for x and 3 for y). To do this a separate random number needs to be generated for both x and y, then each is tested to see if it falls within a range between 0 and 1 (remember java script random gives a random number between 0-1).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  // walker object
+  var Walker = function () {
+      this.x = width / 2;
+      this.y = height / 2;
+
+      Walker.prototype.display = function () {
+          ctx.rect(this.x, this.y, 1, 1);
+          ctx.stroke();
+          ctx.fill();
+      }
+
+      Walker.prototype.walk = function () {
+          // improved movement
+          var stepx = Math.random(); // value 0-1
+          var stepy = Math.random();
+
+          if (stepx &amp;gt;= 0 &amp;amp;&amp;amp; stepx &amp;lt; 0.33) {
+              stepx = -1;
+          } else if (stepx &amp;gt;= 0.33 &amp;amp;&amp;amp; stepx &amp;lt; 0.66) {
+              stepx = 0;
+          } else {
+              stepx = 1;
+          }
+
+          if (stepy &amp;gt;= 0 &amp;amp;&amp;amp; stepy &amp;lt; 0.33) {
+              stepy = -1;
+          } else if (stepy &amp;gt;= 0.33 &amp;amp;&amp;amp; stepy &amp;lt; 0.66) {
+              stepy = 0;
+          } else {
+              stepy = 1;
+          }
+
+          this.x += stepx;
+          this.y += stepy;
+
+      }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 16 Jan 2016 23:00:00 +1100</pubDate>
+        <link>http://chrisbamborough.com/blog/2016/01/16/ImprovedRandomWalkers.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/01/16/ImprovedRandomWalkers.html</guid>
+        
+        <category>Creative</category>
+        
+        <category>Code</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Random Walkers</title>
+        <description>&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;script&gt;
+// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var ctx = canvas.getContext(&#39;2d&#39;);
+    var width = canvas.width;
+    var height = canvas.height;
+    var step = 5;
+
+    // walker object
+    var Walker = function() {
+        this.x = width / 2;
+        this.y = height / 2;
+
+        Walker.prototype.display = function() {
+            ctx.rect(this.x,this.y,1,1);
+            ctx.stroke();
+            ctx.fill();
+        }
+
+        Walker.prototype.walk = function () {
+            var choice = Math.random();
+
+            if (choice &gt;= 0 &amp;&amp; choice &lt; 0.25) {
+                this.x = this.x + step;
+            } else if (choice &gt;= 0.25 &amp;&amp; choice &lt; 0.5) {
+                this.x = this.x - step;
+            } else if (choice &gt;= 0.5 &amp;&amp; choice &lt; 0.75) {
+                this.y += step;
+            } else {
+                this.y -= step;
+            }
+        }
+    }
+    // initialise a walker object
+    var w = new Walker();
+
+    // run draw function
+    setInterval(draw, 10);
+
+    function draw() {
+        w.walk();
+        w.display();
+    }
+
+
+};
+
+&lt;/script&gt;
+
+&lt;p&gt;This is a little bit backward but I started with section 1 in Nature Of Code as I didn’t know how to create objects in Java Script but this is the stage where this happened.&lt;/p&gt;
+
+&lt;p&gt;As before the html file is set up toreference a javascript file and creates a canvas.
+~~~ html
+    &amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &lt;title&gt;Random Walker&lt;/title&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;NOC_0_1_RandomWalker.js&quot;&gt;&lt;/script&gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &lt;canvas id=&quot;canvas&quot;&gt;&lt;/canvas&gt;
+    &amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;
+~~~&lt;/p&gt;
+
+&lt;p&gt;For the javascript the function is set up to load as the window is opened and then the variables initialised.&lt;/p&gt;
+
+&lt;p&gt;~~~ Javascript
+    window.onload = function () {
+        “use strict”;
+        // initialise canvas
+        var canvas = document.getElementById(‘canvas’);
+        var ctx = canvas.getContext(‘2d’);
+        var width = canvas.width = window.innerWidth;
+        var height = canvas.height = window.innerHeight;
+        var step = 1;
+        ~~~&lt;/p&gt;
+
+&lt;p&gt;The next step is to create a walker object that has information on how to behave, in this case how to display, and then how to walk. The most significant difference here between processing and javascript is that js does not have a random function that you can input ranges, it only outputs a float between 0-1. As a result the walk function needs a series of conditionals to test wether than random number generated fell between a certain range.&lt;/p&gt;
+
+&lt;p&gt;~~~ Javascript
+     // walker object
+        var Walker = function() {
+            this.x = width / 2;
+            this.y = height / 2;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        Walker.prototype.display = function() {
+            ctx.rect(this.x,this.y,1,1);
+            ctx.stroke();
+            ctx.fill();
+        }
+
+        Walker.prototype.walk = function () {
+            var choice = Math.random();
+
+            if (choice &amp;gt;= 0 &amp;amp;&amp;amp; choice &amp;lt; 0.25) {
+                this.x = this.x + step;
+            } else if (choice &amp;gt;= 0.25 &amp;amp;&amp;amp; choice &amp;lt; 0.5) {
+                this.x = this.x - step;
+            } else if (choice &amp;gt;= 0.5 &amp;amp;&amp;amp; choice &amp;lt; 0.75) {
+                this.y += step;
+            } else {
+                this.y -= step;
+            }
+        }
+    }  
+    ~~~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Finally to create a walker the object must be instantiated, a draw function created to call the objects functions, and a call to run the draw function.&lt;/p&gt;
+
+&lt;p&gt;~~~ Javascript
+    // initialise a walker object
+        var w = new Walker();&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    // run draw function
+    setInterval(draw, 10);
+
+    function draw() {
+        w.walk();
+        w.display();
+    }
+
+
+};
+~~~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 13 Jan 2016 23:00:00 +1100</pubDate>
+        <link>http://chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</guid>
+        
+        <category>Creative</category>
+        
+        <category>Code</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>The Nature Of Canvas</title>
+        <description>&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
+&lt;/canvas&gt;
+&lt;script&gt;
+// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var context = canvas.getContext(&#39;2d&#39;);
+    var width = canvas.width;
+    var height = canvas.height;
+    var x = 100;
+    var y = 100;
+    var xspeed = 5;
+    var yspeed = 5;
+
+
+    setInterval(draw,10);
+
+
+
+    function draw () {
+
+        context.clearRect(0,0,width,height);
+        context.beginPath();
+        context.fillStyle = &quot;#000ff&quot;;
+        context.arc(x, y, 20,0, Math.PI * 2, true);
+        context.fill();
+
+        if (x &gt; width || x &lt; 0) {
+            xspeed = -xspeed;
+        }
+        if (y &gt; height || y &lt; 0) {
+            yspeed = -yspeed;
+        }
+
+        x+=xspeed;
+        y+=yspeed;
+    }
+}
+&lt;/script&gt;
+
+&lt;p&gt;When I first started learning &lt;a href=&quot;http://processing.org&quot;&gt;Processing&lt;/a&gt; a few years ago I was drawn to Daniel Shiffman’s book &lt;a href=&quot;http://www.learningprocessing.com/&quot;&gt;“Learning Processing”&lt;/a&gt; because he did such a great job at explaining the basics without you feeling like a dumb ass. After this first book Shiffman developed a self published &lt;a href=&quot;http://natureofcode.com/&quot;&gt;Nature Of Code&lt;/a&gt; project shaped as a sylabus for his Introduction to Computational media course at &lt;a href=&quot;http://admin.tisch.nyu.edu/object/ShiffmanD.html&quot;&gt;ITP New York&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;His Nature Of Code course simply aims to simulate things that naturally occur in the physical world via Processing. As Processing is based on the java script language I’ve became interested in using it to learn Javascript programing in Canvas.&lt;/p&gt;
+
+&lt;p&gt;I’m going to work through the examples Shiffman uses in the book so to start,&lt;/p&gt;
+
+&lt;p&gt;Chapter 1 Vectors
+1_bouncingball_novectors&lt;/p&gt;
+
+&lt;p&gt;This first example in the book aims to move a book around the screen using a constant updating of the ball’s x and y location.&lt;/p&gt;
+
+&lt;p&gt;To start off an html file must link to a javascript file in the head tags, before setting up a canvas in the body, in this case sized 500px x 500px.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;NOC_1_1_BouncingBall_NoVectors.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id =&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width =&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;500&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height =&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;500&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;  
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Within the javascript file firstly the script needs to be launched on loading of the webpage. A variable canvas which fetches the myCanvas element in the html must allways be called, and a context must be set up, in this case it is using the built in HTML5 2d library.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var context = canvas.getContext(&#39;2d&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The neccessary variables must be set up for a bounding ball.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var context = canvas.getContext(&#39;2d&#39;);
+    var width = canvas.width = window.innerWidth;
+    var height = canvas.height = window.innerHeight;
+    var x = 100;
+    var y = 100;
+    var xspeed = 5;
+    var yspeed = 5;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;which will be used in a draw function similar to a processing sketch. In order for the run function to work though a setInterval(draw,10); command must be used to set up the drawing routine “draw” with a framerate of 10.&lt;/p&gt;
+
+&lt;p&gt;Then the draw function can be called. Comments are after the // marks.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// put code in an overall function
+window.onload = function () {
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var context = canvas.getContext(&#39;2d&#39;);
+    var width = canvas.width = window.innerWidth;
+    var height = canvas.height = window.innerHeight;
+    var x = 100;
+    var y = 100;
+    var xspeed = 5;
+    var yspeed = 5;
+
+
+    setInterval(draw,10);
+
+    // function to draw
+    function draw () {
+
+    	//clear the background each frame              		
+    	context.clearRect(0,0,width,height);
+        // Start the path for the circle
+        context.beginPath();
+        // Indicate what colour to fill the circle
+        context.fillStyle = &quot;#000ff&quot;;
+        // describe the circle using the arc function
+        context.arc(x, y, 20,0, Math.PI * 2, true);
+        // Fill the shape
+        context.fill();
+
+        // if statements to detect the shapes proximity to the edge of the canvas
+        to make object rebound with opposite change in x and y direction.
+        if (x &amp;gt; width || x &amp;lt; 0) {
+            xspeed = -xspeed;
+        }
+        if (y &amp;gt; height || y &amp;lt; 0) {
+            yspeed = -yspeed;
+        }
+
+		// finally make the ball move by adding a variable &quot;speed&quot; to the x and y position
+        x+=xspeed;
+        y+=yspeed;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 12 Jan 2016 23:00:00 +1100</pubDate>
+        <link>http://chrisbamborough.com/blog/2016/01/12/NOC.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/01/12/NOC.html</guid>
+        
+        <category>Creative</category>
+        
+        <category>Code</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Getting Architectural</title>
@@ -27,9 +486,9 @@
 
 &lt;p&gt;We in the industry need to develop more contemporary tools for the measurement of architecture’s success, it is the wicked problem of quantifying aesthetics but I think rather than focussing on money and capital gain the focus is shifted onto cultural and social influence. The one thing that sets the digital communications work apart is their use of the web and networked technologies. What if architects were to build in a process of post project success analysis using exposure on social media and image aggregations to justify its effective impact. This wouldn’t see a dilution of the Architects already weakened position across diffused non spatial services, but rather develop a capitalist language about the benefits of quality designed space that potential commissioners of space value and understand.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 01 Dec 2015 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2015/12/01/Architectural.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2015/12/01/Architectural.html</guid>
+        <pubDate>Sat, 01 Feb 2014 23:00:00 +1100</pubDate>
+        <link>http://chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</guid>
         
         <category>Architecture</category>
         
@@ -39,12 +498,33 @@
       </item>
     
       <item>
-        <title>Hello World</title>
-        <description>&lt;p&gt;Hello World!&lt;/p&gt;
+        <title>UPN Petcha Kutcha</title>
+        <description>&lt;p&gt;&lt;object data=&quot;http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf&quot; height=&quot;400&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;700&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf&quot; /&gt;&lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;&lt;param name=&quot;scale&quot; value=&quot;noscale&quot; /&gt;&lt;param name=&quot;salign&quot; value=&quot;l&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;menu&quot; value=&quot;false&quot; /&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;mode=mini&amp;amp;embedBackground=%23000000&amp;amp;backgroundColor=%23222222&amp;amp;documentId=120704113628-87d1e9ac40ec49c08f1064776ce4c7a0&quot; /&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://issuu.com/chrisbamborough/docs/compstudio_petchakutcha?mode=window&amp;amp;backgroundColor=%23222222&quot; target=&quot;_blank&quot;&gt;Open publication&lt;/a&gt; - Free &lt;a href=&quot;http://issuu.com&quot; target=&quot;_blank&quot;&gt;publishing&lt;/a&gt; - &lt;a href=&quot;http://issuu.com/search?q=petcha%20kutcha&quot; target=&quot;_blank&quot;&gt;More petcha kutcha&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Prior to studying architecture I completed a human Geography degree. Apart from teaching me to colour in it promoted an approach that allways question the social, economic, cultural, environmental and political forces at work within a space. &amp;nbsp;&lt;/p&gt;
+&lt;p&gt;My professional work took me into Advertising. From it I understand how commercialism unfortunately drives social identity within capitalist culture. If space is socially constructed and social identity spatially constructed, advertising gives the instructions.&lt;/p&gt;
+&lt;p&gt;I understand the importance of communicating a story or idea. During my masters degree I have explored multiple ways of producing explanatory narratives through story boards, scanario diaries, films and diagrams.&lt;/p&gt;
+&lt;p&gt;Interested in urban scale spatial relationships, and the power of speculative vision. This can arise through direct building, or control of factors that influence emergent spatial relationships. This is Bondi where I speculated on a higher density suburb with train station, main square and a network of courtyards. &amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Within my Architectural work I have concentrated on computation and fabrication. Working with digital processes provides the opportunity to uncover non linear design outcomes and the potential to explore difference and repetition and form finding.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m aware of the importance of selling within Architecture. The aspirational or seductive image is very powerful in convincing stakeholders of its success. These were examples of material and light experiences for my last project Metabolic Weave.&lt;/p&gt;
+&lt;p&gt;The symposium on Thursday was extremely eye opening in respect to the varied agendas the presentors hold, in summary&lt;br /&gt;SHFA = Happy if tenants and public seem happy.&lt;br /&gt;State Government = Place making through the confluence of events&lt;br /&gt;Sydney City Council = Sustainable development / the activation of lost space&lt;br /&gt;Powerhouse = More open and flexible connectivity&lt;/p&gt;
+&lt;p&gt;INSW = Importance of getting public infrastructure right, to then attract the right private investment&lt;br /&gt;ABC = Engage local community + collaboration.&lt;br /&gt;HBO/EMBT = Importance of public realm improvement to attract further positive change.&lt;br /&gt;UTS = More international students + assistance in determination of need.&lt;/p&gt;
+&lt;p&gt;TAFE = &amp;nbsp;More international students + Connections / Access to Sydney&lt;br /&gt;Ben Hewitt = &amp;ldquo;Vision&amp;rdquo; of place - need for public involvement &lt;br /&gt;Tim Williams = Crucial for project to be defined and the benefits for stakeholders made clear.&lt;/p&gt;
+&lt;p&gt;I have previously studied and designed for the UPN during an AA infrastructural tissues elective. The approach that time was to investigate velocities within the site, and veritcal connection to increase the heterogenity existing within the space. My critique of the resulting proposal however was that it relied on a presumed natural traffic flow within the space which does not exist.&lt;/p&gt;
+&lt;p&gt;In considering the UPN my immediate interest has been with the attracting influence of the space and its place within a larger network. I am interested in the politics of space around the UPN, the capacity for multiple social identities to be formed through its use, and its potential to define a larger network.&lt;/p&gt;
+&lt;p&gt;The network Billy showed on Friday I felt was too simplistic, there is the pedestrian aspect, but if we look at the UPN in the deleuzian concept of public space as a territorialised assemblage, the network needs to be understood as a study of material things, flows, spatial connections and intensities. &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;For me the &amp;ldquo;mouth&amp;rdquo; is the most crippling aspect of the UPN, what if this entrance was removed and another attached? Would benefits be added / removed from certain stakeholders within the area. Could development be promoted through market driven forces of mutual economic benefit.&lt;/p&gt;
+&lt;p&gt;Around this area there are a number of broken networks desperate to be stitched back into the city&lt;br /&gt;1- cycle network - massive area around UTS where the network disappears, no cross connection and lack of cyclists accessing the precint&lt;br /&gt;2 - technology park - hidden away and unconnected, a top down approach to development and a perceived failure.&lt;/p&gt;
+&lt;p&gt;Public space Infrastructure as activator for movement and activity (symposium). &lt;br /&gt;Interested in place making through intensive multiplicities. Smooth spatial segmentarity and Multiple identities, = richness but potential for conflict. &lt;br /&gt;&lt;br /&gt;A first move of creating a bike park within the UPN seems nice enough, associated symbiotic activities could thrive around the securing of bikes for local employees and residents.&lt;/p&gt;
+&lt;p&gt;For a bike park to be viable however needs an activation from cycling opportunities and a development of a cycling culture within the city. This is achieved by providing direct and safe cycle connections into and accross the city.An opportunity appears to be present in the rail tunnel that connects to the UPN.&lt;/p&gt;
+&lt;p&gt;The UPN has potential to extend its relationship via the old rail tunnel to connect over to Cleveland Street activating a desperately needed cycle connection. Also providing a connection to the existing Redfern cycling network, station and beyond the Technology park. The pedestrian and cycle infrastructure connecting one side of the railway to the other provides opportunity for stakeholders of the UPN to expand south of the city. This could mean teaching links with technology, commercial opportunities for TAFE, commercial rent for Railcorp.&lt;/p&gt;
+&lt;p&gt;I am interested in gradient and topography as spatial organiser for flows of use and public private divisions. An example of such an approach is SANAA&amp;rsquo;s Rolex Centre where spatial division is achieved through ease of circulation, sight lines and voids.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 01 Dec 2015 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2015/12/01/HelloWorld.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2015/12/01/HelloWorld.html</guid>
+        <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
+        <link>http://chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</guid>
+        
+        <category>Architecture</category>
         
         
         <category>blog</category>
@@ -52,24 +532,209 @@
       </item>
     
       <item>
-        <title>Use More Table</title>
-        <description>&lt;p&gt;Christmas 2008 I volunteered to help the charity SHELTER (http://england.shelter. org.uk/) by helping with the design and decoration of a drop in centre in South London. In addition to helping set up shelter locations around South London I  designed a cheap and simple to construct table that could be used in a number of ways. I wanted to design a low cost table for the users of the centre, that could also be turned into seating / space dividing furniture through simple manipulation.
-The issue we identified was that if temporary furniture for Christmas shelter locations were to be created they would have to be able to be quick and easy to construct, whilst being multi-functional. The four part “Usemore Table” was designed to function primarily as a dining or work table, which could then be split into a table and seating or all purely seating.
-Other designs from the group involved in Shelter included modular room dividers that could be adapted to different spatial situations, and Christmas decorations produced by local school children.&lt;/p&gt;
+        <title>Three.js Animation</title>
+        <description>&lt;p&gt;I’m continuing to try out the examples in “Learning Three.js” by working through the code and attempting to get live on this blog. This is the first scene described in the book but with some animation thrown in and the use of a stats counter in the top left hand corner.&lt;/p&gt;
 
-&lt;p&gt;&lt;a title=&quot;Shelter_DD_2 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/5412287179/&quot;&gt;&lt;img src=&quot;http://farm6.static.flickr.com/5215/5412287179_6d44f03a50_z.jpg&quot; alt=&quot;Shelter_DD_2&quot; width=&quot;640&quot; height=&quot;293&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;style&gt;  
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+&lt;/style&gt;
 
-&lt;p&gt;&lt;a title=&quot;Shelter_DD_1 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/5412898082/&quot;&gt;&lt;img src=&quot;http://farm6.static.flickr.com/5134/5412898082_01155c5ac3_z.jpg&quot; alt=&quot;Shelter_DD_1&quot; width=&quot;640&quot; height=&quot;390&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;script&gt;
+		// add some stats
+        var stats = initStats();
 
-&lt;p&gt;&lt;a title=&quot;Shelter_Model_1 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/5412286823/&quot;&gt;&lt;img src=&quot;http://farm6.static.flickr.com/5252/5412286823_483ce26ec9_z.jpg&quot; alt=&quot;Shelter_Model_1&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+        // create the scene
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+        // position and point the camera
+        camera.position.x = -30;
+        camera.position.y = 40;
+        camera.position.z = 30;
+        camera.lookAt(scene.position);
+        // create a renderer
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setClearColor(0xEEEEEE);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
 
-&lt;p&gt;DOWNLOAD THE PRESS RELEASE FOR THIS PROJECT &lt;a href=&quot;http://www.smoothspace.me/wp-content/uploads/2011/05/Press_Release_ShelterTable.pdf&quot;&gt;HERE.&lt;/a&gt;&lt;/p&gt;
+        // create ground plane
+        var planeGeometry = new THREE.PlaneGeometry(60,20);
+        var planeMaterial = new THREE.MeshBasicMaterial();
+        var plane = new THREE.Mesh(planeGeometry,planeMaterial);
+        // rotate and position the plane
+        plane.rotation.x=-0.5*Math.PI;
+        plane.position.x=15
+        plane.position.y=0
+        plane.position.z=0
+        // add the plane to the scene
+        scene.add(plane);
+
+		// create a cube
+        var geometry = new THREE.CubeGeometry(4, 4, 4);
+        var material = new THREE.MeshBasicMaterial({color: 0xff0000, wireframe:true});
+        var cube = new THREE.Mesh(geometry, material);
+        // position the cube
+        cube.position.x=-4;
+        cube.position.y=3;
+        cube.position.z=0;
+        scene.add(cube);
+
+        // create a sphere
+        var sphereGeometry = new THREE.SphereGeometry(4,20,20);
+        var sphereMaterial = new THREE.MeshBasicMaterial({color: 0x7777ff, wireframe: true});
+        var sphere = new THREE.Mesh(sphereGeometry,sphereMaterial);
+        // position the sphere
+        sphere.position.x=20;
+        sphere.position.y=4;
+        sphere.position.z=2;
+        // add the sphere to the scene
+        scene.add(sphere);
+
+        // add an axis
+        var axis = new THREE.AxisHelper(20);
+        scene.add(axis);
+
+		var step = 0;
+
+         // need a render loop
+        function render() {
+        	stats.update();
+
+            requestAnimationFrame(render);
+            renderer.render(scene, camera);
+
+            // bounce the sphere
+            step += 0.04;
+            sphere.position.x = 20 + (10*(Math.cos(step)));
+            sphere.position.y = 2 + (10*Math.abs(Math.sin(step)));
+
+            // rotate cube
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+        }
+
+        render();
+
+        function initStats(){
+            var stats = new Stats();
+            stats.setMode(0);
+
+            stats.domElement.style.position = &#39;absolute&#39;;
+            stats.domElement.style.left = &#39;0px&#39;;
+            stats.domElement.style.top = &#39;0px&#39;;
+            document.body.appendChild( stats.domElement );
+                return stats;
+        }
+
+
+
+    &lt;/script&gt;
+
 </description>
-        <pubDate>Mon, 01 Dec 2008 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2008/12/01/UseMoreTable.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2008/12/01/UseMoreTable.html</guid>
+        <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
+        <link>http://chrisbamborough.com/blog/2012/04/13/ThreeJS.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/ThreeJS.html</guid>
         
-        <category>Design</category>
+        <category>Creative</category>
+        
+        <category>Code</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>The ABC Opened</title>
+        <description>&lt;p&gt;The final project for my Architecture MA at UTS was an intensive four week studio aiming to recreate an architectural competition atmosphere, it&#39;s focus the Sydney&#39;s south central creative quarter, i.e. Ultimo, and the pedestrian network in particular. The studios aim was to generate a catalyst for new material organisations through architectural thinking, and an engagement with the multiple stakeholders of the area, namely ABC, The City of Sydney, Powerhouse Museum, Sydney Harbour Foreshore Authority, Frasers Property, UTS, TAFE, Rail Corp and CitiGate Hotel.&lt;p&gt;
+
+&lt;object style=&quot;width: 690px; height: 300px;&quot; width=&quot;690px&quot; height=&quot;240&quot; classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;menu&quot; value=&quot;false&quot; /&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;mode=mini&amp;amp;embedBackground=%23000000&amp;amp;backgroundColor=%23222222&amp;amp;documentId=120802085122-511ebf1f028f48d98b872aa0f9116e3b&quot; /&gt;&lt;embed style=&quot;width: 700px; height: 300px;&quot; width=&quot;320&quot; height=&quot;240&quot; type=&quot;application/x-shockwave-flash&quot; src=&quot;http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf&quot; allowfullscreen=&quot;true&quot; menu=&quot;false&quot; wmode=&quot;transparent&quot; flashvars=&quot;mode=mini&amp;amp;embedBackground=%23000000&amp;amp;backgroundColor=%23222222&amp;amp;documentId=120802085122-511ebf1f028f48d98b872aa0f9116e3b&quot; /&gt;&lt;/object&gt;
+&lt;div style=&quot;width: 700px; text-align: left;&quot;&gt;&lt;a href=&quot;http://issuu.com/chrisbamborough/docs/abc_opened?mode=window&amp;amp;backgroundColor=%23222222&quot; target=&quot;_blank&quot;&gt;Open publication&lt;/a&gt; - Free &lt;a href=&quot;http://issuu.com&quot; target=&quot;_blank&quot;&gt;publishing&lt;/a&gt; - &lt;a href=&quot;http://issuu.com/search?q=abc&quot; target=&quot;_blank&quot;&gt;More abc&lt;/a&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Under the tutelage of Billy Feuerman of [Office Feuerman]( http://www.officefeuerman.com) myself and Will Cooper explored the role of the ABC. We sought to question what interior spatial relationships could be made between key stakeholder buildings and new spaces within the quarter, looking at the Ultimo Pedestrian Network less as a spine but more of a network that extends to different parts of the city, from inside to out. From an initial &quot;forensic mapping&quot; that sought to uncover relationships from room to building to block to city we studied the interior workings of the ABC to uncover aspects that could extend into the public realm. What we identified was the shrinking of office and media production space created by advances in technology that has started to create dead space within the ABC. Our agenda was to allow the public up into these spaces to observe the inner workings of the National public broadcaster. In return the ABC would receive new recreational spaces, and engagement opportunities with a captive audience.
+
+The architectural scheme proposed an opening up of the ground plane to connect Harris Street with the pedestrian network, whilst allowing ABC employees to access their building from underneath. Pop ups break through the surface to reveal media studios and connections to facilities in the ABC building above. Both the ground plane and the open spaces within the building become accessible and public, within physical and visual connections throughout. At level three a public facilities loop (archive, studios, library) with connecting cafe provides a focus for public use and natural surveillance through use. The intention was for an engagement with the public with ABC&#39;s radio and TV media production encouraging a further interaction through social media ultimately blurring the boundary between the public space of the Ultimo pedestrian network and the expanded ABC building.
+
+&lt;a title=&quot;StakeholderPreso_FINAL17 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7696803560/&quot;&gt;&lt;img class=&quot;alignnone&quot; src=&quot;http://farm9.staticflickr.com/8012/7696803560_820020e920_z.jpg&quot; alt=&quot;StakeholderPreso_FINAL17&quot; width=&quot;700&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
+        <link>http://chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</guid>
+        
+        <category>Architecture</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Strip Morphologies</title>
+        <description>&lt;p&gt;13th April 2012 was the interim crit for Materiality lab. The main outcome for the presentation was an assemblage using a combination of prototypes developed during the previous 6 weeks. I decided to go for a large assemblage that used my Eyelet prototype in a number of different ways to achieve a transition for lightweight tectonic, to solid streotomic expression.&lt;/p&gt;
+
+&lt;p&gt;This transition took Gotfried Semper’s theory of Matabolism from the late 1800s as a point of research departure. Whilst the crit seemed to go well and I was happy with the verbal presentation, fitting all things I wanted to present in the allotted time, I realised that the expectation was to actually present all my prototypes rather than the development to my assemblage. The problem i found was that my prototypes had taken two research trajectories, one of bending (moment capacity), the other twisting (strip morphologies), as a result I hadn’t combined the two directions into an interim assemblage. Although my process was documented within a book the presentation only touched on part of my work which I think was a missed opportunity. Saying that I thought there was enough exploration within Eyelet, and its parent exploration “Strip Morphologies” to make the presentation engaging and more content would have diluted the main message.&lt;/p&gt;
+
+&lt;p&gt;In terms of critique the main point of discussion was the joining of the EyeLet units which I agreed needs focus on. One opinion was that it ruined the beauty of the structure, whilst another liked its “grotesque” contrast with the weaving strips, like Cindy Crawford’s mole. I had anticipated this point with a study of alternative connecting methods but I felt the prototype used allowed different configurations and varying positions of structural stasis. I think an important part was the visual treatment of the extra strip, in the assemblage they were simply smaller sections of the 30mm wide strips used, but they could have been expressed, or even carry out a second role. This could be to thicken the structure, to allow cross over of strips, allow a variance in strip width, these clues for design development will be explored during the next series of prototypes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Material Computation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Another string of discussion from the crit covered the calculation of material behaviour and the potential for computational exploration. Prior to the interim I had explored scripting of strips in python, and using the grasshopper plugin kangaroo to predict strip morphologies. For development it seems important to explore computation to uncover opportunities that I would have not have otherwise struck upon. This potentially could be research into sin and cosine calculations to develop weaving patterns. The main issue for the project is that the system I wish to elaborate relies heavily of plywood’s capacity to comply with, whilst resisting bending movement. It is one which allows developable surfaces to be extracted, digitally this can only be achieved through physics based modelling which gets complicated. The ambition is to programme strip behaviours, whilst providing them the ability to detect other forms of geometry, and act accordingly. An extra level of detail would be to then overlay a second exploration of connection within the digital space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Transition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A critical part of the project, the transition from tectonic to stereotomy needs greater exploration and control. In the Eyelet assemblage the transition occurred through a separation, rotation and overlapping of units to allow stacking. In order to allow overlap the connections parametrically varied, but the rotation and separation occurred as a negotiation between the two end states. To move forward I need to focus on accurately predicting and controlling the transfer, whilst making sure there is a degree of freedom in movement so the material behaviour can be visually registered.&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;ProtoypePreso_A0_FINAL by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/6924359590/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5470/6924359590_0560100711_z.jpg&quot; alt=&quot;ProtoypePreso_A0_FINAL&quot; width=&quot;640&quot; height=&quot;452&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Assessment 1_Crit by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7112294869/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7229/7112294869_72985d1142_z.jpg&quot; alt=&quot;Assessment 1_Crit&quot; width=&quot;640&quot; height=&quot;428&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Assessment 1_Crit by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7112298969/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7140/7112298969_7ae7e8b6a7_z.jpg&quot; alt=&quot;Assessment 1_Crit&quot; width=&quot;426&quot; height=&quot;640&quot; /&gt;&lt;/a&gt;&lt;a title=&quot;Assessment 1_Crit by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/6966218158/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7069/6966218158_bb021d5f8e_z.jpg&quot; alt=&quot;Assessment 1_Crit&quot; width=&quot;426&quot; height=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Assessment 1 is tomorrow so this week has been documenting the whole process and building the final assemblage. The concept for the structure is to produce a gradually transforming interplay of identically sizes plywood strips woven into cross units. The model will move from a surface arrangement through to a thickened stacked combination creating contrasting visual effects and geometry.&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Tectonic_Close by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435073/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5325/7070435073_e32777c8b9_z.jpg&quot; alt=&quot;Tectonic_Close&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;stereotomy by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435731/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5197/7070435731_d595927e80_z.jpg&quot; alt=&quot;stereotomy&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;Assemblage_Front by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435367/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7055/7070435367_560abc3681_z.jpg&quot; alt=&quot;Assemblage_Front&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;EyeletRender_5 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/6895710934/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7210/6895710934_2d186b4d58_z.jpg&quot; alt=&quot;EyeletRender_5&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
+        <link>http://chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</guid>
+        
+        <category>Architecture</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Pavilion Design</title>
+        <description>&lt;p&gt;From the eyelet prototype and their ability to be alter their shape I firstly explored how it can be used in its tectonic state. My ambition was to allow it to scissor across a surface each eyelet moving to a closed state.&lt;/p&gt;
+
+&lt;p&gt;In its stacked state I tested its ability to scissor and gradually close with the ambition that the two states come to meet. The resulting assemblage aims to create two conditions of light and heavy, the ambition will be to find angles and the right lighting conditions within rendering to convey this for the final presentation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Stereotomy_close_v2 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7326837066/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7228/7326837066_fe66d89e23_z.jpg&quot; alt=&quot;Stereotomy_close_v2&quot; width=&quot;600&quot; height=&quot;450&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Eyelet_Pavilion_V2_1 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7326838202/&quot;&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8005/7326838202_499b8f79ea_z.jpg&quot; alt=&quot;Eyelet_Pavilion_V2_1&quot; width=&quot;600&quot; height=&quot;450&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Eyelet_Pavilion_V2_2 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7326838596/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7094/7326838596_4edbe39bfb_z.jpg&quot; alt=&quot;Eyelet_Pavilion_V2_2&quot; width=&quot;600&quot; height=&quot;450&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Eyelet_Pavilion_V2_7 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7326839412/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7217/7326839412_6926638c8e_z.jpg&quot; alt=&quot;Eyelet_Pavilion_V2_7&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Stereotomy_close_v2 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7326837066/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7228/7326837066_fe66d89e23_z.jpg&quot; alt=&quot;Stereotomy_close_v2&quot; width=&quot;600&quot; height=&quot;450&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;Eyelet_Pavilion_V2_5 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7326839028/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7213/7326839028_5bb05e9c8f_z.jpg&quot; alt=&quot;Eyelet_Pavilion_V2_5&quot; width=&quot;600&quot; height=&quot;450&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
+        <link>http://chrisbamborough.com/blog/2012/04/13/PavilionDesign.html</link>
+        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/PavilionDesign.html</guid>
+        
+        <category>Architecture</category>
         
         
         <category>blog</category>
