@@ -3,10 +3,10 @@
   <channel>
     <title>Chris Bamborough</title>
     <description>The personal website of Chris Bamborough</description>
-    <link>http://chrisbamborough.com/</link>
-    <atom:link href="http://chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 20 Mar 2016 22:28:22 +1100</pubDate>
-    <lastBuildDate>Sun, 20 Mar 2016 22:28:22 +1100</lastBuildDate>
+    <link>http://www.chrisbamborough.com/</link>
+    <atom:link href="http://www.chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 25 Mar 2016 08:53:58 +1100</pubDate>
+    <lastBuildDate>Fri, 25 Mar 2016 08:53:58 +1100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -20,147 +20,14 @@
 
 </description>
         <pubDate>Sat, 13 Feb 2016 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2016/02/13/MeshBox.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/02/13/MeshBox.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2016/02/13/MeshBox.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/02/13/MeshBox.html</guid>
         
         <category>Creative</category>
         
         <category>Code,</category>
         
         <category>Three.js</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Improved Random Walkers</title>
-        <description>&lt;style&gt;  
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-&lt;/style&gt;
-
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
-&lt;/canvas&gt;
-
-&lt;script&gt;
-// put code in an overall function
-window.onload = function () {
-    &quot;use strict&quot;;
-    var canvas = document.getElementById(&#39;myCanvas&#39;);    
-  	canvas.style.width =&#39;100%&#39;;
-  	canvas.style.height=&#39;100%&#39;;
-  	canvas.width  = canvas.offsetWidth;
-  	canvas.height = canvas.offsetHeight;    
-    var ctx = canvas.getContext(&#39;2d&#39;);
-    var width = canvas.width;
-    var height = canvas.height;
-    var step = 5;
-
-    // walker object
-    var Walker = function () {
-        this.x = width / 2;
-        this.y = height / 2;
-
-        Walker.prototype.display = function() {
-            ctx.rect(this.x,this.y,2,2);
-            ctx.stroke();
-            ctx.fill();
-        }
-
-        Walker.prototype.walk = function () {
-        	var choice = Math.random();
-
-            var stepx = Math.random(); // value 0-1
-            var stepy = Math.random();
-
-            if (stepx &gt;= 0 &amp;&amp; stepx &lt; 0.33) {
-                stepx = -1;
-            } else if (stepx &gt;= 0.33 &amp;&amp; stepx &lt; 0.66) {
-                stepx = 0;
-            } else {
-                stepx = 1;
-            }
-
-            if (stepy &gt;= 0 &amp;&amp; stepy &lt; 0.33) {
-                stepy = -1;
-            } else if (stepy &gt;= 0.33 &amp;&amp; stepy &lt; 0.66) {
-                stepy = 0;
-            } else {
-                stepy = 1;
-            }
-
-            this.x += stepx*step
-            this.y += stepy*step
-        }
-        }
-
-        // initialise a walker object
-        var w = new Walker();
-
-        // run draw function
-        setInterval(draw, 10);
-
-        function draw() {
-            w.walk();
-            w.display();
-        }
-    };
-&lt;/script&gt;
-
-&lt;p&gt;The point of improvement in the ImprovedVectorWalker is the conditional that “controls” the randomness. In the previous example the test gave the random walker a choice of 4 directions (2 for x and 2 for y), this time it has 9 choices (3 for x and 3 for y). To do this a separate random number needs to be generated for both x and y, then each is tested to see if it falls within a range between 0 and 1 (remember java script random gives a random number between 0-1).&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  // walker object
-  var Walker = function () {
-      this.x = width / 2;
-      this.y = height / 2;
-
-      Walker.prototype.display = function () {
-          ctx.rect(this.x, this.y, 1, 1);
-          ctx.stroke();
-          ctx.fill();
-      }
-
-      Walker.prototype.walk = function () {
-          // improved movement
-          var stepx = Math.random(); // value 0-1
-          var stepy = Math.random();
-
-          if (stepx &amp;gt;= 0 &amp;amp;&amp;amp; stepx &amp;lt; 0.33) {
-              stepx = -1;
-          } else if (stepx &amp;gt;= 0.33 &amp;amp;&amp;amp; stepx &amp;lt; 0.66) {
-              stepx = 0;
-          } else {
-              stepx = 1;
-          }
-
-          if (stepy &amp;gt;= 0 &amp;amp;&amp;amp; stepy &amp;lt; 0.33) {
-              stepy = -1;
-          } else if (stepy &amp;gt;= 0.33 &amp;amp;&amp;amp; stepy &amp;lt; 0.66) {
-              stepy = 0;
-          } else {
-              stepy = 1;
-          }
-
-          this.x += stepx;
-          this.y += stepy;
-
-      }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 16 Jan 2016 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2016/01/16/ImprovedRandomWalkers.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/01/16/ImprovedRandomWalkers.html</guid>
-        
-        <category>Creative</category>
-        
-        <category>Code</category>
         
         
         <category>blog</category>
@@ -303,8 +170,8 @@ window.onload = function () {
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 13 Jan 2016 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</guid>
         
         <category>Creative</category>
         
@@ -456,8 +323,141 @@ window.onload = function () {
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 12 Jan 2016 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2016/01/12/NOC.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2016/01/12/NOC.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2016/01/12/NOC.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/01/12/NOC.html</guid>
+        
+        <category>Creative</category>
+        
+        <category>Code</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Improved Random Walkers</title>
+        <description>&lt;style&gt;  
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+&lt;/style&gt;
+
+&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
+&lt;/canvas&gt;
+
+&lt;script&gt;
+// put code in an overall function
+window.onload = function () {
+    &quot;use strict&quot;;
+    var canvas = document.getElementById(&#39;myCanvas&#39;);    
+  	canvas.style.width =&#39;100%&#39;;
+  	canvas.style.height=&#39;100%&#39;;
+  	canvas.width  = canvas.offsetWidth;
+  	canvas.height = canvas.offsetHeight;    
+    var ctx = canvas.getContext(&#39;2d&#39;);
+    var width = canvas.width;
+    var height = canvas.height;
+    var step = 5;
+
+    // walker object
+    var Walker = function () {
+        this.x = width / 2;
+        this.y = height / 2;
+
+        Walker.prototype.display = function() {
+            ctx.rect(this.x,this.y,2,2);
+            ctx.stroke();
+            ctx.fill();
+        }
+
+        Walker.prototype.walk = function () {
+        	var choice = Math.random();
+
+            var stepx = Math.random(); // value 0-1
+            var stepy = Math.random();
+
+            if (stepx &gt;= 0 &amp;&amp; stepx &lt; 0.33) {
+                stepx = -1;
+            } else if (stepx &gt;= 0.33 &amp;&amp; stepx &lt; 0.66) {
+                stepx = 0;
+            } else {
+                stepx = 1;
+            }
+
+            if (stepy &gt;= 0 &amp;&amp; stepy &lt; 0.33) {
+                stepy = -1;
+            } else if (stepy &gt;= 0.33 &amp;&amp; stepy &lt; 0.66) {
+                stepy = 0;
+            } else {
+                stepy = 1;
+            }
+
+            this.x += stepx*step
+            this.y += stepy*step
+        }
+        }
+
+        // initialise a walker object
+        var w = new Walker();
+
+        // run draw function
+        setInterval(draw, 10);
+
+        function draw() {
+            w.walk();
+            w.display();
+        }
+    };
+&lt;/script&gt;
+
+&lt;p&gt;The point of improvement in the ImprovedVectorWalker is the conditional that “controls” the randomness. In the previous example the test gave the random walker a choice of 4 directions (2 for x and 2 for y), this time it has 9 choices (3 for x and 3 for y). To do this a separate random number needs to be generated for both x and y, then each is tested to see if it falls within a range between 0 and 1 (remember java script random gives a random number between 0-1).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  // walker object
+  var Walker = function () {
+      this.x = width / 2;
+      this.y = height / 2;
+
+      Walker.prototype.display = function () {
+          ctx.rect(this.x, this.y, 1, 1);
+          ctx.stroke();
+          ctx.fill();
+      }
+
+      Walker.prototype.walk = function () {
+          // improved movement
+          var stepx = Math.random(); // value 0-1
+          var stepy = Math.random();
+
+          if (stepx &amp;gt;= 0 &amp;amp;&amp;amp; stepx &amp;lt; 0.33) {
+              stepx = -1;
+          } else if (stepx &amp;gt;= 0.33 &amp;amp;&amp;amp; stepx &amp;lt; 0.66) {
+              stepx = 0;
+          } else {
+              stepx = 1;
+          }
+
+          if (stepy &amp;gt;= 0 &amp;amp;&amp;amp; stepy &amp;lt; 0.33) {
+              stepy = -1;
+          } else if (stepy &amp;gt;= 0.33 &amp;amp;&amp;amp; stepy &amp;lt; 0.66) {
+              stepy = 0;
+          } else {
+              stepy = 1;
+          }
+
+          this.x += stepx;
+          this.y += stepy;
+
+      }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 12 Jan 2016 23:00:00 +1100</pubDate>
+        <link>http://www.chrisbamborough.com/blog/2016/01/12/ImprovedRandomWalkers.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/01/12/ImprovedRandomWalkers.html</guid>
         
         <category>Creative</category>
         
@@ -487,8 +487,8 @@ window.onload = function () {
 &lt;p&gt;We in the industry need to develop more contemporary tools for the measurement of architecture’s success, it is the wicked problem of quantifying aesthetics but I think rather than focussing on money and capital gain the focus is shifted onto cultural and social influence. The one thing that sets the digital communications work apart is their use of the web and networked technologies. What if architects were to build in a process of post project success analysis using exposure on social media and image aggregations to justify its effective impact. This wouldn’t see a dilution of the Architects already weakened position across diffused non spatial services, but rather develop a capitalist language about the benefits of quality designed space that potential commissioners of space value and understand.&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Feb 2014 23:00:00 +1100</pubDate>
-        <link>http://chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</guid>
         
         <category>Architecture</category>
         
@@ -521,8 +521,8 @@ window.onload = function () {
 &lt;p&gt;I am interested in gradient and topography as spatial organiser for flows of use and public private divisions. An example of such an approach is SANAA&amp;rsquo;s Rolex Centre where spatial division is achieved through ease of circulation, sight lines and voids.&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
-        <link>http://chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</guid>
         
         <category>Architecture</category>
         
@@ -637,8 +637,8 @@ window.onload = function () {
 
 </description>
         <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
-        <link>http://chrisbamborough.com/blog/2012/04/13/ThreeJS.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/ThreeJS.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2012/04/13/ThreeJS.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/ThreeJS.html</guid>
         
         <category>Creative</category>
         
@@ -665,8 +665,8 @@ The architectural scheme proposed an opening up of the ground plane to connect H
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
-        <link>http://chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</guid>
         
         <category>Architecture</category>
         
@@ -702,8 +702,8 @@ The architectural scheme proposed an opening up of the ground plane to connect H
 &lt;p&gt;&lt;a title=&quot;Tectonic_Close by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435073/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5325/7070435073_e32777c8b9_z.jpg&quot; alt=&quot;Tectonic_Close&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;stereotomy by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435731/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5197/7070435731_d595927e80_z.jpg&quot; alt=&quot;stereotomy&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;Assemblage_Front by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435367/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7055/7070435367_560abc3681_z.jpg&quot; alt=&quot;Assemblage_Front&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;EyeletRender_5 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/6895710934/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7210/6895710934_2d186b4d58_z.jpg&quot; alt=&quot;EyeletRender_5&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
-        <link>http://chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</guid>
         
         <category>Architecture</category>
         
@@ -731,8 +731,8 @@ The architectural scheme proposed an opening up of the ground plane to connect H
 &lt;p&gt;&lt;a title=&quot;Eyelet_Pavilion_V2_5 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7326839028/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7213/7326839028_5bb05e9c8f_z.jpg&quot; alt=&quot;Eyelet_Pavilion_V2_5&quot; width=&quot;600&quot; height=&quot;450&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
-        <link>http://chrisbamborough.com/blog/2012/04/13/PavilionDesign.html</link>
-        <guid isPermaLink="true">http://chrisbamborough.com/blog/2012/04/13/PavilionDesign.html</guid>
+        <link>http://www.chrisbamborough.com/blog/2012/04/13/PavilionDesign.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/PavilionDesign.html</guid>
         
         <category>Architecture</category>
         
