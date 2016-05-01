@@ -1,6 +1,9 @@
+var canvasDiv = document.getElementById("myCanvas");
+var divWidth = document.getElementById("myCanvas").clientWidth;
+
 function setup() {
-  var myCanvas = createCanvas(845,450);
-  myCanvas.parent("myCanvas");
+  var sketchCanvas = createCanvas(divWidth,450);
+  sketchCanvas.parent("myCanvas");
 }
 
 function draw() {
@@ -9,7 +12,7 @@ function draw() {
   } else {
     fill(255);
   }
-  ellipse(mouseX, mouseY, 80, 80);
+  ellipse(mouseX, mouseY, 40, 40);
 
   if (keyIsPressed == true){
     clear();

@@ -140,9 +140,14 @@
 
 <p>The above example sketch is the one included in the <a href="https://p5js.org/get-started/">getting started</a> section of the website, so I need to get a bit more creative, but its a good simple sketch to try and integrate. The only difference is that in the setup I needed to assign a variable to createCanvas() to point it towards my located div. Alternatively I could have set up the canvas and position it within the javascript, but I prefer to use CSS to take care all of that.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">myCanvas</span> <span class="o">=</span> <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">845</span><span class="p">,</span><span class="mi">450</span><span class="p">);</span>
-  <span class="nx">myCanvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">);</span>
+<p>There is a slight quirk with my approach that means the p5 sketch extends slightly further in width that the div wrapper. I attempted to use the div client width as the width of the canvas but the two do not quite correlate. If you have any advice on this please tweet me on @chrisbamborough</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">canvasDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">divWidth</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">).</span><span class="nx">clientWidth</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">sketchCanvas</span> <span class="o">=</span> <span class="nx">createCanvas</span><span class="p">(</span><span class="nx">divWidth</span><span class="p">,</span><span class="mi">450</span><span class="p">);</span>
+  <span class="nx">sketchCanvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
@@ -151,11 +156,14 @@
   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="nx">fill</span><span class="p">(</span><span class="mi">255</span><span class="p">);</span>
   <span class="p">}</span>
-  <span class="nx">ellipse</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">);</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">);</span>
 
   <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsPressed</span> <span class="o">==</span> <span class="kc">true</span><span class="p">){</span>
     <span class="nx">clear</span><span class="p">();</span>
+  <span class="p">}</span>
+
 <span class="p">}</span>
+
 </code></pre>
 </div>
 

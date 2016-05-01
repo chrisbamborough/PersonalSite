@@ -46,10 +46,15 @@ In the .js sketch file p5 allows you to structure your code along the logic of a
 
 The above example sketch is the one included in the [getting started](https://p5js.org/get-started/) section of the website, so I need to get a bit more creative, but its a good simple sketch to try and integrate. The only difference is that in the setup I needed to assign a variable to createCanvas() to point it towards my located div. Alternatively I could have set up the canvas and position it within the javascript, but I prefer to use CSS to take care all of that.
 
+There is a slight quirk with my approach that means the p5 sketch extends slightly further in width that the div wrapper. I attempted to use the div client width as the width of the canvas but the two do not quite correlate. If you have any advice on this please tweet me on @chrisbamborough
+
 ~~~ javascript
+var canvasDiv = document.getElementById("myCanvas");
+var divWidth = document.getElementById("myCanvas").clientWidth;
+
 function setup() {
-  var myCanvas = createCanvas(845,450);
-  myCanvas.parent("myCanvas");
+  var sketchCanvas = createCanvas(divWidth,450);
+  sketchCanvas.parent("myCanvas");
 }
 
 function draw() {
@@ -58,9 +63,12 @@ function draw() {
   } else {
     fill(255);
   }
-  ellipse(mouseX, mouseY, 80, 80);
+  ellipse(mouseX, mouseY, 40, 40);
 
   if (keyIsPressed == true){
     clear();
+  }
+
 }
+
 ~~~
