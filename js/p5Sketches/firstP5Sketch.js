@@ -18,4 +18,8 @@ function draw() {
     clear();
   }
 
+  function windowResized() {
+  resizeCanvas(divWidth,450);
+}
+
 }
