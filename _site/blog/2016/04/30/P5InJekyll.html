@@ -87,12 +87,12 @@
             <article class="post">
               <header>
                 <div class="title">
-                  <h2><a href="/blog/2012/04/13/TheABCOpened.html">The ABC Opened</a></h2>
+                  <h2><a href="/blog/2016/04/30/P5InJekyll.html">Using P5.js with Jekyll</a></h2>
                 <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
                 </div>
 
                 <div class="meta">
-                  <time class="published" datetime="2012-04-13">April, 2012</time>
+                  <time class="published" datetime="2016-04-30">April, 2016</time>
                   
                     <a href="#">blog</a>
                   
@@ -102,24 +102,72 @@
                 </div>
               </header>
               
-              <p>The final project for my Architecture MA at UTS was an intensive four week studio aiming to recreate an architectural competition atmosphere, it's focus the Sydney's south central creative quarter, i.e. Ultimo, and the pedestrian network in particular. The studios aim was to generate a catalyst for new material organisations through architectural thinking, and an engagement with the multiple stakeholders of the area, namely ABC, The City of Sydney, Powerhouse Museum, Sydney Harbour Foreshore Authority, Frasers Property, UTS, TAFE, Rail Corp and CitiGate Hotel.<p>
+              <div id="myCanvas" style="border:1px solid #000000;">
+</div>
 
-<object style="width: 690px; height: 300px;" width="690px" height="240" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowfullscreen" value="true" /><param name="menu" value="false" /><param name="wmode" value="transparent" /><param name="src" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" /><param name="flashvars" value="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120802085122-511ebf1f028f48d98b872aa0f9116e3b" /><embed style="width: 700px; height: 300px;" width="320" height="240" type="application/x-shockwave-flash" src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" allowfullscreen="true" menu="false" wmode="transparent" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120802085122-511ebf1f028f48d98b872aa0f9116e3b" /></object>
-<div style="width: 700px; text-align: left;"><a href="http://issuu.com/chrisbamborough/docs/abc_opened?mode=window&amp;backgroundColor=%23222222" target="_blank">Open publication</a> - Free <a href="http://issuu.com" target="_blank">publishing</a> - <a href="http://issuu.com/search?q=abc" target="_blank">More abc</a></div>
+<script src="/js/p5Sketches/firstP5Sketch.js" type="text/javascript"></script>
 
+<p>Press any button to clear the canvas.</p>
 
-<p>Under the tutelage of Billy Feuerman of [Office Feuerman]( http://www.officefeuerman.com) myself and Will Cooper explored the role of the ABC. We sought to question what interior spatial relationships could be made between key stakeholder buildings and new spaces within the quarter, looking at the Ultimo Pedestrian Network less as a spine but more of a network that extends to different parts of the city, from inside to out. From an initial "forensic mapping" that sought to uncover relationships from room to building to block to city we studied the interior workings of the ABC to uncover aspects that could extend into the public realm. What we identified was the shrinking of office and media production space created by advances in technology that has started to create dead space within the ABC. Our agenda was to allow the public up into these spaces to observe the inner workings of the National public broadcaster. In return the ABC would receive new recreational spaces, and engagement opportunities with a captive audience.
+<p>I have been playing around with <a href="www.processing.org">processing</a> for a few years now but never really got stuck in because of the difficulty to share on the web (without annoying aplets). <a href="www.processingjs.org">Processing.js</a> offered a way to use processing in the browser, but involved an extra layer of translation from java (processing) into javascript. Enter <a href="www.p5js.org">p5.js</a>, the intuition of processing but using native java script in the browser.</p>
 
-The architectural scheme proposed an opening up of the ground plane to connect Harris Street with the pedestrian network, whilst allowing ABC employees to access their building from underneath. Pop ups break through the surface to reveal media studios and connections to facilities in the ABC building above. Both the ground plane and the open spaces within the building become accessible and public, within physical and visual connections throughout. At level three a public facilities loop (archive, studios, library) with connecting cafe provides a focus for public use and natural surveillance through use. The intention was for an engagement with the public with ABC's radio and TV media production encouraging a further interaction through social media ultimately blurring the boundary between the public space of the Ultimo pedestrian network and the expanded ABC building.
+<p>The P5 series of javascript <a href="https://p5js.org/libraries/">libraries</a> provide means to play with the DOM (Document Object Model), Sound, Interaction, Data streams, Image, Video to name just a few.</p>
 
-<a title="StakeholderPreso_FINAL17 by ChrisBamborough, on Flickr" href="http://www.flickr.com/photos/chrisbamborough/7696803560/"><img class="alignnone" src="http://farm9.staticflickr.com/8012/7696803560_820020e920_z.jpg" alt="StakeholderPreso_FINAL17" width="700" height="480" /></a>
-</p></p></p>
+<p>So I have been playing with the P5.js IDE which has a built in web-server, but I wanted to start publishing my experiments to this site. As it is a jekyll site and posts are written in markdown I had to find a work around.</p>
+
+<p>The first thing to do was include the p5.js libraries into the head of the Jekyll site. In header.html;</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>      <span class="nt">&lt;html&gt;</span>
+      <span class="nt">&lt;head&gt;</span>
+          <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/js/p5.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+      <span class="nt">&lt;/head&gt;</span>
+</code></pre>
+</div>
+
+<p>Previously in my failed ambition to replicate the Nature Of Code book using straight java script, I was pointing my javascript to an HTML canvas element in the markdown post. As P5 deals with creating a canvas itself, I simply used a div with an id myCanvas to provide a placeholder for a canvas created in javascript.</p>
+
+<p>Jekyll works by writing posts in markdown, which then get compiled into HTML with css styling. The great thing about markdown is that you can throw in html and javascript in amongst and it will render it to the page. As mentioned above I first needed a div for my canvas, then a link to my .js sketch file.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"myCanvas"</span>
+<span class="na">style=</span><span class="s">"border:1px solid #000000;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/js/p5Sketches/firstP5Sketch.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+</div>
+
+<p>In the .js sketch file p5 allows you to structure your code along the logic of a processing sketch with a setup() (runs once) and draw() (loops continuously). The only difference is that preceding “void” is replaced by “function”. In the setup a new canvas is placed using a variable used to then call p5 methods and access their elements from the <a href="http://p5js.org/reference/#/p5.Element">library</a>. See the <a href="https://github.com/processing/p5.js/wiki/Beyond-the-canvas">github repository</a> for more details.</p>
+
+<p>The above example sketch is the one included in the <a href="https://p5js.org/get-started/">getting started</a> section of the website, so I need to get a bit more creative, but its a good simple sketch to try and integrate. The only difference is that in the setup I needed to assign a variable to createCanvas() to point it towards my located div. Alternatively I could have set up the canvas and position it within the javascript, but I prefer to use CSS to take care all of that.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">myCanvas</span> <span class="o">=</span> <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">845</span><span class="p">,</span><span class="mi">450</span><span class="p">);</span>
+  <span class="nx">myCanvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span><span class="p">){</span>
+    <span class="nx">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">fill</span><span class="p">(</span><span class="mi">255</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsPressed</span> <span class="o">==</span> <span class="kc">true</span><span class="p">){</span>
+    <span class="nx">clear</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 
               <footer>
                 <ul class="stats">
                 
-                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Creative</a></li>
+                
+                  <li><a href="#">Code,</a></li>
+                
+                  <li><a href="#">p5.js</a></li>
                 
         <!--
         <li><a href="#">General</a></li>
@@ -131,10 +179,10 @@ The architectural scheme proposed an opening up of the ground plane to connect H
            </article>
   					<ul class="actions pagination">
   					  
-  	  				  <li><a href="/blog/2012/04/13/StripMorphologies.html" class="button big previous">Previous Post</a></li>
+  	  				  <li><a href="/blog/2016/02/13/MeshBox.html" class="button big previous">Previous Post</a></li>
   						
 							
-  						  <li><a href="/blog/2012/04/13/ThreeJS.html" class="button big next">Next Post</a></li>
+  						  <li><a href="#" class="disabled button big next">Next Post</a></li>
   						
   					</ul>
 					</div>
