@@ -102,9 +102,7 @@
                 </div>
               </header>
               
-              <div id="myCanvas" style="border:1px solid #000000;">
-</div>
-
+              <div id="myCanvas"></div>
 <script src="/js/p5Sketches/firstP5Sketch.js" type="text/javascript"></script>
 
 <p>Press any button to clear the canvas.</p>
@@ -129,9 +127,7 @@
 <p>Jekyll works by writing posts in markdown, which then get compiled into HTML with css styling. The great thing about markdown is that you can throw in html and javascript in amongst and it will render it to the page. As mentioned above I first needed a div for my canvas, then a link to my .js sketch file.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>
-<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"myCanvas"</span>
-<span class="na">style=</span><span class="s">"border:1px solid #000000;"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"myCanvas"</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/js/p5Sketches/firstP5Sketch.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre>
 </div>
@@ -142,10 +138,10 @@
 
 <p>There is a slight quirk with my approach that means the p5 sketch extends slightly further in width that the div wrapper. I attempted to use the div client width as the width of the canvas but the two do not quite correlate. If you have any advice on this please tweet me on @chrisbamborough</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">canvasDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">divWidth</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">).</span><span class="nx">clientWidth</span><span class="p">;</span>
-
+<div class="highlighter-rouge"><pre class="highlight"><code>
 <span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">canvasDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">divWidth</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">).</span><span class="nx">clientWidth</span><span class="p">;</span>
   <span class="kd">var</span> <span class="nx">sketchCanvas</span> <span class="o">=</span> <span class="nx">createCanvas</span><span class="p">(</span><span class="nx">divWidth</span><span class="p">,</span><span class="mi">450</span><span class="p">);</span>
   <span class="nx">sketchCanvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="s2">"myCanvas"</span><span class="p">);</span>
 <span class="p">}</span>

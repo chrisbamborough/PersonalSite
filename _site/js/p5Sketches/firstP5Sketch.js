@@ -1,8 +1,10 @@
-var canvasDiv = document.getElementById("myCanvas");
-var divWidth = document.getElementById("myCanvas").clientWidth;
-
 function setup() {
-  var sketchCanvas = createCanvas(divWidth,450);
+  var canvasDiv = document.getElementById('myCanvas');
+  var width = canvasDiv.clientWidth;
+  console.log(canvasDiv);
+  console.log(width);
+  var sketchCanvas = createCanvas(width,450);
+  //var sketchCanvas = createCanvas(windowWidth,450);
   sketchCanvas.parent("myCanvas");
 }
 
@@ -17,9 +19,8 @@ function draw() {
   if (keyIsPressed == true){
     clear();
   }
-
-  function windowResized() {
-  resizeCanvas(divWidth,450);
 }
 
+function windowResized() {
+  resizeCanvas(width,450);
 }
