@@ -5,9 +5,57 @@
     <description>The personal website of Chris Bamborough</description>
     <link>http://www.chrisbamborough.com/</link>
     <atom:link href="http://www.chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 07 May 2016 12:48:20 +1000</pubDate>
-    <lastBuildDate>Sat, 07 May 2016 12:48:20 +1000</lastBuildDate>
+    <pubDate>Wed, 11 May 2016 21:38:33 +1000</pubDate>
+    <lastBuildDate>Wed, 11 May 2016 21:38:33 +1000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>P5.js background interactivity</title>
+        <description>&lt;script src=&quot;/js/p5Sketches/P5backgroundSketch.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The next stage is to create p5 sketches in the background so it isn’t confined to a canvas window within the post. In this post the canvas has simply been assigned to an overall html Div called backgroundCanvas which wraps all the content. As previously the sketch canvas is given the div’s attributes as height and width.&lt;/p&gt;
+
+&lt;p&gt;The p5.js website integrates a background animation through an iFrame positioned to float behind, I’m not sure if this is a better solution or not. Any comments tweet me on &lt;a href=&quot;www.twitter.com/chrisbamborough&quot;&gt;@chrisbamborough&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvasDiv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;backgroundCanvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;divWidth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvasDiv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;offsetWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;divHeight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvasDiv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;offsetWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sketchCanvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;divWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;divHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;sketchCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;backgroundCanvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mouseIsPressed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;ellipse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mouseX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mouseY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyIsPressed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 11 May 2016 05:45:00 +1000</pubDate>
+        <link>http://www.chrisbamborough.com/blog/2016/05/11/P5Background.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/05/11/P5Background.html</guid>
+        
+        <category>Creative</category>
+        
+        <category>Code,</category>
+        
+        <category>p5.js</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Using P5.js with Jekyll</title>
@@ -744,43 +792,6 @@ The architectural scheme proposed an opening up of the ground plane to connect H
         <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
         <link>http://www.chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</link>
         <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/TheABCOpened.html</guid>
-        
-        <category>Architecture</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Strip Morphologies</title>
-        <description>&lt;p&gt;13th April 2012 was the interim crit for Materiality lab. The main outcome for the presentation was an assemblage using a combination of prototypes developed during the previous 6 weeks. I decided to go for a large assemblage that used my Eyelet prototype in a number of different ways to achieve a transition for lightweight tectonic, to solid streotomic expression.&lt;/p&gt;
-
-&lt;p&gt;This transition took Gotfried Semper’s theory of Matabolism from the late 1800s as a point of research departure. Whilst the crit seemed to go well and I was happy with the verbal presentation, fitting all things I wanted to present in the allotted time, I realised that the expectation was to actually present all my prototypes rather than the development to my assemblage. The problem i found was that my prototypes had taken two research trajectories, one of bending (moment capacity), the other twisting (strip morphologies), as a result I hadn’t combined the two directions into an interim assemblage. Although my process was documented within a book the presentation only touched on part of my work which I think was a missed opportunity. Saying that I thought there was enough exploration within Eyelet, and its parent exploration “Strip Morphologies” to make the presentation engaging and more content would have diluted the main message.&lt;/p&gt;
-
-&lt;p&gt;In terms of critique the main point of discussion was the joining of the EyeLet units which I agreed needs focus on. One opinion was that it ruined the beauty of the structure, whilst another liked its “grotesque” contrast with the weaving strips, like Cindy Crawford’s mole. I had anticipated this point with a study of alternative connecting methods but I felt the prototype used allowed different configurations and varying positions of structural stasis. I think an important part was the visual treatment of the extra strip, in the assemblage they were simply smaller sections of the 30mm wide strips used, but they could have been expressed, or even carry out a second role. This could be to thicken the structure, to allow cross over of strips, allow a variance in strip width, these clues for design development will be explored during the next series of prototypes.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Material Computation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Another string of discussion from the crit covered the calculation of material behaviour and the potential for computational exploration. Prior to the interim I had explored scripting of strips in python, and using the grasshopper plugin kangaroo to predict strip morphologies. For development it seems important to explore computation to uncover opportunities that I would have not have otherwise struck upon. This potentially could be research into sin and cosine calculations to develop weaving patterns. The main issue for the project is that the system I wish to elaborate relies heavily of plywood’s capacity to comply with, whilst resisting bending movement. It is one which allows developable surfaces to be extracted, digitally this can only be achieved through physics based modelling which gets complicated. The ambition is to programme strip behaviours, whilst providing them the ability to detect other forms of geometry, and act accordingly. An extra level of detail would be to then overlay a second exploration of connection within the digital space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Transition&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A critical part of the project, the transition from tectonic to stereotomy needs greater exploration and control. In the Eyelet assemblage the transition occurred through a separation, rotation and overlapping of units to allow stacking. In order to allow overlap the connections parametrically varied, but the rotation and separation occurred as a negotiation between the two end states. To move forward I need to focus on accurately predicting and controlling the transfer, whilst making sure there is a degree of freedom in movement so the material behaviour can be visually registered.&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&quot;ProtoypePreso_A0_FINAL by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/6924359590/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5470/6924359590_0560100711_z.jpg&quot; alt=&quot;ProtoypePreso_A0_FINAL&quot; width=&quot;640&quot; height=&quot;452&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&quot;Assessment 1_Crit by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7112294869/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7229/7112294869_72985d1142_z.jpg&quot; alt=&quot;Assessment 1_Crit&quot; width=&quot;640&quot; height=&quot;428&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&quot;Assessment 1_Crit by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7112298969/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7140/7112298969_7ae7e8b6a7_z.jpg&quot; alt=&quot;Assessment 1_Crit&quot; width=&quot;426&quot; height=&quot;640&quot; /&gt;&lt;/a&gt;&lt;a title=&quot;Assessment 1_Crit by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/6966218158/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7069/6966218158_bb021d5f8e_z.jpg&quot; alt=&quot;Assessment 1_Crit&quot; width=&quot;426&quot; height=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Assessment 1 is tomorrow so this week has been documenting the whole process and building the final assemblage. The concept for the structure is to produce a gradually transforming interplay of identically sizes plywood strips woven into cross units. The model will move from a surface arrangement through to a thickened stacked combination creating contrasting visual effects and geometry.&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&quot;Tectonic_Close by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435073/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5325/7070435073_e32777c8b9_z.jpg&quot; alt=&quot;Tectonic_Close&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;stereotomy by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435731/&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5197/7070435731_d595927e80_z.jpg&quot; alt=&quot;stereotomy&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;Assemblage_Front by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/7070435367/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7055/7070435367_560abc3681_z.jpg&quot; alt=&quot;Assemblage_Front&quot; width=&quot;640&quot; height=&quot;372&quot; /&gt;&lt;/a&gt; &lt;a title=&quot;EyeletRender_5 by ChrisBamborough, on Flickr&quot; href=&quot;http://www.flickr.com/photos/chrisbamborough/6895710934/&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7210/6895710934_2d186b4d58_z.jpg&quot; alt=&quot;EyeletRender_5&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/StripMorphologies.html</guid>
         
         <category>Architecture</category>
         

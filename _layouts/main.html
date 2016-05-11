@@ -7,32 +7,31 @@
 <html>
   {% include header.html %}
 	<body>
+  		<!-- Wrapper -->
+  			<div id="wrapper">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  				{% include head.html %}
+  				<!-- Main -->
+  					<div id="main">
+              <!-- Left empty to keep menu on the left -->
+  					</div>
 
-				{% include head.html %}
-				<!-- Main -->
-					<div id="main">
-            <!-- Left empty to keep menu on the left -->
-					</div>
+  				<!-- Sidebar -->
+  					<section id="sidebar">
 
-				<!-- Sidebar -->
-					<section id="sidebar">
+  						<!-- Intro -->
+  						{% include intro.html %}
 
-						<!-- Intro -->
-						{% include intro.html %}
+  						<!-- Mini Posts -->
+  						{% include miniposts.html %}
 
-						<!-- Mini Posts -->
-						{% include miniposts.html %}
+  						<!-- About -->
+  					  {% include about.html %}
 
-						<!-- About -->
-					  {% include about.html %}
-
-						<!-- Footer -->
-						{% include footer.html %}
-					</section>
-			</div>
+  						<!-- Footer -->
+  						{% include footer.html %}
+  					</section>
+  			</div>=
 		<!-- Scripts -->
 		{% include scripts.html %}
 	</body>

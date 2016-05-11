@@ -89,12 +89,12 @@
             <article class="post">
               <header>
                 <div class="title">
-                  <h2><a href="/blog/2016/01/12/ImprovedRandomWalkers.html">Improved Random Walkers</a></h2>
+                  <h2><a href="/blog/2016/05/11/P5Background.html">P5.js background interactivity</a></h2>
                 <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
                 </div>
 
                 <div class="meta">
-                  <time class="published" datetime="2016-01-12">January, 2016</time>
+                  <time class="published" datetime="2016-05-11">May, 2016</time>
                   
                     <a href="#">blog</a>
                   
@@ -104,121 +104,34 @@
                 </div>
               </header>
               
-              <style>  
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-</style>
+              <script src="/js/p5Sketches/P5backgroundSketch.js" type="text/javascript"></script>
 
-<canvas id="myCanvas" width="845px" height="450px" style="border:1px solid #000000;">
-</canvas>
+<p>The next stage is to create p5 sketches in the background so it isn’t confined to a canvas window within the post. In this post the canvas has simply been assigned to an overall html Div called backgroundCanvas which wraps all the content. As previously the sketch canvas is given the div’s attributes as height and width.</p>
 
-<script>
-// put code in an overall function
-window.onload = function () {
-    "use strict";
-    var canvas = document.getElementById('myCanvas');    
-  	canvas.style.width ='100%';
-  	canvas.style.height='100%';
-  	canvas.width  = canvas.offsetWidth;
-  	canvas.height = canvas.offsetHeight;    
-    var ctx = canvas.getContext('2d');
-    var width = canvas.width;
-    var height = canvas.height;
-    var step = 5;
+<p>The p5.js website integrates a background animation through an iFrame positioned to float behind, I’m not sure if this is a better solution or not. Any comments tweet me on <a href="www.twitter.com/chrisbamborough">@chrisbamborough</a></p>
 
-    // walker object
-    var Walker = function () {
-        this.x = width / 2;
-        this.y = height / 2;
+<div class="highlighter-rouge"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">canvasDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"backgroundCanvas"</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">divWidth</span> <span class="o">=</span> <span class="nx">canvasDiv</span><span class="p">.</span><span class="nx">offsetWidth</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">divHeight</span> <span class="o">=</span> <span class="nx">canvasDiv</span><span class="p">.</span><span class="nx">offsetWidth</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">sketchCanvas</span> <span class="o">=</span> <span class="nx">createCanvas</span><span class="p">(</span><span class="nx">divWidth</span><span class="p">,</span><span class="nx">divHeight</span><span class="p">);</span>
+  <span class="nx">sketchCanvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="s2">"backgroundCanvas"</span><span class="p">);</span>
+<span class="p">}</span>
 
-        Walker.prototype.display = function() {
-            ctx.rect(this.x,this.y,2,2);
-            ctx.stroke();
-            ctx.fill();
-        }
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">mouseIsPressed</span><span class="p">){</span>
+    <span class="nx">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">fill</span><span class="p">(</span><span class="mi">255</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">ellipse</span><span class="p">(</span><span class="nx">mouseX</span><span class="p">,</span> <span class="nx">mouseY</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">);</span>
 
-        Walker.prototype.walk = function () {
-        	var choice = Math.random();
+  <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsPressed</span> <span class="o">==</span> <span class="kc">true</span><span class="p">){</span>
+    <span class="nx">clear</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-            var stepx = Math.random(); // value 0-1
-            var stepy = Math.random();
-
-            if (stepx >= 0 && stepx < 0.33) {
-                stepx = -1;
-            } else if (stepx >= 0.33 && stepx < 0.66) {
-                stepx = 0;
-            } else {
-                stepx = 1;
-            }
-
-            if (stepy >= 0 && stepy < 0.33) {
-                stepy = -1;
-            } else if (stepy >= 0.33 && stepy < 0.66) {
-                stepy = 0;
-            } else {
-                stepy = 1;
-            }
-
-            this.x += stepx*step
-            this.y += stepy*step
-        }
-        }
-
-        // initialise a walker object
-        var w = new Walker();
-
-        // run draw function
-        setInterval(draw, 10);
-
-        function draw() {
-            w.walk();
-            w.display();
-        }
-    };
-</script>
-
-<p>The point of improvement in the ImprovedVectorWalker is the conditional that “controls” the randomness. In the previous example the test gave the random walker a choice of 4 directions (2 for x and 2 for y), this time it has 9 choices (3 for x and 3 for y). To do this a separate random number needs to be generated for both x and y, then each is tested to see if it falls within a range between 0 and 1 (remember java script random gives a random number between 0-1).</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>  // walker object
-  var Walker = function () {
-      this.x = width / 2;
-      this.y = height / 2;
-
-      Walker.prototype.display = function () {
-          ctx.rect(this.x, this.y, 1, 1);
-          ctx.stroke();
-          ctx.fill();
-      }
-
-      Walker.prototype.walk = function () {
-          // improved movement
-          var stepx = Math.random(); // value 0-1
-          var stepy = Math.random();
-
-          if (stepx &gt;= 0 &amp;&amp; stepx &lt; 0.33) {
-              stepx = -1;
-          } else if (stepx &gt;= 0.33 &amp;&amp; stepx &lt; 0.66) {
-              stepx = 0;
-          } else {
-              stepx = 1;
-          }
-
-          if (stepy &gt;= 0 &amp;&amp; stepy &lt; 0.33) {
-              stepy = -1;
-          } else if (stepy &gt;= 0.33 &amp;&amp; stepy &lt; 0.66) {
-              stepy = 0;
-          } else {
-              stepy = 1;
-          }
-
-          this.x += stepx;
-          this.y += stepy;
-
-      }
 </code></pre>
 </div>
 
@@ -228,7 +141,9 @@ window.onload = function () {
                 
                   <li><a href="#">Creative</a></li>
                 
-                  <li><a href="#">Code</a></li>
+                  <li><a href="#">Code,</a></li>
+                
+                  <li><a href="#">p5.js</a></li>
                 
         <!--
         <li><a href="#">General</a></li>
@@ -240,10 +155,10 @@ window.onload = function () {
            </article>
   					<ul class="actions pagination">
   					  
-  	  				  <li><a href="/blog/2014/02/01/GettingArchitectural.html" class="button big previous">Previous Post</a></li>
+  	  				  <li><a href="/blog/2016/04/30/P5InJekyll.html" class="button big previous">Previous Post</a></li>
   						
 							
-  						  <li><a href="/blog/2016/01/12/NOC.html" class="button big next">Next Post</a></li>
+  						  <li><a href="#" class="disabled button big next">Next Post</a></li>
   						
   					</ul>
 					</div>
