@@ -1,11 +1,13 @@
+
+
 function setup() {
-  var canvasDiv = document.getElementById('myCanvas');
+  var canvasDiv = document.getElementById('postCanvas');
   var width = canvasDiv.clientWidth;
-  console.log(canvasDiv);
-  console.log(width);
+  var height = canvasDiv.clientHeight;
+
   var sketchCanvas = createCanvas(width,450);
   //var sketchCanvas = createCanvas(windowWidth,450);
-  sketchCanvas.parent("myCanvas");
+  sketchCanvas.parent('postCanvas');
 }
 
 function draw() {
@@ -23,4 +25,5 @@ function draw() {
 
 function windowResized() {
   resizeCanvas(width,450);
+  console.log("I'm being called");
 }

@@ -8,6 +8,8 @@ function setup() {
   var sketchCanvas = createCanvas(width,height);
   //var sketchCanvas = createCanvas(windowWidth,450);
   sketchCanvas.parent("backgroundCanvas");
+
+  console.log(sketchCanvas)
 }
 
 function draw() {

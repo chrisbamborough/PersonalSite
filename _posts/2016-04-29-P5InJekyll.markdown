@@ -6,12 +6,16 @@ categories: blog
 tags: Creative Code, p5.js
 image:
 ---
-<div id="myCanvas"></div>
+
+<div id="postCanvas" style="position: relative; border: 1px solid black; height: 450px;"></div>
 <script src="/js/p5Sketches/firstP5Sketch.js" type="text/javascript"></script>
+
 
 Press any button to clear the canvas.
 
-I have been playing around with [processing](www.processing.org) for a few years now but never really got stuck in because of the difficulty to share on the web (without annoying aplets). [Processing.js](www.processingjs.org) offered a way to use processing in the browser, but involved an extra layer of translation from java (processing) into javascript. Enter [p5.js](www.p5js.org), the intuition of processing but using native java script in the browser.
+I have been playing around with [processing](https://processing.org) for a few years now but never really got stuck in because of the difficulty to share on the web (without annoying aplets). [Processing.js](https://www.processingjs.org) offered a way to use processing in the browser, but involved an extra layer of translation from java (processing) into javascript. Enter [p5.js](https://www.p5js.org), the intuition of processing but using native java script in the browser.
+
+
 
 The P5 series of javascript [libraries](https://p5js.org/libraries/) provide means to play with the DOM (Document Object Model), Sound, Interaction, Data streams, Image, Video to name just a few.
 
