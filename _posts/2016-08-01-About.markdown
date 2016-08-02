@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Test Project"
+date:   2016-08-01 19:45:00
+categories: about
+tags:
+image:
+---
+Chris Bamborough is a designer and researcher working in the field of architecture.
+<br/>
+<br/>
+This site is a collection of tool explorations and projects. If you want to venture out you can read about his professional [experience][639dfd01], scroll through his 42 character [musings][aa0f53f0], learn about his [projects][f7d5e3a0] in more detail, check out his [coding][c4fa3c6c] interests, watch some [films][af66690b] he's made, listen to his [musical][99899410] influences, browse his [visual][64042ccd] inspirations, connect with some of his [research][f580b998], or learn about some of his current [ideas][0a809fe0].    
+
+  [f7d5e3a0]: www.behance.net/chrisbamborough "Behance Portfolio"
+  [aa0f53f0]: www.twitter.com/chrisbamborough "Twitter"
+  [639dfd01]: www.linkedin.com/chrisbamborough "LinkedIn"
+  [c4fa3c6c]: www.github.com/chrisbamborough "Github"
+  [af66690b]: www.vimeo.com/chrisbamborough "Vimeo"
+  [99899410]: www.soundcloud.com/smoothspace "Soundcloud"
+  [64042ccd]: www.pinterest.com/chrisbamborough "Pinterest"
+  [f580b998]: https://uts.academia.edu/ChrisBamborough "Academia.edu"
+  [0a809fe0]: https://www.are.na/chris-bamborough/channels "Are.na"

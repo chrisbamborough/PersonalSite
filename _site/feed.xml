@@ -5,8 +5,8 @@
     <description>The personal website of Chris Bamborough</description>
     <link>http://www.chrisbamborough.com/</link>
     <atom:link href="http://www.chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Aug 2016 14:20:29 +1000</pubDate>
-    <lastBuildDate>Tue, 02 Aug 2016 14:20:29 +1000</lastBuildDate>
+    <pubDate>Tue, 02 Aug 2016 16:13:26 +1000</pubDate>
+    <lastBuildDate>Tue, 02 Aug 2016 16:13:26 +1000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -19,6 +19,23 @@
         
         
         <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Test Project</title>
+        <description>&lt;p&gt;Chris Bamborough is a designer and researcher working in the field of architecture.
+&lt;br /&gt;
+&lt;br /&gt;
+This site is a collection of tool explorations and projects. If you want to venture out you can read about his professional &lt;a href=&quot;www.linkedin.com/chrisbamborough&quot; title=&quot;LinkedIn&quot;&gt;experience&lt;/a&gt;, scroll through his 42 character &lt;a href=&quot;www.twitter.com/chrisbamborough&quot; title=&quot;Twitter&quot;&gt;musings&lt;/a&gt;, learn about his &lt;a href=&quot;www.behance.net/chrisbamborough&quot; title=&quot;Behance Portfolio&quot;&gt;projects&lt;/a&gt; in more detail, check out his &lt;a href=&quot;www.github.com/chrisbamborough&quot; title=&quot;Github&quot;&gt;coding&lt;/a&gt; interests, watch some &lt;a href=&quot;www.vimeo.com/chrisbamborough&quot; title=&quot;Vimeo&quot;&gt;films&lt;/a&gt; he’s made, listen to his &lt;a href=&quot;www.soundcloud.com/smoothspace&quot; title=&quot;Soundcloud&quot;&gt;musical&lt;/a&gt; influences, browse his &lt;a href=&quot;www.pinterest.com/chrisbamborough&quot; title=&quot;Pinterest&quot;&gt;visual&lt;/a&gt; inspirations, connect with some of his &lt;a href=&quot;https://uts.academia.edu/ChrisBamborough&quot; title=&quot;Academia.edu&quot;&gt;research&lt;/a&gt;, or learn about some of his current &lt;a href=&quot;https://www.are.na/chris-bamborough/channels&quot; title=&quot;Are.na&quot;&gt;ideas&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 02 Aug 2016 05:45:00 +1000</pubDate>
+        <link>http://www.chrisbamborough.com/about/2016/08/02/About.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/about/2016/08/02/About.html</guid>
+        
+        
+        <category>about</category>
         
       </item>
     
@@ -648,40 +665,6 @@ window.onload = function () {
         <pubDate>Sat, 01 Feb 2014 23:00:00 +1100</pubDate>
         <link>http://www.chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</link>
         <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2014/02/01/GettingArchitectural.html</guid>
-        
-        <category>Architecture</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>UPN Petcha Kutcha</title>
-        <description>&lt;p&gt;&lt;object data=&quot;http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf&quot; height=&quot;400&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;700&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf&quot; /&gt;&lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;&lt;param name=&quot;scale&quot; value=&quot;noscale&quot; /&gt;&lt;param name=&quot;salign&quot; value=&quot;l&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;menu&quot; value=&quot;false&quot; /&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;mode=mini&amp;amp;embedBackground=%23000000&amp;amp;backgroundColor=%23222222&amp;amp;documentId=120704113628-87d1e9ac40ec49c08f1064776ce4c7a0&quot; /&gt;&lt;/object&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://issuu.com/chrisbamborough/docs/compstudio_petchakutcha?mode=window&amp;amp;backgroundColor=%23222222&quot; target=&quot;_blank&quot;&gt;Open publication&lt;/a&gt; - Free &lt;a href=&quot;http://issuu.com&quot; target=&quot;_blank&quot;&gt;publishing&lt;/a&gt; - &lt;a href=&quot;http://issuu.com/search?q=petcha%20kutcha&quot; target=&quot;_blank&quot;&gt;More petcha kutcha&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Prior to studying architecture I completed a human Geography degree. Apart from teaching me to colour in it promoted an approach that allways question the social, economic, cultural, environmental and political forces at work within a space. &amp;nbsp;&lt;/p&gt;
-&lt;p&gt;My professional work took me into Advertising. From it I understand how commercialism unfortunately drives social identity within capitalist culture. If space is socially constructed and social identity spatially constructed, advertising gives the instructions.&lt;/p&gt;
-&lt;p&gt;I understand the importance of communicating a story or idea. During my masters degree I have explored multiple ways of producing explanatory narratives through story boards, scanario diaries, films and diagrams.&lt;/p&gt;
-&lt;p&gt;Interested in urban scale spatial relationships, and the power of speculative vision. This can arise through direct building, or control of factors that influence emergent spatial relationships. This is Bondi where I speculated on a higher density suburb with train station, main square and a network of courtyards. &amp;nbsp;&lt;/p&gt;
-&lt;p&gt;Within my Architectural work I have concentrated on computation and fabrication. Working with digital processes provides the opportunity to uncover non linear design outcomes and the potential to explore difference and repetition and form finding.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m aware of the importance of selling within Architecture. The aspirational or seductive image is very powerful in convincing stakeholders of its success. These were examples of material and light experiences for my last project Metabolic Weave.&lt;/p&gt;
-&lt;p&gt;The symposium on Thursday was extremely eye opening in respect to the varied agendas the presentors hold, in summary&lt;br /&gt;SHFA = Happy if tenants and public seem happy.&lt;br /&gt;State Government = Place making through the confluence of events&lt;br /&gt;Sydney City Council = Sustainable development / the activation of lost space&lt;br /&gt;Powerhouse = More open and flexible connectivity&lt;/p&gt;
-&lt;p&gt;INSW = Importance of getting public infrastructure right, to then attract the right private investment&lt;br /&gt;ABC = Engage local community + collaboration.&lt;br /&gt;HBO/EMBT = Importance of public realm improvement to attract further positive change.&lt;br /&gt;UTS = More international students + assistance in determination of need.&lt;/p&gt;
-&lt;p&gt;TAFE = &amp;nbsp;More international students + Connections / Access to Sydney&lt;br /&gt;Ben Hewitt = &amp;ldquo;Vision&amp;rdquo; of place - need for public involvement &lt;br /&gt;Tim Williams = Crucial for project to be defined and the benefits for stakeholders made clear.&lt;/p&gt;
-&lt;p&gt;I have previously studied and designed for the UPN during an AA infrastructural tissues elective. The approach that time was to investigate velocities within the site, and veritcal connection to increase the heterogenity existing within the space. My critique of the resulting proposal however was that it relied on a presumed natural traffic flow within the space which does not exist.&lt;/p&gt;
-&lt;p&gt;In considering the UPN my immediate interest has been with the attracting influence of the space and its place within a larger network. I am interested in the politics of space around the UPN, the capacity for multiple social identities to be formed through its use, and its potential to define a larger network.&lt;/p&gt;
-&lt;p&gt;The network Billy showed on Friday I felt was too simplistic, there is the pedestrian aspect, but if we look at the UPN in the deleuzian concept of public space as a territorialised assemblage, the network needs to be understood as a study of material things, flows, spatial connections and intensities. &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;For me the &amp;ldquo;mouth&amp;rdquo; is the most crippling aspect of the UPN, what if this entrance was removed and another attached? Would benefits be added / removed from certain stakeholders within the area. Could development be promoted through market driven forces of mutual economic benefit.&lt;/p&gt;
-&lt;p&gt;Around this area there are a number of broken networks desperate to be stitched back into the city&lt;br /&gt;1- cycle network - massive area around UTS where the network disappears, no cross connection and lack of cyclists accessing the precint&lt;br /&gt;2 - technology park - hidden away and unconnected, a top down approach to development and a perceived failure.&lt;/p&gt;
-&lt;p&gt;Public space Infrastructure as activator for movement and activity (symposium). &lt;br /&gt;Interested in place making through intensive multiplicities. Smooth spatial segmentarity and Multiple identities, = richness but potential for conflict. &lt;br /&gt;&lt;br /&gt;A first move of creating a bike park within the UPN seems nice enough, associated symbiotic activities could thrive around the securing of bikes for local employees and residents.&lt;/p&gt;
-&lt;p&gt;For a bike park to be viable however needs an activation from cycling opportunities and a development of a cycling culture within the city. This is achieved by providing direct and safe cycle connections into and accross the city.An opportunity appears to be present in the rail tunnel that connects to the UPN.&lt;/p&gt;
-&lt;p&gt;The UPN has potential to extend its relationship via the old rail tunnel to connect over to Cleveland Street activating a desperately needed cycle connection. Also providing a connection to the existing Redfern cycling network, station and beyond the Technology park. The pedestrian and cycle infrastructure connecting one side of the railway to the other provides opportunity for stakeholders of the UPN to expand south of the city. This could mean teaching links with technology, commercial opportunities for TAFE, commercial rent for Railcorp.&lt;/p&gt;
-&lt;p&gt;I am interested in gradient and topography as spatial organiser for flows of use and public private divisions. An example of such an approach is SANAA&amp;rsquo;s Rolex Centre where spatial division is achieved through ease of circulation, sight lines and voids.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 13 Apr 2012 22:00:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2012/04/13/UPNPetchaKutcha.html</guid>
         
         <category>Architecture</category>
         

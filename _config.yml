@@ -3,7 +3,7 @@ title: Chris Bamborough
 email: bamborough.c@gmail.com
 description: The personal website of Chris Bamborough
 about: |
-  Blurb about me as a test.
+  Chris Bamborough is a designer and researcher working in the field of architecture. His practice concentrates on the effects of networked communication technology on the built environment. His approach is to utilise the tools of multiple disciplines to produce novel methods for exploring the performance of the built environment.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.chrisbamborough.com" # the base hostname & protocol for your site
@@ -11,7 +11,7 @@ twitter_username: chrisbamborough
 github_username: chrisbamborough
 behance_username: chrisbamborough
 medium_username: "@chrisbamborough"
-# soundcloud_username: smoothspace
+soundcloud_username: smoothspace
 # vimeo_username: chrisbamborough
 # googleplus_username: +chrisbamborough
 # instagram_username: chrisbamborough
