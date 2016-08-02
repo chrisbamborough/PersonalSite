@@ -2,12 +2,22 @@
 title: Chris Bamborough
 email: bamborough.c@gmail.com
 description: The personal website of Chris Bamborough
+about: |
+  Blurb about me as a test.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.chrisbamborough.com" # the base hostname & protocol for your site
 twitter_username: chrisbamborough
 github_username: chrisbamborough
 behance_username: chrisbamborough
 medium_username: "@chrisbamborough"
+# soundcloud_username: smoothspace
+# vimeo_username: chrisbamborough
+# googleplus_username: +chrisbamborough
+# instagram_username: chrisbamborough
+# flickr_username: chrisbamborough
+# linkedin_username: chrisbamborough
+# pinterest_uername: chrisbamborough
 
 # Build settings
 markdown: kramdown
