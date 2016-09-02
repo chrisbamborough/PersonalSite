@@ -5,13 +5,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-  <head>
+<head>
   <!--CODE FOR TYPEKIT -->
   <script src="https://use.typekit.net/nrf6yfy.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="/js/three.min.js"></script>
   <script src="/js/p5.js"></script>
   <script src="/js/addons/p5.dom.js"></script>
+
+  <script type="text/javascript" src="/js/libs/dat.gui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/quicksettings/latest/quicksettings.min.js"></script>
+
+
 
   <title>Chris Bamborough</title>
 	<meta charset="utf-8" />
@@ -23,19 +28,22 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
-	<body>
+
+<body>
     <!-- Animation Canvas -->
     <div id="backgroundCanvas">
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Wrapper -->
+        <div id="wrapper">
 
-				<!-- Header -->
+            <!-- Header -->
 <header id="header">
   <!--
 	<h1><a href="http://www.chrisbamborough.com">Chris Bamborough</a></h1>
 -->
 	<nav class="links">
 	</nav>
+
+
 	<nav class="main">
     <ul>
                 <!--
@@ -53,7 +61,7 @@
 	</nav>
 </header>
 
-<!-- Menu -->
+<!-- Drop Down Menu -->
 <section id="menu">
   <!-- Search -->
   <!--
@@ -69,7 +77,7 @@
       <li>
 		    <!-- <a href="/about"><h1>About</h1></a> -->
 				<a href="/"><h1>Blog</h1></a>
-				<a href="/projects"><h1>Projects</h1></a>
+				<!-- <a href="/projects"><h1>Projects</h1></a> -->
 				<a href="http://makingculture.info"><h1>Making Culture</h1></a>
     </ul>
 	</section>
@@ -83,65 +91,31 @@
   -->
 </section>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Post -->
-            <article class="post">
-              <header>
-                <div class="title">
-                  <h2><a href="/blog/2016/07/14/P5PerlinTerrain.html">P5.js 3D Perlin Terrain</a></h2>
-                <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
-                </div>
-
-                <div class="meta">
-                  <time class="published" datetime="2016-07-14">July, 2016</time>
-                  
-                    <a href="#">blog</a>
-                  
-                  <!--
-                  <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-                -->
-                </div>
-              </header>
-              
-              <script src="/js/p5Sketches/P5perlinTerrain.js" type="text/javascript"></script>
-
-<p>I’ve been watching a lot of the excellent <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r">Daniel Shiffman’s coding rainbows</a> You Tube videos about p5.js.</p>
+            <!-- Main -->
+            <div id="main">
 
 
-              <footer>
-                <ul class="stats">
-                
-                  <li><a href="#">Creative</a></li>
-                
-                  <li><a href="#">Code,</a></li>
-                
-                  <li><a href="#">p5.js</a></li>
-                
-        <!--
-        <li><a href="#">General</a></li>
-        <li><a href="#" class="icon fa-heart">28</a></li>
-        <li><a href="#" class="icon fa-comment">128</a></li>
-        -->
-                </ul>
-              </footer>
-           </article>
-  					<ul class="actions pagination">
-  					  
-  	  				  <li><a href="/blog/2016/05/11/P5Background.html" class="button big previous">Previous Post</a></li>
-  						
-							
-  						  <li><a href="/about/2016/08/02/About.html" class="button big next">Next Post</a></li>
-  						
-  					</ul>
-					</div>
+                    </header>
+                     <script src="/js/p5Sketches/P5perlinFlowAgentSketch.js" type="text/javascript"></script>
 
-				<!-- Sidebar -->
-					<section id="sidebar">
+<script src="/js/p5Objects/P5_agent.js"></script>
 
-						<!-- Intro -->
-						<section id="intro">
+<script src="/js/p5Objects/P5_flowField.js"></script>
+
+
+
+                    <footer>
+
+                    </footer>
+                </article>
+
+            </div>
+
+            <!-- Sidebar -->
+            <section id="sidebar">
+
+                <!-- Intro -->
+                <section id="intro">
 
   <a href="http://www.chrisbamborough.com" class="logo"><img src="https://dl.dropboxusercontent.com/u/20394991/ChrisBamborough/CB_Logo_200x200_green.svg" alt="" /></a>
 
@@ -169,14 +143,14 @@
 </section>
 
 
-						<!-- Mini Posts -->
-						<section>
+                <!-- Mini Posts -->
+                <section>
   <div class="mini-posts">
     
       <article class="mini-post">
   	    <header>
-  		    <h3><a href="/blog/2016/07/14/P5PerlinTerrain.html">P5.js 3D Perlin Terrain</a></h3>
-		      <time class="published" datetime="2016-07-14">July 14, 2016</time>
+  		    <h3><a href="/blog/2016/08/31/P5FlowFields.html">P5.js Perlin Noise Flow Fields</a></h3>
+		      <time class="published" datetime="2016-08-31">August 31, 2016</time>
 						<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
 			  </header>
         <!--
@@ -467,8 +441,8 @@
 </section>
 
 
-            <!-- About -->
-            <section class="blurb">
+                <!-- About -->
+                <section class="blurb">
 	<ul class="actions">
 		<!--
 	  <li><a href="/archive" class="button">Archive</a></li>
@@ -477,21 +451,22 @@
 </section>
 
 
-						<!-- Footer -->
-						<section id="footer">
+                <!-- Footer -->
+                <section id="footer">
   <p class="copyright"> Copyright &copy; 2015 Chris Bamborough </p>
   <p class="copyright"> Website Based on Sierra by <a href="https://github.com/satokazuma/Siera"> Kazuma Sato </a> </p>
 </section>
 
-					</section>
-			</div>
+            </section>
+        </div>
     </div>
-		<!-- Scripts -->
-		<script src="/js/jquery.min.js"></script>
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
 <script src="/js/skel.min.js"></script>
 <script src="/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
