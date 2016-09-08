@@ -22,6 +22,6 @@ soundcloud_username: smoothspace
 # Build settings
 markdown: kramdown
 highlighter: rouge
-paginate: 100
+paginate: 4
 author: Chris Bamborough
 gems: [jekyll-paginate]
