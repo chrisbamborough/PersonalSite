@@ -7,6 +7,8 @@ function FlowField(r) {
     this.cols = width / this.resolution;
     this.rows = height / this.resolution;
 
+    var zoff = 0;
+
     this.make2Darray = function(n) {
         var array = [];
         for (var i = 0; i < n; i++) {
@@ -23,15 +25,26 @@ function FlowField(r) {
         for (var i = 0; i < this.cols; i++) {
             var yoff = yoffStart;
             for (var j = 0; j < this.rows; j++) {
-                var theta = map(noise(xoff, yoff), 0, 1, 0, TWO_PI);
-                this.field[i][j] = createVector(cos(theta), sin(theta));
+                //var angle = noise(xoff, yoff,zoff) * TWO_PI * 4;
+                var angle = map(noise(xoff, yoff), 0, 1, 0, TWO_PI);
+                //this.field[i][j] = createVector(cos(theta), sin(theta));
+                v = p5.Vector.fromAngle(angle);
+                v.setMag(1);
+                this.field[i][j] = v;
                 yoff += 0.1;
             }
             xoff += 0.1;
+            zoff += 0.0003;
         }
+        return this.field
     };
 
-    //this.init(10000,0,0);
+    this.lookup = function(lookup) {
+        var column = Math.floor(constrain(lookup.x / this.resolution, 0, this.cols - 1));
+        var row = Math.floor(constrain(lookup.y / this.resolution, 0, this.rows - 1));
+        //println(lookup.x);
+        return this.field[column][row].copy();
+    };
 
     this.display = function() {
         for (var i = 0; i < this.cols; i++) {
