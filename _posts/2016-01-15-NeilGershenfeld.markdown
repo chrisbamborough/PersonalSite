@@ -1,0 +1,22 @@
+---
+layout: mc_post
+title:  "Neil Gershenfeld and the modern Fab Lab"
+date:   2016-01-15 16:52:07
+categories: Articles
+tags: Fab Lab
+image: https://dl.dropboxusercontent.com/u/20394991/MakingCulture/BHTS_NeilGershenfeld.png
+---
+One of the main influences behind Making culture was from reading Neil Gershenfeld's book Fab which charts the inception and development of the Fab Lab concept from Boston to around the world. The book was written in 2005 so I was interested in how Gershenfeld is considering progress 10 years on through the lens of digital fabrication.
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/L0RDrSKenGo" frameborder="0" allowfullscreen></iframe>
+Last year he spoke at the [Solid Conference][1] and bemoaned the hype that has built up around additive manufacturing, i.e. 3d printing highlighting that in this process all information is embedded in the computer programme not the material outcomes. He uses the example of the Ribosome, a large and complex molecular machine, found within all living cells, that serves as the site of biological protein synthesis (translation). This leads interestingly into his current work (through students) into rapid prototyping of rapid prototyping machines and the prospect of additive manufacturing through the assembly of fabricated components rather than just matter. A fascinating example he uses is the exploration of robots that mass produce small parts that combine to create Airbus A380s.
+
+I've written recently about my involvement in architectures drive to consolidate stages of making in architecture, there are direct comparisons with engineering who Gershenfeld says are working towards streamlining the process of moving from CAD to CAM, to machine control, to motion control through to structural systems, his aim is to communicate data structures directly to a fabricating machine that codes material. In the Deleuzian sense of "pleats of matter" Gershenfeld's future involves the construction of materials through folding of programmable matter, would a 3d printer in the future print something which then becomes something else?
+
+In a slight shift Gershenfeld then jumps to the Fab Lab project which his book Fab was centred around, his claim is that it has a similar trajectory to that of computing in that large main frames became mini computers, which became smartphones. He likens Fab labs which hold small scale fabrication machines to the stage of mini computers and points out that the internet was invented during this era, not using large mainframe computers. The point is that access to desktop technology is where shifts will occur and he sees the prospect of everyone being able to produce anything as the critical junction from where consumption can move to creation. On face value I am not convinced, it is a hard sell to ask people to make things which are easily and cheaply available through commerce, be he adds a caveat which i think the maker movement is centred around. Making isn't critical to creating the things that are available in Wallmart, instead it is for those personal things which solve personal and emotional problems.
+
+Gershenfeld likens making spaces to basic social infrastructure, such as libraries and points towards the US investing to develop national literacy to turn data to things and things to data. If an urban area can become self sufficient in its production, but remain connected globally then why would a factory working "go somewhere remote from where you live, to do a job you don't want to do, making something designed by someone you don't know for someone you'll never see, to get money to get something you want". An example he uses is Barcelona which is filling its city with Fablabs to guarantee things can be made and that people know how to make them. The issue is not about scaling up to manufacturing levels, but being to able to personally produce what you need, for your own personal situation, not everyone needs the same thing.
+
+During this study I have had a sense that personal fabrication is disrupting established economic models but have not quite been able to put my finger on what this looks like. Gershenfeld also thinks this but rather than pointing towards an example suggests that jobs are not going back to manufacturing after the economic downturn, that multiple new economic layers are emerging through small scale fabrication and that the "Toys" involved will provide the means for this subtle but significant shift.
+
+ [1]: http://solidcon.com/solid2014

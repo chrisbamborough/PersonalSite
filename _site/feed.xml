@@ -5,9 +5,26 @@
     <description>The personal website of Chris Bamborough</description>
     <link>http://www.chrisbamborough.com/</link>
     <atom:link href="http://www.chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 06 Nov 2016 08:48:29 +1100</pubDate>
-    <lastBuildDate>Sun, 06 Nov 2016 08:48:29 +1100</lastBuildDate>
+    <pubDate>Tue, 08 Nov 2016 15:08:18 +1100</pubDate>
+    <lastBuildDate>Tue, 08 Nov 2016 15:08:18 +1100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Making Culture Introduction</title>
+        <description>&lt;p&gt;Making Culture is a collection of thoughts and reflections related to Chris Bamborough’s PHD research into digital culture and infrastructures in Architecture.&lt;/p&gt;
+
+&lt;p&gt;The Making Culture project was inititated by a research travel scholarship awarded from the The Byera Hadley Travelling Fund in 2014. This enabled visits to spaces of community making in Australia and the US to study and understand the potential benefits of personal fabrication for architecture and vice versa. It was interested in how community making could potentially provide a vehicle for architects to better connect the esoteric nature of architectural design and increase public appreciation of architecture.&lt;/p&gt;
+
+&lt;p&gt;The project has evolved since to explore how architecture can adapt to remain relevant in todays digitally networked society, while helping to reconnect digital culture and design with the material and tectonic traditions of architecture.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Nov 2016 06:45:00 +1100</pubDate>
+        <link>http://www.chrisbamborough.com/mc_about/2016/11/07/MC_About.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/mc_about/2016/11/07/MC_About.html</guid>
+        
+        
+        <category>mc_about</category>
+        
+      </item>
     
       <item>
         <title>P5.js Perlin Noise Agents</title>
@@ -72,11 +89,43 @@
       </item>
     
       <item>
+        <title>Robot Trainers</title>
+        <description>&lt;p&gt;As computers and robots become more capable in movement and artificial intelligence they will offer clients and developers a cheaper, more efficient and more manageable alternative to human labour. Research into the creative capacity of agents, or autonomous computation is already 15 years in the making (Saunders 2001) meaning that designers days seem numbered. Fear not fellow architects, this is an opportunity to become unshackled from AutoCAD and Revit, think of this as a chance to outsource the crap you hate, bathroom details…robot, door schedules…robot, environmental impact assessment reports…actually even the robot might find this too much. Rather than thinking of this as a them and us, it offers a new kind of approach to design and building, one where architects become robot owners, trainers, mentors. A two way relationship with a software or hardware robot provides a means of design, communication and production.&lt;/p&gt;
+
+&lt;h1 id=&quot;robarch-sydney&quot;&gt;Rob|Arch Sydney&lt;/h1&gt;
+&lt;p&gt;I attended the Sydney Rob|Arch conference in March this year and this future was present, but through weak(ish) signals. I was the first time I had seen collaborative robots (HAL Robotics &amp;amp; Bond University), interactive 3d printing robots (Institute of Advanced Architecture Catalunya, Harvard GSD &amp;amp; University of Sydney and UNSW), and real-time vision sensing generative design robots (RMIT Architectural Robotics Lab and Southern California Institute of Architecture). The introduction of realtime communication between human, robot and material at this stage was clunky and not as “real time” as hoped, but it showed how the treatment of robots as subservient machinery through deterministic algorithms is no longer the accepted approach. While the outcomes shown at Rob|Arch were pretty wild and unpredictable, treating material behavior as an unknown in the design system, there is an opportunity for architects to understand the systems and create tunable outcomes, this is where training will come in. The progression of machine learning technology, and open source software tools mean architects with the right skills can take on the responsibility to continuously improve their own robots while engaging in the theory and practice they love.&lt;/p&gt;
+
+&lt;h1 id=&quot;personal-robots&quot;&gt;Personal Robots&lt;/h1&gt;
+&lt;p&gt;As software bots and industrial robots become more accessible and more manoeuvrable via Moore’s (Observation) Law, it becomes possible to imagine robot work cells maintained and constantly improved through interaction with architects, providing a liberation from the banal, and re-connecting with the built environment. It won’t mean a loss of the spatial intelligence needed to be architect, it will mean design studios, construction electives and history and theory in architecture schools will utilise personal and collaborative robots as a means to understand the past and imagine the future.&lt;/p&gt;
+
+&lt;p&gt;In this scenario quality and ability will come to be measured through the architectural intelligence of robots which will reflect its human collaborators knowledge and capacity to teach. Beyond this, if the singularity is to be believed, the robot architect can take over the practice while the human architect goes and spends time with loved ones, or be killed, its hard to tell at this stage.&lt;/p&gt;
+
+&lt;p&gt;Saunders, R. 2001 Curious Design Agents and Artificial Creativity, Ph.D. Thesis, Faculty of Architecture, The University of Sydney.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Aug 2016 22:00:00 +1000</pubDate>
+        <link>http://www.chrisbamborough.com/articles/2016/08/30/RobotTrainers.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/articles/2016/08/30/RobotTrainers.html</guid>
+        
+        <category>Robots,</category>
+        
+        <category>Fabrication,</category>
+        
+        <category>Practice</category>
+        
+        
+        <category>Articles</category>
+        
+      </item>
+    
+      <item>
         <title>Intoduction</title>
         <description>&lt;p&gt;Chris Bamborough is a designer and researcher working in the field of architecture.
 &lt;br /&gt;
 &lt;br /&gt;
-This site is a collection of tool explorations and projects. If you want to venture out you can read about his professional &lt;a href=&quot;http://www.linkedin.com/in/chrisbamborough&quot; target=&quot;_blank&quot;&gt;experience&lt;/a&gt;, scroll through his 42 character &lt;a href=&quot;http://www.twitter.com/chrisbamborough&quot; target=&quot;_blank&quot;&gt;musings&lt;/a&gt;, learn about his &lt;a href=&quot;http://www.behance.net/chrisbamborough&quot; target=&quot;_blank&quot;&gt;projects&lt;/a&gt; in more detail, check out his &lt;a href=&quot;http://www.github.com/chrisbamborough&quot;&gt;coding&lt;/a&gt; interests, watch some &lt;a href=&quot;http://www.vimeo.com/chrisbamborough&quot; target=&quot;_blank&quot;&gt;films&lt;/a&gt; he’s made, listen to his &lt;a href=&quot;http://www.soundcloud.com/smoothspace&quot; target=&quot;_blank&quot;&gt;musical&lt;/a&gt; influences, browse his &lt;a href=&quot;http://www.pinterest.com/chrisbamborough&quot; target=&quot;_blank&quot;&gt;visual&lt;/a&gt; inspirations, connect with his &lt;a href=&quot;https://uts.academia.edu/ChrisBamborough&quot; target=&quot;_blank&quot;&gt;research&lt;/a&gt;, or learn about his current &lt;a href=&quot;https://www.are.na/chris-bamborough/channels&quot; target=&quot;_blank&quot;&gt;ideas&lt;/a&gt;.&lt;/p&gt;
+This site is a collection of tool explorations and thoughts relating to his practice and research.
+&lt;br /&gt;
+&lt;br /&gt;
+If you want to venture out you can read about his professional &lt;a href=&quot;http://www.linkedin.com/in/chrisbamborough&quot; target=&quot;_blank&quot;&gt;experience&lt;/a&gt;, scroll through his 42 character &lt;a href=&quot;http://www.twitter.com/chrisbamborough&quot; target=&quot;_blank&quot;&gt;musings&lt;/a&gt;, learn about his &lt;a href=&quot;http://www.behance.net/chrisbamborough&quot; target=&quot;_blank&quot;&gt;projects&lt;/a&gt; in more detail, check out his &lt;a href=&quot;http://www.github.com/chrisbamborough&quot;&gt;coding&lt;/a&gt; interests, watch some &lt;a href=&quot;http://www.vimeo.com/chrisbamborough&quot; target=&quot;_blank&quot;&gt;films&lt;/a&gt; he’s made, listen to his &lt;a href=&quot;http://www.soundcloud.com/smoothspace&quot; target=&quot;_blank&quot;&gt;musical&lt;/a&gt; influences, browse his &lt;a href=&quot;http://www.pinterest.com/chrisbamborough&quot; target=&quot;_blank&quot;&gt;visual&lt;/a&gt; inspirations, connect with his &lt;a href=&quot;https://uts.academia.edu/ChrisBamborough&quot; target=&quot;_blank&quot;&gt;research&lt;/a&gt; publications, or learn about his current &lt;a href=&quot;https://www.evernote.com/pub/bambarooga/phdreadings&quot; target=&quot;_blank&quot;&gt;interests&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 02 Aug 2016 05:45:00 +1000</pubDate>
@@ -215,460 +264,155 @@ This site is a collection of tool explorations and projects. If you want to vent
       </item>
     
       <item>
-        <title>Mesh Box</title>
-        <description>&lt;p&gt;While I have been experimenting with the HTML5 Canvas and WebGL capabilities I’ve had trouble sharing the graphical output of my code. So after messing around trying to get Three.js and Jekyll to play nice, I opted for embedding a code pen player.&lt;/p&gt;
+        <title>Open Cities Open Data</title>
+        <description>&lt;p&gt;On the 2nd of October the Open Cities / Open Data workshop took place at the University of New South Wales. The day involved a mixture of keynote presentations and then two seperate discussion sessions running along side each other. I was invited by Scott Hawken of the Smart Cities research cluster to submit an abstract on my maker space research, and subsequently asked to present in the Collaborative Cities discussion stream.&lt;/p&gt;
 
-&lt;p&gt;The outcome is pretty good and means the HTML, CSS and Javascript can be referenced along with the animation.&lt;/p&gt;
+&lt;p&gt;The workshop aimed to explore the potential for digital technologies to make cities more accessible, democratic and inclusive.  The focus of the delegates was spread across three streams of data, crowd sourced data, data compiled by businesses into online databases, and data released in an open format by government agencies, considering how it could contribute to making cities more inclusive and open. Positive outlooks on the use of technology in cities were critiqued via issues of urban anonymity, sociability, privacy and transparency. Panel discussions covered the challenges, dangers and opportunities of achieving open cities through the use of open data.&lt;/p&gt;
 
-&lt;p data-height=&quot;319&quot; data-theme-id=&quot;8227&quot; data-slug-hash=&quot;aIbeu&quot; data-default-tab=&quot;result&quot; data-user=&quot;chrisbamborough&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/chrisbamborough/pen/aIbeu/&quot;&gt;Simple Green Box&lt;/a&gt; by Chris Bamborough (&lt;a href=&quot;http://codepen.io/chrisbamborough&quot;&gt;@chrisbamborough&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;My presentation was a overview of the Byera Hadley travel to the US under the guise of Maker Cities Open Data. In contrast to the “Bigness” of data gaining most of attention from participants (with the exception of Marcus Foth’s excellent Keynote), my talk identified more open channels for personal data sharing, around the “designing” of things.&lt;/p&gt;
 
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract;&lt;/h1&gt;
+
+&lt;p&gt;This paper explores how shared data in the form of 3d digital models coupled with open source modelling software and access to desktop scaled digital fabrication has the potential to change the way citizens engage with the shaping of their cities. Rapid digital prototyping could provide the means to help understand, reinterpret and generate new types of urbanism through crowdsourced ideas, and open citizen design engagement.&lt;/p&gt;
+
+&lt;p&gt;“Maker Cities” hint at such an outcome where web technologies, spaces providing fabrication equipment and citizen collaboration are producing bottom up changes to the urban fabric or highlighting specific need for top down action [^1]. As the internet became a platform for democratisation and expression, so too can the city which has the potential to become a living laboratory of dynamic DIY urbanism.&lt;/p&gt;
+
+&lt;p&gt;Amateur making and its associated “maker movement”, has emerged globally as communities of people engage in making as a social activity, whilst addressing personal or collective problems. Activities in such community spaces range widely, they include technological empowerment, peer to peer collaboration, project-based technical training, local problem solving, high tech entrepreneurial activity and grassroots research. The movement has grown in relation to the increased availability of software and hardware for digital 3d design and fabrication through reduced cost. This is providing a shift in the means of production from large scale industry to small scale personal fabrication, reversing the mass production of early twentieth century capitalism. The proliferation of desktop personal fabricating machines into community spaces is analogous to the accessibility of personal computing in the 1980s[^2].&lt;/p&gt;
+
+&lt;p&gt;This research intends to explore the potential for a new digital urban vernacular where new urban forms emerge through empowered citizen makers and collective negotiation of a complex social, economic and political forces.&lt;/p&gt;
+
+&lt;h1 id=&quot;presentation-sections&quot;&gt;Presentation sections;&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In Michel Bauwens book “ Network Society and Future Scenarios for a Collaborative Economy.” he refers to peer to peer collaboration as a way to revolutionise production and society. Rather than reiterate his predictions I would like to consider design potential and think about what other open data sharing practices can enhance peer to peer influence.&lt;/p&gt;
+
+&lt;p&gt;In this presentation I would like to share some observations I had from the trip in relation to collaborative and open data, identify existing frameworks that foster collaboration, present some architectural / urban outcomes, speculate regarding new data opportunities and potential for increased design quality in maker collaboration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Making Culture - Spaces of personal fabrication&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;My research trip focussed on two cities in the US, Boston and San Fransisco as they provided a broad selection of types of maker spaces. These ranged from anarchic hackerspaces, through to established and sophisticated tech incubators. All the spaces utilised increased affordability in digital desktop fabrication
+each providing new accesses to means of production.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Observations from travel&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Some key observations from the study were;
+1. Virtual connectivity rather than destroying physical connection had facilitated more collective engagement / sharing
+2. Evolution of digital use from pure 2 way communication to provide multiple connections and feedback loops.
+3. Divisions of data openness and types of data - Types of data (digital files such as 3d models and photos, sensor information,
+tutorials, geo-locations)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collaboration / Mobilisation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;My initial hypothesis about the maker movement was that the creation of maker spaces would have a transformative affect beyond its immediate space as makers turn their their attention to their local surroundings, but I did not detect this happening. Instead I experienced extremely efficient communication networks and forces of mobilisation that create temporary event spaces.&lt;/p&gt;
+
+&lt;p&gt;Maker Faire’s are the optimal embodiment, with one White House Faire, Two worlds fairs, Maker Faire’s in nearly every capital city, and Mini Maker Faire’s in satellite cities and towns. Each event brings maker communities with internal collaborative practices together to share information and create new networked connections.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Open Source&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;At the World Maker Faire I met Gael Langevin, the designer of the open source humanoid InMoov. His robot exists as a system of 3d components small enough to be printed on a desktop computer. To participate in the project by building a robot, or developing the system of the humanoid, new users simply download lists of commercial parts and sal files for 3d printing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Open Design Data&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This approach is being explored in other design fields who use open systems to reimagine channels of idea generation and production. Platforms such as Thingiverse, Open Desk, At Fab and Wiki House provide digital files with embedded fabrication data allowing experts and enthusiasts to freely fabricate 3d models, furniture or timber shelter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Citizen Prototypes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In San Fransisco the Market Street Prototyping Festival challenged its residents to design urban interventions and help shape the future of their city. An initial showcase along the street publicised up to 50 possible ideas for improving market street and visitors were encouraged to document and share their opinion. The most popular ideas were later built in a three day main event where pedestrians had the chance to experience, explore, and interact with the prototypes.&lt;/p&gt;
+
+&lt;p&gt;The event took advantage of local communities of makers already active in sharing ideas and knowledge and combined it with social media provide an significant feedback loop between creation and populous critique. Digital platforms reinforce physical connectivity and widen the extent of participation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Crowd Sourcing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;While making conjures up the image of wood / metal work,  electronic prototyping is also associated with the maker movement due to its close
+relationship with the field of engineering. Distributed sensors via open source electronic kits, born out of Fab Labs, start to shift the detection of environmental  quality away from government control providing increased transparency.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fab Labs - Fab Cities&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Fab Lab Barcelona is part of the fab lab foundation created by Neil Gershenfeld of MIT. Barcelona is using personal fabrication and open sharing as a way to become self sufficient in terms of resources and materials. For Gershenfeld if an urban area can become self sufficient in its production, it can also remain connected globally.&lt;/p&gt;
+
+&lt;p&gt;He also asks the question “why would a factory worker go somewhere remote from where you live, to do a job you don’t want to do, making something designed by someone you don’t know, for someone you’ll never see, to get money to get something you want”?&lt;/p&gt;
+
+&lt;p&gt;The alternative is a distribution of smaller scale fabrication spaces which allow local production, shifting away from international flows of consumption. The Fab Cities initiative in Barcelona is creating a network of neighbourhood Fablabs, under the guidance of Institute for Advanced Architecture ofCatalonia, IAAC, and Vincent Gallant, the former architect of the city.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New urban vernacular?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Expertise combined with collaboration, mobilisation and enthusiasm can lead to a shift in control in the built environment. Once example is of the Fab Lab condenser, also from Barcelona, devised by Margen Lab, but developed and constructed by the Fab Lab network. The design system allows customisation and production via fab lab scale fabrication tools.Fabrication Systems like this provide opportunities for design participation in the built environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Data Sets&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New data sources and increased ownership in personal data and open data sets.&lt;/li&gt;
+  &lt;li&gt;Virtual / Physical boundary blurring between collaboration in the two environments.&lt;/li&gt;
+  &lt;li&gt;New Vernacular styles through Digital fabrication and shared data.&lt;/li&gt;
+  &lt;li&gt;Increased agency for citizens in the built environment through greater creative input and production participation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;footnote&gt;
+  [1]:    Maker Cities - The Institute For The Future - http://www.iftf.org/future-now/article-detail/maker-cities2 accessed 23.08.2015
+  &lt;br /&gt;  
+  [2]:    Gershenfeld, Neil, Fab: The Coming Revolution On Your Desktop - from personal computers to personal fabrication, New York:Basic Books 2006 p16-19
+  &lt;br /&gt;  
+&lt;/footnote&gt;
+&lt;p&gt;       &lt;/p&gt;
 </description>
-        <pubDate>Sat, 13 Feb 2016 23:00:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/02/13/MeshBox.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/02/13/MeshBox.html</guid>
+        <pubDate>Tue, 29 Mar 2016 03:52:07 +1100</pubDate>
+        <link>http://www.chrisbamborough.com/articles/2016/03/29/OpenCitiesOpenData.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/articles/2016/03/29/OpenCitiesOpenData.html</guid>
         
-        <category>Creative</category>
+        <category>Open_Data,</category>
         
-        <category>Code,</category>
-        
-        <category>Three.js</category>
+        <category>Maker_Culture</category>
         
         
-        <category>blog</category>
+        <category>Articles</category>
         
       </item>
     
       <item>
-        <title>Random Walkers</title>
-        <description>&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
-&lt;/canvas&gt;
+        <title>Project Introduction</title>
+        <description>&lt;p&gt;Imagine a city whose inhabitants have a direct hand in shaping their environment ensuring additions address specific social issues. Imagine communities that don’t rely on imported goods or generic mass market solutions to solve personal problems. Imagine a household whose possessions are unique and tailored exactly to their life’s needs. Imagine bodies clothed in personally designed and crafted fabrics customised for body shape and self expression. The means to make is the key to these speculative scenarios and is seen in this study as an act of empowerment.&lt;/p&gt;
 
-&lt;script&gt;
-// put code in an overall function
-window.onload = function () {
-    var canvas = document.getElementById(&#39;myCanvas&#39;);
-    var ctx = canvas.getContext(&#39;2d&#39;);
-    var width = canvas.width;
-    var height = canvas.height;
-    var step = 5;
+&lt;p&gt;This project, “Making Culture” was initiated after identifying a global trend in the increased affordability and access to digital tools for design and fabrication. Some are predicting[^1] a shift in the means of production, from large industrial companies back to the everyday public, not seen since before the advent of modern capitalism&lt;/p&gt;
 
-    // walker object
-    var Walker = function() {
-        this.x = width / 2;
-        this.y = height / 2;
+&lt;p&gt;Increased innovation in digital manufacturing machines has caused them to get smaller and more affordable. The effects of these two factors in the realm of making is analogous to the democratisation of software development due to the internet. The creator of the Fab Lab foundation Neil Gershenfeld has identified that an emerging democratisation of digital fabrication is allowing a shift from the [ability to manipulate bits, to that of atoms][2]&lt;/p&gt;
 
-        Walker.prototype.display = function() {
-            ctx.rect(this.x,this.y,1,1);
-            ctx.stroke();
-            ctx.fill();
-        }
+&lt;p&gt;In this project I use “Personal Fabrication” as a blanket term for digital making. Within maker culture there are many types of maker groups, so in order to bring them all together I adopted Neil Gershenfeld’s nomenclature. Put simply, maker spaces, Tech Shops, or hacker spaces as many were previously known, provide physical locations and access to digital tools for empowerment to develop. These spaces allow communities of people to form with shared social and cultural values. “Making Culture” examines the communities and the virtual and physical spaces that develop around digital making.  The study identified key case studies in the US and Australia that represent this emergence in order to learn how they operate and what they achieve.&lt;/p&gt;
 
-        Walker.prototype.walk = function () {
-            var choice = Math.random();
+&lt;p&gt;In order to geographically concentrate case studies in the United States, two cities, Boston and San Francisco, were chosen to provide complimentary and contrasting observations. Boston is the home to the world’s first Fab Lab, has a very strong grass roots maker community, and has the conditions for entrepreneurship around digital technology and fabrication. San Francisco on the other hand is the epicentre of the American Tech and self titled “Maker Pro” industry whose aims are to profit through the culture of making.&lt;/p&gt;
 
-            if (choice &gt;= 0 &amp;&amp; choice &lt; 0.25) {
-                this.x = this.x + step;
-            } else if (choice &gt;= 0.25 &amp;&amp; choice &lt; 0.5) {
-                this.x = this.x - step;
-            } else if (choice &gt;= 0.5 &amp;&amp; choice &lt; 0.75) {
-                this.y += step;
-            } else {
-                this.y -= step;
-            }
-        }
-    }
-    // initialise a walker object
-    var w = new Walker();
+&lt;p&gt;The spaces identified and visited all similarly occupy forgotten, unwanted or awkward parts of the city. They re-use and adapt existing architecture, opportunistically inhabiting space, geographically distributed by economic real estate forces. Inside these spaces varieties of people engage in making projects whilst connecting socially, seeking common goals, observing collective codes of behavior, and sharing knowledge and experiences through participation and collaboration.&lt;/p&gt;
 
-    // run draw function
-    setInterval(draw, 10);
+&lt;p&gt;This study is intended to be read as both a source of information in engaging with digital fabrication and the maker movement, and a critical assessment into its capacity for transformative change here in Australia. It is divided into discrete sections that explore particular areas of significance identified live in the field.&lt;/p&gt;
 
-    function draw() {
-        w.walk();
-        w.display();
-    }
+&lt;p&gt;Tools, explores the digital equipment utilised by maker communities and offers insight into the fabrication processes they make possible.&lt;/p&gt;
 
+&lt;p&gt;Case Studies, describes the spaces visited in the study through data collected in observations, photographs and conversations.&lt;/p&gt;
 
-};
+&lt;p&gt;Movements, delves into the social structures that were identified amongst the spaces and attempts to identify differences in their motives.&lt;/p&gt;
 
-&lt;/script&gt;
+&lt;p&gt;Types, highlights and categorizes the typologies of space the maker movement is inhabiting.&lt;/p&gt;
 
-&lt;p&gt;This is a little bit backward but I started with section 1 in Nature Of Code as I didn’t know how to create objects in Java Script but this is the stage where this happened.&lt;/p&gt;
+&lt;p&gt;Context and connectivity, assesses the importance of context for the emergence of maker communities and addresses the significance of connections, or networks, in their comparable success.&lt;/p&gt;
 
-&lt;p&gt;As before the html file is set up to reference a javascript file and creates a canvas.&lt;/p&gt;
+&lt;p&gt;Outcomes, summarises what is made in the maker spaces visited and pays attention to their potential to effect society beyond.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Random Walker&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;NOC_0_1_RandomWalker.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;canvas&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;Maker Con / MAKER FAIRE, is a journal of my experiences at the MakerCon conference and Annual World Maker Faire held in San Francisco in May 2015.&lt;/p&gt;
 
-&lt;p&gt;For the javascript the function is set up to load as the window is opened and then the variables initialised.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/20394991/MakingCulture/LegoTruck_MakerFaire.jpg&quot; alt=&quot;World Maker Faire&quot; title=&quot;World Maker Faire&quot; class=&quot;bodyImage&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// initialise canvas&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;canvas&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ctx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;2d&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The next step is to create a walker object that has information on how to behave, in this case how to display, and then how to walk. The most significant difference here between processing and javascript is that js does not have a random function that you can input ranges, it only outputs a float between 0-1. As a result the walk function needs a series of conditionals to test wether than random number generated fell between a certain range.&lt;/p&gt;
-
-&lt;p&gt;~~~ Javascript
-     // walker object
-        var Walker = function() {
-            this.x = width / 2;
-            this.y = height / 2;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        Walker.prototype.display = function() {
-            ctx.rect(this.x,this.y,1,1);
-            ctx.stroke();
-            ctx.fill();
-        }
-
-        Walker.prototype.walk = function () {
-            var choice = Math.random();
-
-            if (choice &amp;gt;= 0 &amp;amp;&amp;amp; choice &amp;lt; 0.25) {
-                this.x = this.x + step;
-            } else if (choice &amp;gt;= 0.25 &amp;amp;&amp;amp; choice &amp;lt; 0.5) {
-                this.x = this.x - step;
-            } else if (choice &amp;gt;= 0.5 &amp;amp;&amp;amp; choice &amp;lt; 0.75) {
-                this.y += step;
-            } else {
-                this.y -= step;
-            }
-        }
-    }  
-    ~~~
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Finally to create a walker the object must be instantiated, a draw function created to call the objects functions, and a call to run the draw function.&lt;/p&gt;
-
-&lt;p&gt;~~~ Javascript
-    // initialise a walker object
-        var w = new Walker();&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    // run draw function
-    setInterval(draw, 10);
-
-    function draw() {
-        w.walk();
-        w.display();
-    }
-
-
-};
-~~~
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;footnote&gt;
+  [1]:Jeremy Rifkin, 2015,The Zero Marginal Cost Society; The Internet of Things, the Collaborative Commons, and the Eclipse of Capitalism. Palgrave:Macmillan.&lt;br /&gt;  
+  [2]:Neil Gershenfeld, 2006,Fab: The Coming Revolution On Your Desktop - from personal computers to personal fabrication
+  New York: Basic Books.&lt;br /&gt;
+&lt;/footnote&gt;
 </description>
-        <pubDate>Wed, 13 Jan 2016 23:00:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/01/13/RandomWalkers.html</guid>
-        
-        <category>Creative</category>
-        
-        <category>Code</category>
+        <pubDate>Mon, 21 Mar 2016 23:00:00 +1100</pubDate>
+        <link>http://www.chrisbamborough.com/bhts/2016/03/21/BHTS_Intro.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/bhts/2016/03/21/BHTS_Intro.html</guid>
         
         
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>The Nature Of Canvas</title>
-        <description>&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
-&lt;/canvas&gt;
-&lt;script&gt;
-// put code in an overall function
-window.onload = function () {
-    var canvas = document.getElementById(&#39;myCanvas&#39;);
-    var context = canvas.getContext(&#39;2d&#39;);
-    var width = canvas.width;
-    var height = canvas.height;
-    var x = 100;
-    var y = 100;
-    var xspeed = 5;
-    var yspeed = 5;
-
-
-    setInterval(draw,10);
-
-
-
-    function draw () {
-
-        context.clearRect(0,0,width,height);
-        context.beginPath();
-        context.fillStyle = &quot;#000ff&quot;;
-        context.arc(x, y, 20,0, Math.PI * 2, true);
-        context.fill();
-
-        if (x &gt; width || x &lt; 0) {
-            xspeed = -xspeed;
-        }
-        if (y &gt; height || y &lt; 0) {
-            yspeed = -yspeed;
-        }
-
-        x+=xspeed;
-        y+=yspeed;
-    }
-}
-&lt;/script&gt;
-
-&lt;p&gt;When I first started learning &lt;a href=&quot;http://processing.org&quot;&gt;Processing&lt;/a&gt; a few years ago I was drawn to Daniel Shiffman’s book &lt;a href=&quot;http://www.learningprocessing.com/&quot;&gt;“Learning Processing”&lt;/a&gt; because he did such a great job at explaining the basics without you feeling like a dumb ass. After this first book Shiffman developed a self published &lt;a href=&quot;http://natureofcode.com/&quot;&gt;Nature Of Code&lt;/a&gt; project shaped as a sylabus for his Introduction to Computational media course at &lt;a href=&quot;http://admin.tisch.nyu.edu/object/ShiffmanD.html&quot;&gt;ITP New York&lt;/a&gt; .&lt;/p&gt;
-
-&lt;p&gt;His Nature Of Code course simply aims to simulate things that naturally occur in the physical world via Processing. As Processing is based on the java script language I’ve became interested in using it to learn Javascript programing in Canvas.&lt;/p&gt;
-
-&lt;p&gt;I’m going to work through the examples Shiffman uses in the book so to start,&lt;/p&gt;
-
-&lt;p&gt;Chapter 1 Vectors
-1_bouncingball_novectors&lt;/p&gt;
-
-&lt;p&gt;This first example in the book aims to move a book around the screen using a constant updating of the ball’s x and y location.&lt;/p&gt;
-
-&lt;p&gt;To start off an html file must link to a javascript file in the head tags, before setting up a canvas in the body, in this case sized 500px x 500px.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;NOC_1_1_BouncingBall_NoVectors.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id =&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width =&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;500&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height =&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;500&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;  
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Within the javascript file firstly the script needs to be launched on loading of the webpage. A variable canvas which fetches the myCanvas element in the html must allways be called, and a context must be set up, in this case it is using the built in HTML5 2d library.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// put code in an overall function
-window.onload = function () {
-    var canvas = document.getElementById(&#39;myCanvas&#39;);
-    var context = canvas.getContext(&#39;2d&#39;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The neccessary variables must be set up for a bounding ball.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// put code in an overall function
-window.onload = function () {
-    var canvas = document.getElementById(&#39;myCanvas&#39;);
-    var context = canvas.getContext(&#39;2d&#39;);
-    var width = canvas.width = window.innerWidth;
-    var height = canvas.height = window.innerHeight;
-    var x = 100;
-    var y = 100;
-    var xspeed = 5;
-    var yspeed = 5;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;which will be used in a draw function similar to a processing sketch. In order for the run function to work though a setInterval(draw,10); command must be used to set up the drawing routine “draw” with a framerate of 10.&lt;/p&gt;
-
-&lt;p&gt;Then the draw function can be called. Comments are after the // marks.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// put code in an overall function
-window.onload = function () {
-    var canvas = document.getElementById(&#39;myCanvas&#39;);
-    var context = canvas.getContext(&#39;2d&#39;);
-    var width = canvas.width = window.innerWidth;
-    var height = canvas.height = window.innerHeight;
-    var x = 100;
-    var y = 100;
-    var xspeed = 5;
-    var yspeed = 5;
-
-
-    setInterval(draw,10);
-
-    // function to draw
-    function draw () {
-
-    	//clear the background each frame              		
-    	context.clearRect(0,0,width,height);
-        // Start the path for the circle
-        context.beginPath();
-        // Indicate what colour to fill the circle
-        context.fillStyle = &quot;#000ff&quot;;
-        // describe the circle using the arc function
-        context.arc(x, y, 20,0, Math.PI * 2, true);
-        // Fill the shape
-        context.fill();
-
-        // if statements to detect the shapes proximity to the edge of the canvas
-        to make object rebound with opposite change in x and y direction.
-        if (x &amp;gt; width || x &amp;lt; 0) {
-            xspeed = -xspeed;
-        }
-        if (y &amp;gt; height || y &amp;lt; 0) {
-            yspeed = -yspeed;
-        }
-
-		// finally make the ball move by adding a variable &quot;speed&quot; to the x and y position
-        x+=xspeed;
-        y+=yspeed;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 12 Jan 2016 23:00:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/01/12/NOC.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/01/12/NOC.html</guid>
-        
-        <category>Creative</category>
-        
-        <category>Code</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Improved Random Walkers</title>
-        <description>&lt;style&gt;  
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-&lt;/style&gt;
-
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;845px&quot; height=&quot;450px&quot; style=&quot;border:1px solid #000000;&quot;&gt;
-&lt;/canvas&gt;
-
-&lt;script&gt;
-// put code in an overall function
-window.onload = function () {
-    &quot;use strict&quot;;
-    var canvas = document.getElementById(&#39;myCanvas&#39;);    
-  	canvas.style.width =&#39;100%&#39;;
-  	canvas.style.height=&#39;100%&#39;;
-  	canvas.width  = canvas.offsetWidth;
-  	canvas.height = canvas.offsetHeight;    
-    var ctx = canvas.getContext(&#39;2d&#39;);
-    var width = canvas.width;
-    var height = canvas.height;
-    var step = 5;
-
-    // walker object
-    var Walker = function () {
-        this.x = width / 2;
-        this.y = height / 2;
-
-        Walker.prototype.display = function() {
-            ctx.rect(this.x,this.y,2,2);
-            ctx.stroke();
-            ctx.fill();
-        }
-
-        Walker.prototype.walk = function () {
-        	var choice = Math.random();
-
-            var stepx = Math.random(); // value 0-1
-            var stepy = Math.random();
-
-            if (stepx &gt;= 0 &amp;&amp; stepx &lt; 0.33) {
-                stepx = -1;
-            } else if (stepx &gt;= 0.33 &amp;&amp; stepx &lt; 0.66) {
-                stepx = 0;
-            } else {
-                stepx = 1;
-            }
-
-            if (stepy &gt;= 0 &amp;&amp; stepy &lt; 0.33) {
-                stepy = -1;
-            } else if (stepy &gt;= 0.33 &amp;&amp; stepy &lt; 0.66) {
-                stepy = 0;
-            } else {
-                stepy = 1;
-            }
-
-            this.x += stepx*step
-            this.y += stepy*step
-        }
-        }
-
-        // initialise a walker object
-        var w = new Walker();
-
-        // run draw function
-        setInterval(draw, 10);
-
-        function draw() {
-            w.walk();
-            w.display();
-        }
-    };
-&lt;/script&gt;
-
-&lt;p&gt;The point of improvement in the ImprovedVectorWalker is the conditional that “controls” the randomness. In the previous example the test gave the random walker a choice of 4 directions (2 for x and 2 for y), this time it has 9 choices (3 for x and 3 for y). To do this a separate random number needs to be generated for both x and y, then each is tested to see if it falls within a range between 0 and 1 (remember java script random gives a random number between 0-1).&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  // walker object
-  var Walker = function () {
-      this.x = width / 2;
-      this.y = height / 2;
-
-      Walker.prototype.display = function () {
-          ctx.rect(this.x, this.y, 1, 1);
-          ctx.stroke();
-          ctx.fill();
-      }
-
-      Walker.prototype.walk = function () {
-          // improved movement
-          var stepx = Math.random(); // value 0-1
-          var stepy = Math.random();
-
-          if (stepx &amp;gt;= 0 &amp;amp;&amp;amp; stepx &amp;lt; 0.33) {
-              stepx = -1;
-          } else if (stepx &amp;gt;= 0.33 &amp;amp;&amp;amp; stepx &amp;lt; 0.66) {
-              stepx = 0;
-          } else {
-              stepx = 1;
-          }
-
-          if (stepy &amp;gt;= 0 &amp;amp;&amp;amp; stepy &amp;lt; 0.33) {
-              stepy = -1;
-          } else if (stepy &amp;gt;= 0.33 &amp;amp;&amp;amp; stepy &amp;lt; 0.66) {
-              stepy = 0;
-          } else {
-              stepy = 1;
-          }
-
-          this.x += stepx;
-          this.y += stepy;
-
-      }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 12 Jan 2016 23:00:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/01/12/ImprovedRandomWalkers.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/01/12/ImprovedRandomWalkers.html</guid>
-        
-        <category>Creative</category>
-        
-        <category>Code</category>
-        
-        
-        <category>blog</category>
+        <category>bhts</category>
         
       </item>
     
