@@ -7,7 +7,7 @@ tags: 'Innovation, Practice, Conference'
 image: null
 ---
 
-At the beginning of October, I presented at the Australian Architectural School Association (AASA) conference. The title for the event was "Project to practice: Innovating Architecture" and focused on two major questions, where is architecture creating its future, and how is the sector shaping the policy and funding levers of tomorrow? I submitted a paper entitled "Running out of STE(A)M: A Critical Perspective on the Political Rhetoric of Innovation" and presented a twenty-minute summary. The paper argued that political power, in particular, the Australian Turnbull Government, although proclaiming democratised innovation produces distributed wealth and continued economic growth after the resource boom, the strategies hidden motives lie in corporate and institutional access, acquisition and control of knowledge. The paper demonstrated that the paradigm of resource manipulation, where a perceived scarcity and market demand drives the price of natural materials, has been transferred onto the realm of data, information and knowledge, or as McKenzie Wark puts it a "vectorization of information"[^6c2b9755].
+In October, I presented at the Australian Architectural School Association (AASA) conference. The title for the event was "Project to practice: Innovating Architecture" and focused on two major questions, where is architecture creating its future, and how is the sector shaping the policy and funding levers of tomorrow? I submitted a paper entitled "Running out of STE(A)M: A Critical Perspective on the Political Rhetoric of Innovation" and presented a twenty-minute summary. The paper argued that political power, in particular, the Australian Turnbull Government, although proclaiming democratised innovation produces distributed wealth and continued economic growth after the resource boom, the strategies hidden motives lie in corporate and institutional access, acquisition and control of knowledge. The paper demonstrated that the paradigm of resource manipulation, where a perceived scarcity and market demand drives the price of natural materials, has been transferred onto the realm of data, information and knowledge, or as McKenzie Wark puts it a "vectorization of information"[^6c2b9755].
 
 This above represents a placement of capitalist ideology, property ownership and market forces extract value, onto an abundant resource. I am critical of capitalism for its rampant need for "growth" and "progress" which translates into the unethical exploitation of the biosphere for profit generation. I'm also critical of the unequal distribution of wealth capitalism has produced and its boom to bust cyclic nature that governments treat as a necessary evil.
 
@@ -29,7 +29,9 @@ Capitalism isn't going anywhere soon, but that doesn't mean architects have to s
 
 [^6c2b9755]: Wark, M. A Hacker Manifesto, Harvard University Press, 2004
 
-[^b1129747]: Goodbun, J. Klein, M. Till, Jeremy. & Rumpfhuber, A. The Design of Scarcity, Strelka Press: Moscow, 2013 [^7045553f]: Bauwens, M. The Political Economy of Peer Production M. Kroker & A. Kroker, eds. CTheory, 2005, Available at: <http://www.ctheory.net/articles.aspx?id=499> [Accessed May 9, 2016].
+[^b1129747]: Goodbun, J. Klein, M. Till, Jeremy. & Rumpfhuber, A. The Design of Scarcity, Strelka Press: Moscow, 2013
+
+[^7045553f]: Bauwens, M. The Political Economy of Peer Production M. Kroker & A. Kroker, eds. CTheory, 2005, Available at: <http://www.ctheory.net/articles.aspx?id=499> [Accessed May 9, 2016].
 
 [^f5c544bb]: Rifkin, J., 2014. The zero marginal cost society, New York, NY : Palgrave Macmillan, 2014.
 
