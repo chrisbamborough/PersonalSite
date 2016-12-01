@@ -42,12 +42,12 @@ function setup() {
 
 function draw() {
 
-    flying += panel.getRangeValue('flyingRate');
+    flying += panel.getValue('flyingRate');
     var yoff = flying;
     for (var y = 0; y < rows; y++) {
         var xoff = 0;
         for (var x = 0; x < cols; x++) {
-            terrain[x][y] = map(noise(xoff, yoff), 0, 1, panel.getRangeValue("valley"), panel.getRangeValue("peak"));
+            terrain[x][y] = map(noise(xoff, yoff), 0, 1, panel.getValue("valley"), panel.getValue("peak"));
             xoff += 0.2;
         }
         yoff += 0.2;
