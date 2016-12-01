@@ -51,9 +51,9 @@ function createField() {
 
 function seedField() {
     //clear();
-    seed = panel.getRangeValue('Noise Seed');
-    xoffStart = panel.getRangeValue('X Angle');
-    yoffStart = panel.getRangeValue('Y Angle');
+    seed = panel.getValue('Noise Seed');
+    xoffStart = panel.getValue('X Angle');
+    yoffStart = panel.getValue('Y Angle');
     flowfield.init(seed, xoffStart, yoffStart);
 }
 
