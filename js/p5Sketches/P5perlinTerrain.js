@@ -25,7 +25,7 @@ function setup() {
     var canvasDiv = document.getElementById('backgroundCanvas');
     var width = canvasDiv.offsetWidth;
     var height = canvasDiv.offsetHeight;
-    var sketchCanvas = createCanvas(width, height, "WEBGL");
+    var sketchCanvas = createCanvas(width, height, "webgl");
     sketchCanvas.parent("backgroundCanvas");
 
     cols = w / scl;

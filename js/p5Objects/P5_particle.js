@@ -12,7 +12,6 @@ function Particle() {
     this.h = 120;
     this.s = 40;
     this.b = 80;
-
     this.prevPos = this.pos.copy();
 
     this.update = function() {
@@ -78,7 +77,5 @@ function Particle() {
             this.pos.y = height;
             this.updatePrev();
         }
-
     }
-
 }
