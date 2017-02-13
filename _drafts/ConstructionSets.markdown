@@ -2,7 +2,7 @@
 layout: post
 title:  "Construction Sets"
 date:   2015-04-13 12:00:00
-categories: blog
+categories: Articles
 tags: Architecture
 image:
 ---

@@ -5,9 +5,27 @@
     <description>The personal website of Chris Bamborough</description>
     <link>http://www.chrisbamborough.com/</link>
     <atom:link href="http://www.chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Dec 2016 17:21:39 +1100</pubDate>
-    <lastBuildDate>Thu, 01 Dec 2016 17:21:39 +1100</lastBuildDate>
+    <pubDate>Tue, 14 Feb 2017 09:27:18 +1100</pubDate>
+    <lastBuildDate>Tue, 14 Feb 2017 09:27:18 +1100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>P5 Colour Button</title>
+        <description>&lt;script src=&quot;/js/p5Sketches/P5colourButton.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Thu, 01 Dec 2016 12:45:00 +1100</pubDate>
+        <link>http://www.chrisbamborough.com/blog/2016/12/01/P5Colourshifter.html</link>
+        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/12/01/P5Colourshifter.html</guid>
+        
+        <category>Creative_Code,</category>
+        
+        <category>p5.js</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Running out of STE(A)M</title>
@@ -267,84 +285,6 @@ If you want to venture out you can read about his professional &lt;a href=&quot;
         <pubDate>Wed, 11 May 2016 05:45:00 +1000</pubDate>
         <link>http://www.chrisbamborough.com/blog/2016/05/11/P5Background.html</link>
         <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/05/11/P5Background.html</guid>
-        
-        <category>Creative</category>
-        
-        <category>Code,</category>
-        
-        <category>p5.js</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Using P5.js with Jekyll</title>
-        <description>&lt;div id=&quot;postCanvas&quot; style=&quot;position: relative; border: 1px solid black; height: 450px;&quot;&gt;&lt;/div&gt;
-&lt;script src=&quot;/js/p5Sketches/firstP5Sketch.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;Press any button to clear the canvas.&lt;/p&gt;
-
-&lt;p&gt;I have been playing around with &lt;a href=&quot;https://processing.org&quot;&gt;processing&lt;/a&gt; for a few years now but never really got stuck in because of the difficulty to share on the web (without annoying aplets). &lt;a href=&quot;https://www.processingjs.org&quot;&gt;Processing.js&lt;/a&gt; offered a way to use processing in the browser, but involved an extra layer of translation from java (processing) into javascript. Enter &lt;a href=&quot;https://www.p5js.org&quot;&gt;p5.js&lt;/a&gt;, the intuition of processing but using native java script in the browser.&lt;/p&gt;
-
-&lt;p&gt;The P5 series of javascript &lt;a href=&quot;https://p5js.org/libraries/&quot;&gt;libraries&lt;/a&gt; provide means to play with the DOM (Document Object Model), Sound, Interaction, Data streams, Image, Video to name just a few.&lt;/p&gt;
-
-&lt;p&gt;So I have been playing with the P5.js IDE which has a built in web-server, but I wanted to start publishing my experiments to this site. As it is a jekyll site and posts are written in markdown I had to find a work around.&lt;/p&gt;
-
-&lt;p&gt;The first thing to do was include the p5.js libraries into the head of the Jekyll site. In header.html;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/js/p5.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Previously in my failed ambition to replicate the Nature Of Code book using straight java script, I was pointing my javascript to an HTML canvas element in the markdown post. As P5 deals with creating a canvas itself, I simply used a div with an id myCanvas to provide a placeholder for a canvas created in javascript.&lt;/p&gt;
-
-&lt;p&gt;Jekyll works by writing posts in markdown, which then get compiled into HTML with css styling. The great thing about markdown is that you can throw in html and javascript in amongst and it will render it to the page. As mentioned above I first needed a div for my canvas, then a link to my .js sketch file.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/js/p5Sketches/firstP5Sketch.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In the .js sketch file p5 allows you to structure your code along the logic of a processing sketch with a setup() (runs once) and draw() (loops continuously). The only difference is that preceding “void” is replaced by “function”. In the setup a new canvas is placed using a variable used to then call p5 methods and access their elements from the &lt;a href=&quot;http://p5js.org/reference/#/p5.Element&quot;&gt;library&lt;/a&gt;. See the &lt;a href=&quot;https://github.com/processing/p5.js/wiki/Beyond-the-canvas&quot;&gt;github repository&lt;/a&gt; for more details.&lt;/p&gt;
-
-&lt;p&gt;The above example sketch is the one included in the &lt;a href=&quot;https://p5js.org/get-started/&quot;&gt;getting started&lt;/a&gt; section of the website, so I need to get a bit more creative, but its a good simple sketch to try and integrate. The only difference is that in the setup I needed to assign a variable to createCanvas() to point it towards my located div. Alternatively I could have set up the canvas and position it within the javascript, but I prefer to use CSS to take care all of that.&lt;/p&gt;
-
-&lt;p&gt;There is a slight quirk with my approach that means the p5 sketch extends slightly further in width that the div wrapper. I attempted to use the div client width as the width of the canvas but the two do not quite correlate. If you have any advice on this please tweet me on @chrisbamborough&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvasDiv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;divWidth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clientWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sketchCanvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;divWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;450&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;sketchCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;myCanvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mouseIsPressed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;ellipse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mouseX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mouseY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyIsPressed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 30 Apr 2016 05:45:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/04/30/P5InJekyll.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/04/30/P5InJekyll.html</guid>
         
         <category>Creative</category>
         

@@ -12,7 +12,8 @@ function Particle() {
     this.h = 120;
     this.s = 40;
     this.b = 80;
-    this.prevPos = this.pos.copy();
+    //this.prevPos = this.pos.copy();
+    this.prevPos = this.pos.array();
 
     this.update = function() {
         this.vel.add(this.acc);
@@ -34,7 +35,7 @@ function Particle() {
     }
 
     this.show = function() {
-        stroke(this.h, this.s, this.b,0.25);
+        stroke(this.h, this.s, this.b, 0.25);
         this.h += 1;
         //this.s += 1;
         this.b += 0.2;
@@ -48,7 +49,7 @@ function Particle() {
         }
         // brightness 0-100
         if (this.b > 100) {
-          this.b = 25;
+            this.b = 25;
         }
         strokeWeight(2);
         line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);

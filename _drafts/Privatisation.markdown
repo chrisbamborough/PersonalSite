@@ -2,7 +2,7 @@
 layout: post
 title:  "Privatisation and the market"
 date:   2016-11-29 12:00:00
-categories: blog
+categories: Articles
 tags: Innovation, Practice, Conference
 image:
 ---
