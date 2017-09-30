@@ -38,7 +38,7 @@
 				<!-- Header -->
 <header id="header">
   <!--
-	<h1><a href="http://www.chrisbamborough.com">Chris Bamborough</a></h1>
+	<h1><a href="http://localhost:4000">Chris Bamborough</a></h1>
 -->
 	<nav class="links">
 	</nav>
@@ -116,54 +116,54 @@
               
               <p>My work recently had an art competition and the theme was Green. This made me think about the song “It aint easy being green” by Kermit the Frog, so I decided to write a <a title="Processing" href="http://www.processing.org/">Processing</a> sketch that displayed Kermits image but using the repeated words “it aint easy being”. Each letter picked out a pixel colour within a 5 pixel area to create the image, the code is below if you would like to try it yourself. Thanks to <a title="Daniel Shiffman" href="http://www.learningprocessing.com/">Daniel Shiffman</a> who’s <a title="Learning Processing" href="http://www.learningprocessing.com/">book</a> I have been using to learn Processing, this sketch was adapted from his Text Mirror example for a webcam video feed.</p>
 
-<p>~~~ javascript
-  PImage img; //source image’
-  int cellsize = 5; //dimension of each cell in our grid
-  int cols, rows; // Number of columns and rows in our system
-  String chars = "ITSNOTEASYBEING";
-  PFont f;
-  void setup () {
-  	size (800,1058);
-  	// Set up columns and rows
-  	//cols = width/photoScale;
-  	//rows = height/photoScale;
-  	img = loadImage ("kermit-the-frog.jpg");
-  	smooth ();
-  	// Load the font
-  	f = createFont("Courier-Bold",10);
-  }</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>  <span class="nx">PImage</span> <span class="nx">img</span><span class="p">;</span> <span class="c1">//source image'</span>
+  <span class="kr">int</span> <span class="nx">cellsize</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">//dimension of each cell in our grid</span>
+  <span class="kr">int</span> <span class="nx">cols</span><span class="p">,</span> <span class="nx">rows</span><span class="p">;</span> <span class="c1">// Number of columns and rows in our system</span>
+  <span class="nb">String</span> <span class="nx">chars</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">ITSNOTEASYBEING</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;;</span>
+  <span class="nx">PFont</span> <span class="nx">f</span><span class="p">;</span>
+  <span class="k">void</span> <span class="nx">setup</span> <span class="p">()</span> <span class="p">{</span>
+  	<span class="nx">size</span> <span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">1058</span><span class="p">);</span>
+  	<span class="c1">// Set up columns and rows</span>
+  	<span class="c1">//cols = width/photoScale;</span>
+  	<span class="c1">//rows = height/photoScale;</span>
+  	<span class="nx">img</span> <span class="o">=</span> <span class="nx">loadImage</span> <span class="p">(</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">kermit</span><span class="o">-</span><span class="nx">the</span><span class="o">-</span><span class="nx">frog</span><span class="p">.</span><span class="nx">jpg</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;);</span>
+  	<span class="nx">smooth</span> <span class="p">();</span>
+  	<span class="c1">// Load the font</span>
+  	<span class="nx">f</span> <span class="o">=</span> <span class="nx">createFont</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">Courier</span><span class="o">-</span><span class="nx">Bold</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;,</span><span class="mi">10</span><span class="p">);</span>
+  <span class="p">}</span>
 
-<p>void draw () {
-    //draw background each time
-    background (0);
-    // Call loadPixels before we deal with pixels
-    loadPixels ();
-    // Use a variable to count through chars in String
-    int charcount = 0;
-    // Loop through all pixels, skip every 10 pixels along the y-axis
-    for (int y = 0; y &amp;lt; img.height ; y += 10) {
-    	// skip every 5 pixels along the x-axis
-    for (int x = 0; x &amp;lt; img.width+5 ; x += 5) { 
-    	// Calculate the 1D location from a 2D grid 
-      int loc = x + y*img.width; 
-      // write text textFont(f); 
-      // Color according to the image fill 
-      (img.pixels [loc]); 
-      // Map the brightness of a pixel to the size of a font 
-      float b = brightness(img.pixels[loc]); 
-      float fontSize = 20 * (b / 255); 
-      textSize(fontSize); 
-      // One character from the source text is displayed colored accordingly to the pixel location. 
-      // A counter variable â charcountâ is used to walk through the source String one character at a time. 
-      text(chars.charAt(charcount),x,y); 
-      x += textWidth (chars.charAt(charcount)); 
-      // Go on to the next character 
-      charcount = (charcount + 1) % chars.length(); 
-      } 
-  } 
-  save("Kermit.jpg"); 
-  } 
-  ~~~</p>
+  <span class="k">void</span> <span class="nx">draw</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//draw background each time</span>
+    <span class="nx">background</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="c1">// Call loadPixels before we deal with pixels</span>
+    <span class="nx">loadPixels</span> <span class="p">();</span>
+    <span class="c1">// Use a variable to count through chars in String</span>
+    <span class="kr">int</span> <span class="nx">charcount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// Loop through all pixels, skip every 10 pixels along the y-axis</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kr">int</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">y</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">img</span><span class="p">.</span><span class="nx">height</span> <span class="p">;</span> <span class="nx">y</span> <span class="o">+=</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="c1">// skip every 5 pixels along the x-axis</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kr">int</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">x</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">img</span><span class="p">.</span><span class="nx">width</span><span class="o">+</span><span class="mi">5</span> <span class="p">;</span> <span class="nx">x</span> <span class="o">+=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span><span class="err"> </span>
+    	<span class="c1">// Calculate the 1D location from a 2D grid </span>
+      <span class="kr">int</span> <span class="nx">loc</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="o">*</span><span class="nx">img</span><span class="p">.</span><span class="nx">width</span><span class="p">;</span><span class="err"> </span>
+      <span class="c1">// write text textFont(f); </span>
+      <span class="c1">// Color according to the image fill </span>
+      <span class="p">(</span><span class="nx">img</span><span class="p">.</span><span class="nx">pixels</span> <span class="p">[</span><span class="nx">loc</span><span class="p">]);</span><span class="err"> </span>
+      <span class="c1">// Map the brightness of a pixel to the size of a font </span>
+      <span class="kr">float</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">brightness</span><span class="p">(</span><span class="nx">img</span><span class="p">.</span><span class="nx">pixels</span><span class="p">[</span><span class="nx">loc</span><span class="p">]);</span><span class="err"> </span>
+      <span class="kr">float</span> <span class="nx">fontSize</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">*</span> <span class="p">(</span><span class="nx">b</span> <span class="o">/</span> <span class="mi">255</span><span class="p">);</span><span class="err"> </span>
+      <span class="nx">textSize</span><span class="p">(</span><span class="nx">fontSize</span><span class="p">);</span><span class="err"> </span>
+      <span class="c1">// One character from the source text is displayed colored accordingly to the pixel location. </span>
+      <span class="c1">// A counter variable â charcountâ is used to walk through the source String one character at a time. </span>
+      <span class="nx">text</span><span class="p">(</span><span class="nx">chars</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">charcount</span><span class="p">),</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">);</span><span class="err"> </span>
+      <span class="nx">x</span> <span class="o">+=</span> <span class="nx">textWidth</span> <span class="p">(</span><span class="nx">chars</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">charcount</span><span class="p">));</span><span class="err"> </span>
+      <span class="c1">// Go on to the next character </span>
+      <span class="nx">charcount</span> <span class="o">=</span> <span class="p">(</span><span class="nx">charcount</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nx">chars</span><span class="p">.</span><span class="nx">length</span><span class="p">();</span><span class="err"> </span>
+      <span class="p">}</span><span class="err"> </span>
+  <span class="p">}</span><span class="err"> </span>
+  <span class="nx">save</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">Kermit</span><span class="p">.</span><span class="nx">jpg</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;);</span><span class="err"> </span>
+  <span class="p">}</span><span class="err"> </span>
+</code></pre>
+</div>
 
 
               <footer>
@@ -197,11 +197,11 @@
 						<!-- Intro -->
 						<section id="intro">
 
-  <!-- <a href="http://www.chrisbamborough.com" class="logo"><img src="https://dl.dropboxusercontent.com/u/20394991/ChrisBamborough.com/CB_Logo_200x200_green.svg" alt="" /></a> -->
+  <!-- <a href="http://localhost:4000" class="logo"><img src="https://dl.dropboxusercontent.com/u/20394991/ChrisBamborough.com/CB_Logo_200x200_green.svg" alt="" /></a> -->
 
   <header>
 
-    <a href="http://www.chrisbamborough.com"><h2> c.bam.bor.ough </h2></a>
+    <a href="http://localhost:4000"><h2> c.bam.bor.ough </h2></a>
     <!--
     <h-logo>Chris Bamborough</h-logo>
 

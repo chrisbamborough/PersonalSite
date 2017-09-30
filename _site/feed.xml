@@ -3,11 +3,11 @@
   <channel>
     <title>Chris Bamborough</title>
     <description>The personal website of Chris Bamborough</description>
-    <link>http://www.chrisbamborough.com/</link>
-    <atom:link href="http://www.chrisbamborough.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 14 Feb 2017 09:27:18 +1100</pubDate>
-    <lastBuildDate>Tue, 14 Feb 2017 09:27:18 +1100</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 07 Jul 2017 21:35:52 +1000</pubDate>
+    <lastBuildDate>Fri, 07 Jul 2017 21:35:52 +1000</lastBuildDate>
+    <generator>Jekyll v3.5.0</generator>
     
       <item>
         <title>P5 Colour Button</title>
@@ -15,8 +15,8 @@
 
 </description>
         <pubDate>Thu, 01 Dec 2016 12:45:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/12/01/P5Colourshifter.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/12/01/P5Colourshifter.html</guid>
+        <link>http://localhost:4000/blog/2016/12/01/P5Colourshifter.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/12/01/P5Colourshifter.html</guid>
         
         <category>Creative_Code,</category>
         
@@ -52,32 +52,32 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:6c2b9755&quot;&gt;
-      &lt;p&gt;Wark, M. A Hacker Manifesto, Harvard University Press, 2004 &lt;a href=&quot;#fnref:6c2b9755&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Wark, M. A Hacker Manifesto, Harvard University Press, 2004&amp;nbsp;&lt;a href=&quot;#fnref:6c2b9755&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:c0ea01a0&quot;&gt;
-      &lt;p&gt;Watson, R. In Silicon Valley, Young white males are stealing the future from everyone else.The Guardian, 2016, Available at: &lt;a href=&quot;https://www.theguardian.com/commentisfree/2016/may/27/in-silicon-valley-young-white-males-are-stealing-the-future-from-everyone-else&quot;&gt;https://www.theguardian.com/commentisfree/2016/may/27/in-silicon-valley-young-white-males-are-stealing-the-future-from-everyone-else&lt;/a&gt; &lt;a href=&quot;#fnref:c0ea01a0&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Watson, R. In Silicon Valley, Young white males are stealing the future from everyone else.The Guardian, 2016, Available at: &lt;a href=&quot;https://www.theguardian.com/commentisfree/2016/may/27/in-silicon-valley-young-white-males-are-stealing-the-future-from-everyone-else&quot;&gt;https://www.theguardian.com/commentisfree/2016/may/27/in-silicon-valley-young-white-males-are-stealing-the-future-from-everyone-else&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:c0ea01a0&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2f21c4b7&quot;&gt;
-      &lt;p&gt;Revolving Door, Huffington Post, 2016, Available at: &lt;a href=&quot;http://www.huffingtonpost.com/lisen-stromberg/problem-with-women-in-tech-the-pipeline-or-the-revolving-door_b_6992522.html&quot;&gt;http://www.huffingtonpost.com/lisen-stromberg/problem-with-women-in-tech-the-pipeline-or-the-revolving-door_b_6992522.html&lt;/a&gt; [Accessed July 18, 2016] &lt;a href=&quot;#fnref:2f21c4b7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Revolving Door, Huffington Post, 2016, Available at: &lt;a href=&quot;http://www.huffingtonpost.com/lisen-stromberg/problem-with-women-in-tech-the-pipeline-or-the-revolving-door_b_6992522.html&quot;&gt;http://www.huffingtonpost.com/lisen-stromberg/problem-with-women-in-tech-the-pipeline-or-the-revolving-door_b_6992522.html&lt;/a&gt; [Accessed July 18, 2016]&amp;nbsp;&lt;a href=&quot;#fnref:2f21c4b7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:bc14eba3&quot;&gt;
-      &lt;p&gt;Kosoff, M. Does Silicon Valley Have a Racism Problem? Vanity Fair, 2016, Available at: &lt;a href=&quot;http://www.vanityfair.com/news/2016/06/does-silicon-valley-have-a-racism-problem&quot;&gt;http://www.vanityfair.com/news/2016/06/does-silicon-valley-have-a-racism-problem&lt;/a&gt; [Accessed July 18, 2016] &lt;a href=&quot;#fnref:bc14eba3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Kosoff, M. Does Silicon Valley Have a Racism Problem? Vanity Fair, 2016, Available at: &lt;a href=&quot;http://www.vanityfair.com/news/2016/06/does-silicon-valley-have-a-racism-problem&quot;&gt;http://www.vanityfair.com/news/2016/06/does-silicon-valley-have-a-racism-problem&lt;/a&gt; [Accessed July 18, 2016]&amp;nbsp;&lt;a href=&quot;#fnref:bc14eba3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:b1129747&quot;&gt;
-      &lt;p&gt;Goodbun, J. Klein, M. Till, Jeremy. &amp;amp; Rumpfhuber, A. The Design of Scarcity, Strelka Press: Moscow, 2013 &lt;a href=&quot;#fnref:b1129747&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Goodbun, J. Klein, M. Till, Jeremy. &amp;amp; Rumpfhuber, A. The Design of Scarcity, Strelka Press: Moscow, 2013&amp;nbsp;&lt;a href=&quot;#fnref:b1129747&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:f5c544bb&quot;&gt;
-      &lt;p&gt;Rifkin, J., 2014. The zero marginal cost society, New York, NY : Palgrave Macmillan, 2014. &lt;a href=&quot;#fnref:f5c544bb&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Rifkin, J., 2014. The zero marginal cost society, New York, NY : Palgrave Macmillan, 2014.&amp;nbsp;&lt;a href=&quot;#fnref:f5c544bb&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:7045553f&quot;&gt;
-      &lt;p&gt;Bauwens, M. The Political Economy of Peer Production M. Kroker &amp;amp; A. Kroker, eds. CTheory, 2005, Available at: &lt;a href=&quot;http://www.ctheory.net/articles.aspx?id=499&quot;&gt;http://www.ctheory.net/articles.aspx?id=499&lt;/a&gt; [Accessed May 9, 2016]. &lt;a href=&quot;#fnref:7045553f&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Bauwens, M. The Political Economy of Peer Production M. Kroker &amp;amp; A. Kroker, eds. CTheory, 2005, Available at: &lt;a href=&quot;http://www.ctheory.net/articles.aspx?id=499&quot;&gt;http://www.ctheory.net/articles.aspx?id=499&lt;/a&gt; [Accessed May 9, 2016].&amp;nbsp;&lt;a href=&quot;#fnref:7045553f&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 30 Nov 2016 23:00:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/articles/2016/11/30/RunningOutOfSTE(A)M.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/articles/2016/11/30/RunningOutOfSTE(A)M.html</guid>
+        <link>http://localhost:4000/articles/2016/11/30/RunningOutOfSTE(A)M.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2016/11/30/RunningOutOfSTE(A)M.html</guid>
         
         <category>Innovation,</category>
         
@@ -107,8 +107,8 @@
 &lt;p&gt;Something at the Giga factory seems to be amiss, with its 6,000 human workers there is no trace of human in its design. In theory, it can fully internalise its environment without ruining the biosphere because the sun and wind powers it, but shouldn’t humans be able to see some daylight? The Giga factory could be emblematic of a new turn towards Object Oriented Philosophy in Architecture; it has started to provide architectural justification for rejecting context and purely anthropocentric design decisions. Such a position could liberate architecture to explore new and unusual spatial types that consider human and non-human inhabitants, but the &lt;a href=&quot;https://www.tesla.com/en_AU/gigafactory?redirect=no&quot;&gt;Giga factory&lt;/a&gt; should provide a warning that if the human is removed from the equation completely, it appears architects need not apply.&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Nov 2016 23:00:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/articles/2016/11/19/GigaFactory.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/articles/2016/11/19/GigaFactory.html</guid>
+        <link>http://localhost:4000/articles/2016/11/19/GigaFactory.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2016/11/19/GigaFactory.html</guid>
         
         <category>Architecture,</category>
         
@@ -130,8 +130,8 @@
 &lt;p&gt;The project has evolved since to explore how architecture can adapt to remain relevant in todays digitally networked society, while helping to reconnect digital culture and design with the material and tectonic traditions of architecture.&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Nov 2016 06:45:00 +1100</pubDate>
-        <link>http://www.chrisbamborough.com/mc_about/2016/11/07/MC_About.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/mc_about/2016/11/07/MC_About.html</guid>
+        <link>http://localhost:4000/mc_about/2016/11/07/MC_About.html</link>
+        <guid isPermaLink="true">http://localhost:4000/mc_about/2016/11/07/MC_About.html</guid>
         
         
         <category>mc_about</category>
@@ -148,8 +148,8 @@
 
 </description>
         <pubDate>Sun, 11 Sep 2016 05:45:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/09/11/P5PerlinAgents.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/09/11/P5PerlinAgents.html</guid>
+        <link>http://localhost:4000/blog/2016/09/11/P5PerlinAgents.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/09/11/P5PerlinAgents.html</guid>
         
         <category>Creative_Code,</category>
         
@@ -166,8 +166,8 @@
 
 </description>
         <pubDate>Wed, 07 Sep 2016 22:00:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/09/07/P5PerlinTerrain.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/09/07/P5PerlinTerrain.html</guid>
+        <link>http://localhost:4000/blog/2016/09/07/P5PerlinTerrain.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/09/07/P5PerlinTerrain.html</guid>
         
         <category>Creative_Code,</category>
         
@@ -188,8 +188,8 @@
 
 </description>
         <pubDate>Wed, 31 Aug 2016 05:45:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/08/31/P5FlowField.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/08/31/P5FlowField.html</guid>
+        <link>http://localhost:4000/blog/2016/08/31/P5FlowField.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/08/31/P5FlowField.html</guid>
         
         <category>Creative_Code,</category>
         
@@ -215,8 +215,8 @@
 &lt;p&gt;Saunders, R. 2001 Curious Design Agents and Artificial Creativity, Ph.D. Thesis, Faculty of Architecture, The University of Sydney.&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Aug 2016 22:00:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/articles/2016/08/30/RobotTrainers.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/articles/2016/08/30/RobotTrainers.html</guid>
+        <link>http://localhost:4000/articles/2016/08/30/RobotTrainers.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2016/08/30/RobotTrainers.html</guid>
         
         <category>Robots,</category>
         
@@ -241,8 +241,8 @@ If you want to venture out you can read about his professional &lt;a href=&quot;
 
 </description>
         <pubDate>Tue, 02 Aug 2016 05:45:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/about/2016/08/02/About.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/about/2016/08/02/About.html</guid>
+        <link>http://localhost:4000/about/2016/08/02/About.html</link>
+        <guid isPermaLink="true">http://localhost:4000/about/2016/08/02/About.html</guid>
         
         
         <category>about</category>
@@ -257,7 +257,7 @@ If you want to venture out you can read about his professional &lt;a href=&quot;
 
 &lt;p&gt;The p5.js website integrates a background animation through an iFrame positioned to float behind, I’m not sure if this is a better solution or not. Any comments tweet me on &lt;a href=&quot;www.twitter.com/chrisbamborough&quot;&gt;@chrisbamborough&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvasDiv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;backgroundCanvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;divWidth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;canvasDiv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;offsetWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -283,8 +283,8 @@ If you want to venture out you can read about his professional &lt;a href=&quot;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 11 May 2016 05:45:00 +1000</pubDate>
-        <link>http://www.chrisbamborough.com/blog/2016/05/11/P5Background.html</link>
-        <guid isPermaLink="true">http://www.chrisbamborough.com/blog/2016/05/11/P5Background.html</guid>
+        <link>http://localhost:4000/blog/2016/05/11/P5Background.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/05/11/P5Background.html</guid>
         
         <category>Creative</category>
         

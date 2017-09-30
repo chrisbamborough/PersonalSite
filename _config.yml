@@ -31,4 +31,4 @@ markdown: kramdown
 highlighter: rouge
 paginate: 4
 author: Chris Bamborough
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]

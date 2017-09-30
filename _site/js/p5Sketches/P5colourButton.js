@@ -6,7 +6,7 @@ function setup() {
     // //var sketchCanvas = createCanvas(windowWidth,450);
     // sketchCanvas.parent("backgroundCanvas");
 
-    text = createP("Press the button to try out different colour combinations")
+    text = createP("An experiment using p5.js DOM control to play with contrasting colours. Press the button to try out different colour combinations")
     text.parent('main');
 
     button = createButton("Click Me!");
