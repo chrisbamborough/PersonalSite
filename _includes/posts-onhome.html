@@ -1,0 +1,7 @@
+
+<!-- Next divs for post names -->
+{% for post in site.posts %}
+<div class="left px-0-5 mt-0 mt-lg-0">
+  <a class="align-middle link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} /</a>
+</div>
+{% endfor %}

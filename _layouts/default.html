@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+  <!-- Animation Canvas -->
+  <div id="backgroundCanvas">
 
-    <div>
-      {{ content }}
-    </div>
+  {% include header.html %}
 
-    {% include footer.html %}
+    {{ content }}
 
-  </body>
+  </div>
+
+</body>
 
 </html>
