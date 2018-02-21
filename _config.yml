@@ -17,7 +17,7 @@ title: bam.bor.ough / making culture
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.chrisbamborough.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: researchWebsite # the GitHub repo name for your project
+github_repo: chrisbamborough.github.io # the GitHub repo name for your project
 github_username: chrisbamborough
 
 # Optional social link, you can choose from the following options:
