@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "The Giga Factory and post-anthropocentric architecture"
-date:   2016-11-19 12:00:00
-categories: Articles
+title:  "The Giga Factory"
+date:   2016-11-19
+categories: writing
 tags: Architecture, Non-Human, Post-Anthropocentric
 image:
 ---

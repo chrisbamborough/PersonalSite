@@ -1,8 +1,8 @@
 ---
-layout: no-post
-title:  "P5.js Perlin Noise Flow Field"
-date:   2016-08-30 19:45:00
-categories: blog
+layout: post
+title:  "Flow Field"
+date:   2016-08-30
+categories: Drawings
 tags: Creative_Code, p5.js
 image:
 ---

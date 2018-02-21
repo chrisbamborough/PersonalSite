@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "The ABC Opened"
-date:   2012-04-13 12:00:00
-categories: blog
+date:   2012-04-13
+categories: projects
 tags: Architecture
 image:
 ---

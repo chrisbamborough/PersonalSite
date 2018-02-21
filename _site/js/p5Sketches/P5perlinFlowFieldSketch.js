@@ -10,15 +10,13 @@ var seed = 5000;
 var xoffStart = 0;
 var yoffStart = 0;
 
-var panelParent = document.getElementById('main');
+var panelParent = document.getElementById('backgroundCanvas');
 console.log(panelParent);
 
 var panel = QuickSettings.create(600, 100, 'Flowfield Controls')
     .addRange("Noise Seed", 0, 10000, 5000, 100, draw)
     .addRange('X Angle', 0, 1, 0, 0.1, draw)
     .addRange('Y Angle', 0, 1, 0, 0.1, draw);
-
-
 
 function setup() {
     var canvasDiv = document.getElementById('backgroundCanvas');

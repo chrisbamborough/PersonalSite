@@ -1,172 +1,130 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-  <head>
-  <!--CODE FOR TYPEKIT -->
-  <script src="https://use.typekit.net/nrf6yfy.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <script src="/js/libs/three.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.dom.js" type="text/javascript"></script>
-  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.sound.js" type="text/javascript"></script> -->
-  <!-- <script src="/js/libs/p5.js"></script> -->
-  <!-- <script src="/js/libs/p5.dom.js"></script> -->
-  <script src="/js/libs/quicksettings.min.js"></script>
 
+<head>
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/84/three.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js"></script>
+  <script src="//cdn.jsdelivr.net/quicksettings/latest/quicksettings.min.js"></script>
 
-  <title>Chris Bamborough</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+  <title>c.bam.bor.ough/making culture</title>
 
-	<link rel="stylesheet" href="/css/main.css" />
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projects</title>
+  <meta name="description" content="">
+
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/style.css">
+
+  <link rel="canonical" href="http://localhost:4000/projects/">
+  <link rel="alternate" type="application/rss+xml" title="c.bam.bor.ough/making culture" href="http://localhost:4000/feed.xml">
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
-	<body>
-  		<!-- Wrapper -->
-  			<div id="wrapper">
 
-  				<!-- Header -->
-<header id="header">
-  <!--
-	<h1><a href="http://localhost:4000">Chris Bamborough</a></h1>
--->
-	<nav class="links">
-	</nav>
+<body>
 
+  <!-- Animation Canvas -->
+  <div id="backgroundCanvas">
 
-	<nav class="main">
-    <ul>
-                <!--
-								<li class="search">
-									<a class="fa-search" href="#search">Search</a>
-									<form id="search" method="get" action="#">
-										<input type="text" name="query" placeholder="Search" />
-									</form>
-								</li>
-              -->
-		  <li class="menu">
-		  	<a class="fa-bars" href="#menu">Menu</a>
-			</li>
-		</ul>
-	</nav>
+   <header class="px-2 mb-2 clearfix">
+
 </header>
 
-<!-- Drop Down Menu -->
-<section id="menu">
-  <!-- Search -->
-  <!--
-  <section>
-	  <form class="search" method="get" action="#">
-	    <input type="text" name="query" placeholder="Search" />
-		</form>
-	</section>
-  -->
-	<!-- Links -->
-	<section>
-	  <ul class="links">
-      <li>
-		    <!-- <a href="/about"><h1>About</h1></a> -->
-				<a href="/"><h1>c.bam.bor.ough</h1></a>
-				<!-- <a href="/projects"><h1>Projects</h1></a> -->
-				<a href="/mc/"><h1>Making Culture</h1></a>
-				<a href="/bhts/"><h1>Byera Hadley</h1></a>
-    </ul>
-	</section>
-	<!-- Actions -->
-  <!--
-  <section>
-	  <ul class="actions vertical">
-	    <li><a href="#" class="button big fit">Log In</a></li>
-    </ul>
-  </section>
-  -->
-</section>
-
-  				<!-- Main -->
-          <div id="main">
-              <!-- <article class="post">
-              <header>
-                <div class="title">
-              <p>Chris Bamborough is a designer and researcher working in the field of architecture. His practice concentrates on the effects of networked communication technology on the built environment. His approach is to utilise the tools of multiple disciplines to produce novel methods for exploring the performance of the built environment.
-</p>
-                </div>
-              </header> -->
-          </div>
-
-  				<!-- Sidebar -->
-  					<section id="sidebar">
-
-  						<!-- Intro -->
-  						<section id="intro">
-
-  <!-- <a href="http://localhost:4000" class="logo"><img src="https://dl.dropboxusercontent.com/u/20394991/ChrisBamborough.com/CB_Logo_200x200_green.svg" alt="" /></a> -->
-
-  <header>
-
-    <a href="http://localhost:4000"><h2> c.bam.bor.ough </h2></a>
-    <!--
-    <h-logo>Chris Bamborough</h-logo>
-
-    <h2>Expanding Architectural Practice.</h2>
-    -->
-    <ul class="icons">
-      <li><a href="https://twitter.com/chrisbamborough" class="fa-twitter"><span class="label">Twitter</span></a></li>
-      <li><a href="https://github.com/chrisbamborough" class="fa-github"><span class="label">GitHub</span></a></li>
-      <li><a href="https://www.behance.net/chrisbamborough" class="fa-behance"><span class="label">Behance</span></a></li>
-      <li><a href="https://www.medium.com/@chrisbamborough" class="fa-medium"><span class="label">Medium</span></a></li>
-      <li><a href="https://www.soundcloud.com/smoothspace" class="fa-soundcloud"><span class="label">Soundcloud</span></a></li>
-      <li><a href="/feed.xml" class="fa-rss"><span class="label">RSS</span></a></li>
-      <li><a href="mailto:bamborough.c@gmail.com" class="fa-envelope"><span class="label">Email</span></a></li>
-    </ul>
-
-  </header>
-
-  <!-- <ul class="actions">
-	  <li><a href="/about" class="button">Learn More</a></li>
-	</ul> -->
-</section>
 
 
-  						<!-- Mini Posts -->
-  						<section>
-  <div class="mini-posts">
+ <div class="left sm-width-full px-1 mt-0 mt-lg-0">
+  <a class="align-middle link-primary text-accent" href="/">
+          c.bam.bor.ough/making culture
+        </a>
+</div>
+<!-- Next divs for pages -->
+ 
+<div class="left px-0-5 mt-0 mt-lg-0">
+  <a class="align-middle link-primary " href="/about/">About / </a>
+</div>
+  
+<div class="left px-0-5 mt-0 mt-lg-0">
+  <a class="align-middle link-primary " href="/drawings/">Drawings / </a>
+</div>
     
+<div class="left px-0-5 mt-0 mt-lg-0">
+  <a class="align-middle link-primary " href="/projects/">Projects / </a>
+</div>
+    
+<div class="left px-0-5 mt-0 mt-lg-0">
+  <a class="align-middle link-primary " href="/writing/">Writing / </a>
+</div>
+ 
+
+
+
+    <article class="container mx-auto px-2 mt2 mb4">
+  <header>
+    <h1 class="h0 py-4 mt-3">Projects</h1>
+  </header>
+  <div class="col-4 sm-width-full border-top-thin">
   </div>
-</section>
+  <div class="prose mb-4 py-4">
+    
+
+<div class="container mx-auto">
+  
+    <!-- Renders post date, title, and snippet of text. -->
+<div class="py-2 mb-2 prose">
+  <!-- <a class="no-underline h5 bold text-accent" title="/projects/2012/04/13/TheABCOpened.html" href="/projects/2012/04/13/TheABCOpened.html">Apr 13, 2012</a> -->
+  <h2 class="h1 lh-condensed col-9 mt-0">
+    <a class="link-primary" title="/projects/2012/04/13/TheABCOpened.html" href="/projects/2012/04/13/TheABCOpened.html">The ABC Opened</a>
+  </h2>
+  <!-- <p>The final project for my Architecture MA at UTS was an intensive four week studio aiming to recreate an architectural competition atmosphere, it's focus the Sydney's south central creative quarter, i.e. Ultimo,...</p> -->
+</div>
+
+  
+    <!-- Renders post date, title, and snippet of text. -->
+<div class="py-2 mb-2 prose">
+  <!-- <a class="no-underline h5 bold text-accent" title="/projects/2012/04/13/StripMorphologies.html" href="/projects/2012/04/13/StripMorphologies.html">Apr 13, 2012</a> -->
+  <h2 class="h1 lh-condensed col-9 mt-0">
+    <a class="link-primary" title="/projects/2012/04/13/StripMorphologies.html" href="/projects/2012/04/13/StripMorphologies.html">Strip Morphologies</a>
+  </h2>
+  <!-- <p>13th April 2012 was the interim crit for Materiality lab. The main outcome for the presentation was an assemblage using a combination of prototypes developed during the previous 6 weeks....</p> -->
+</div>
+
+  
+    <!-- Renders post date, title, and snippet of text. -->
+<div class="py-2 mb-2 prose">
+  <!-- <a class="no-underline h5 bold text-accent" title="/projects/2011/12/01/BondiTrainStation.html" href="/projects/2011/12/01/BondiTrainStation.html">Dec 1, 2011</a> -->
+  <h2 class="h1 lh-condensed col-9 mt-0">
+    <a class="link-primary" title="/projects/2011/12/01/BondiTrainStation.html" href="/projects/2011/12/01/BondiTrainStation.html">Bondi Train Station</a>
+  </h2>
+  <!-- <p>MA Architecture project in collaboration with Nicholas Malyon, Leonardo Quinones and Oliver Petrie @ UTS Sydney The Hex building project proposes a new train station for the suburb of Bondi,...</p> -->
+</div>
+
+  
+    <!-- Renders post date, title, and snippet of text. -->
+<div class="py-2 mb-2 prose">
+  <!-- <a class="no-underline h5 bold text-accent" title="/projects/2010/12/01/ItsNotEasy.html" href="/projects/2010/12/01/ItsNotEasy.html">Dec 1, 2010</a> -->
+  <h2 class="h1 lh-condensed col-9 mt-0">
+    <a class="link-primary" title="/projects/2010/12/01/ItsNotEasy.html" href="/projects/2010/12/01/ItsNotEasy.html">Its Not Easy</a>
+  </h2>
+  <!-- <p>My work recently had an art competition and the theme was Green. This made me think about the song “It aint easy being green” by Kermit the Frog, so I...</p> -->
+</div>
+
+  
+</div>
+
+  </div>
+</article>
 
 
-  						<!-- About -->
-  					  <section class="blurb">
-	<ul class="actions">
-		<!--
-	  <li><a href="/archive" class="button">Archive</a></li>
-	-->
-	</ul>
-</section>
+  </div>
 
+</body>
 
-  						<!-- Footer -->
-  						<section id="footer">
-  <p class="copyright"> Copyright &copy; 2015 Chris Bamborough </p>
-  <p class="copyright"> Website Based on Sierra by <a href="https://github.com/satokazuma/Siera"> Kazuma Sato </a> </p>
-</section>
-
-  					</section>
-  			</div>=
-		<!-- Scripts -->
-		<script src="/js/jquery.min.js"></script>
-<script src="/js/skel.min.js"></script>
-<script src="/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="/js/main.js"></script>
-
-	</body>
 </html>

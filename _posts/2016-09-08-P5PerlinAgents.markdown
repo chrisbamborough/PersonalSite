@@ -1,8 +1,8 @@
 ---
-layout: no-post
-title:  "P5.js Perlin Noise Agents"
-date:   2016-09-10 19:45:00
-categories: blog
+layout: post
+title:  "Perlin Noise Agents"
+date:   2016-09-10
+categories: Drawings
 tags: Creative_Code, p5.js
 image:
 ---

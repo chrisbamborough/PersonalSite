@@ -1,56 +1,26 @@
-<!-- Header -->
-<header id="header">
-  <!--
-	<h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
--->
-	<!-- <nav class="links">
-	</nav>
+<head>
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/84/three.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js"></script>
+  <script src="//cdn.jsdelivr.net/quicksettings/latest/quicksettings.min.js"></script>
 
-	<nav class="main">
-    <ul> -->
-                <!--
-								<li class="search">
-									<a class="fa-search" href="#search">Search</a>
-									<form id="search" method="get" action="#">
-										<input type="text" name="query" placeholder="Search" />
-									</form>
-								</li>
-              -->
-		  <!-- <li class="menu">
-		  	<a class="fa-bars" href="#menu">Menu</a>
-			</li>
-		</ul>
-	</nav> -->
-</header>
+  <title>{{ site.title }}</title>
 
-<!-- Drop Down Menu -->
-<!-- <section id="menu"> -->
-  <!-- Search -->
-  <!--
-  <section>
-	  <form class="search" method="get" action="#">
-	    <input type="text" name="query" placeholder="Search" />
-		</form>
-	</section>
-  -->
-	<!-- Links -->
-	<!-- <section>
-	  <ul class="links">
-      <li> -->
-		    <!-- <a href="/about"><h1>About</h1></a> -->
-				<!-- <a href="/"><h1>c.bam.bor.ough</h1></a> -->
-				<!-- <a href="/projects"><h1>Projects</h1></a> -->
-				<!-- <a href="/mc/"><h1>Making Culture</h1></a>
-				<a href="/bhts/"><h1>Byera Hadley</h1></a>
-    </ul>
-	</section> -->
-	<!-- Actions -->
-  <!--
-  <section>
-	  <ul class="actions vertical">
-	    <li><a href="#" class="button big fit">Log In</a></li>
-    </ul>
-  </section>
-  -->
-<!-- </section> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  {% assign user_url = site.url | append: site.baseurl %}
+  {% assign full_base_url = user_url | default: site.github.url %}
+  <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: full_base_url }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Bondi Train Station"
-date:   2011-12-01 12:00:00
-categories: blog
+date:   2011-12-01
+categories: projects
 tags: Architecture
 image:
 ---

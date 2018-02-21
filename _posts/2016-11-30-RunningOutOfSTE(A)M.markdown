@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Running out of STE(A)M
-date: 2016-11-30 12:00:00
-categories: Articles
+date: 2016-11-30
+categories: writing
 tags: 'Innovation, Practice, Conference'
 image: null
 ---

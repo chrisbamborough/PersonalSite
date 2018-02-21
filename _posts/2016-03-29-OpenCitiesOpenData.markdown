@@ -1,8 +1,8 @@
 ---
-layout: mc_post
+layout: post
 title:  "Open Cities Open Data"
-date:   2016-03-28 16:52:07
-categories: Articles
+date:   2016-03-28
+categories: writing
 tags: Open_Data, Maker_Culture
 image:
 ---
