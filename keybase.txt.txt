@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/sm_th_sp_ce
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.chrisbamborough.com
+  * I am sm_th_sp_ce (https://keybase.io/sm_th_sp_ce) on keybase.
+  * I have a public key ASAQYM8E8E0PJjd_-invcbq6XNs6-BuT-3N5FLDMP-CLkQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201060cf04f04d0f26377ffa29ef71baba5cdb3af81b93fb737914b0cc3fe08b910a",
+      "host": "keybase.io",
+      "kid": "01201060cf04f04d0f26377ffa29ef71baba5cdb3af81b93fb737914b0cc3fe08b910a",
+      "uid": "c8e678506cb231295b5be9dfc3b5eb19",
+      "username": "sm_th_sp_ce"
+    },
+    "merkle_root": {
+      "ctime": 1525223223,
+      "hash": "c9e6545d1d416c8c2b99ddfc03108202dd5a00f16e84dda35b75bd5b1eebf2780323c53dd681e7a63df951f9ecb3037c192979533cfe46d24c5b85ba754bfedb",
+      "hash_meta": "3530d13e0fd15da13d65ca41edbe9fc98409fde4d009aaabc5a3ad1eb1466f25",
+      "seqno": 2468178
+    },
+    "service": {
+      "entropy": "tPDER3CTQfwcebnE8ZofVPFa",
+      "hostname": "www.chrisbamborough.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1525223240,
+  "expire_in": 504576000,
+  "prev": "9cd1aa09de72e025b0484711128cbf7b8e25b344dd353345a625b28d71ede4be",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgEGDPBPBNDyY3f/op73G6ulzbOvgbk/tzeRSwzD/gi5EKp3BheWxvYWTESpcCCsQgnNGqCd5y4CWwSEcREoy/e44ls0TdNTNFpiWyjXHt5L7EIF7koXbBKUVnBgCVYBaAVi889crEgKNXC+b0UJbJtg/6AgHCo3NpZ8RAvDhZQl/q3+oMdQjwCNtUQs8qPvY62yTjCD2ZK8IYoolGsoOF9JydW/SZlAgUW1JBeGy1do03vGbJCgNluv1+BqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIH9n+LQa/2fTWxbbSALZnlubyJeJpYcLz/d5drP1JVJ4o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sm_th_sp_ce
+
+==================================================================
