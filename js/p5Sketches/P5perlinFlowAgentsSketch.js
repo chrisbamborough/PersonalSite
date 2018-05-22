@@ -14,9 +14,9 @@ var particles = [];
 var scl = 10;
 var vectorLine = [];
 
-var panelParent = document.getElementById('main');
+var panelParent = document.getElementById('backgroundCanvas');
 
-var panel = QuickSettings.create(600, 100, 'Flowfield Controls')
+var panel = QuickSettings.create(panelParent.offsetWidth*0.75, panelParent.offsetHeight*0.25, 'Flowfield Controls')
     .addRange("Noise Seed", 0, 10000, 5000, 100, seedField)
     .addRange('X Angle', 0, 1, 0, 0.1, seedField)
     .addRange('Y Angle', 0, 1, 0, 0.1, seedField);
@@ -33,7 +33,6 @@ function setup() {
 
     // set colour mode (HSB, 360, 100, 100, 1)
     colorMode(HSB);
-
     createField();
     seedField();
 
