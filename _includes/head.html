@@ -1,9 +1,9 @@
 <head>
 
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/84/three.js"></script> -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
-  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.js" type="text/javascript"></script>
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.js" type="text/javascript"></script> -->
   <script src="//cdn.jsdelivr.net/npm/quicksettings@latest/quicksettings.min.js"></script>
 
   <title>{{ site.title }}</title>
@@ -13,17 +13,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  {% assign user_url = site.url | append: site.baseurl %}
-  {% assign full_base_url = user_url | default: site.github.url %}
-  <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: full_base_url }}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"> {% assign user_url = site.url | append: site.baseurl %} {% assign full_base_url = user_url | default: site.github.url %}
+  <link rel="stylesheet" href="{{ " /assets/style.css " | prepend: full_base_url }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}">
 
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-  {% if site.tags != "" %}
-  {% include collecttags.html %}{% endif %}
+  {% if site.tags != "" %} {% include collecttags.html %}{% endif %}
 </head>
