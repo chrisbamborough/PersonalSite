@@ -48,7 +48,7 @@ function draw() {
   }
 
   background(255);
-  translate(0, height / 5);
+  translate(0, height / 3);
   rotateX(PI / 3);
   translate(-w / 2, -h / 2);
 
