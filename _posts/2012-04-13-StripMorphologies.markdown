@@ -2,8 +2,8 @@
 layout: post
 title:  "Strip Morphologies"
 date:   2012-04-13
-categories: projects
-tags: Architecture
+categories: Building
+tags: [Networks, Animation]
 image:
 ---
 13th April 2012 was the interim crit for Materiality lab. The main outcome for the presentation was an assemblage using a combination of prototypes developed during the previous 6 weeks. I decided to go for a large assemblage that used my Eyelet prototype in a number of different ways to achieve a transition for lightweight tectonic, to solid streotomic expression.

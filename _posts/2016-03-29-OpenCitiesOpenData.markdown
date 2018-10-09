@@ -2,8 +2,8 @@
 layout: post
 title:  "Open Cities Open Data"
 date:   2016-03-28
-categories: writing
-tags: Open_Data, Maker_Culture
+categories: Writing
+tags: [Conference, Open Data, Maker Culture]
 image:
 ---
 On the 2nd of October the Open Cities / Open Data workshop took place at the University of New South Wales. The day involved a mixture of keynote presentations and then two seperate discussion sessions running along side each other. I was invited by Scott Hawken of the Smart Cities research cluster to submit an abstract on my maker space research, and subsequently asked to present in the Collaborative Cities discussion stream.

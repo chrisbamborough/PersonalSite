@@ -2,8 +2,8 @@
 layout: post
 title: Artistic approaches to Machine Learning.
 date: 2018-08-28
-categories: writing
-tags: 'PhD, Data, Machine Learning'
+categories: Writing
+tags: [Art, Machine Learning]
 image: null
 ---
 

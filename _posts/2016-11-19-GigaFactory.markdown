@@ -2,8 +2,8 @@
 layout: post
 title:  "The Giga Factory"
 date:   2016-11-19
-categories: writing
-tags: Architecture, Non-Human, Post-Anthropocentric
+categories: Writing
+tags: [Architecture, Automation, Non-human]
 image:
 ---
 

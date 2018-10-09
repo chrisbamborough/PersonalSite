@@ -2,8 +2,8 @@
 layout: post
 title:  "Bondi Train Station"
 date:   2011-12-01
-categories: projects
-tags: Architecture
+categories: Building
+tags: [Computational Design]
 image:
 ---
 The Hex building project, a competition in collaboration with Nicholas Malyon, Leonardo Quinones and Oliver Petrie, proposed a new train station for the suburb of Bondi, Australia. The project studied the train station as an architectural type, its effect on a place like Bondi, and the future of beach suburbs in Sydney as a whole. Our scheme provides a train station for a new speculative Bondi of increased density providing fine grain market and civic functions that allow temporary and permanent activity for local residents. The scheme provides a new public space within Bondi aiming to create an additional focal point to that of the iconic beach. At the time of the project the Population of Sydney was 4.5 million, with the projected population set to reach approximately 5.5 million by 2026, and 7 million by 2056 the western sprawl created by the CBDs close proximity to the coast will produce greater ecological damage through energy wastage, loss of agricultural land and the reliance on the car for mobility with the COAG review of urban congestion predicting it to cost Sydney $7.8 billion by 2020. Strategies of densification within Sydney must be considered in order to reduce pollution and congestion through public transport and closer proximity between live and work locations.

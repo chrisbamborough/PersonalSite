@@ -2,8 +2,8 @@
 layout: post
 title: Towards an Ontology of Data in Design.
 date: 2018-08-24
-categories: writing
-tags: 'PhD, Data'
+categories: Writing
+tags: [Data, Design]
 image: null
 ---
 

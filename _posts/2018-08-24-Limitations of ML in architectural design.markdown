@@ -2,8 +2,8 @@
 layout: post
 title: The limitations of machine learning in architectural design.
 date: 2018-08-24
-categories: writing
-tags: 'PhD, Data, Machine Learning, Functionalism, Modernism'
+categories: Writing
+tags: [Machine Learning, Design]
 image: null
 ---
 

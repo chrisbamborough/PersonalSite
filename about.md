@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+
 Chris Bamborough is a designer and researcher working in the field of architecture.
 <br/>
 <br/>

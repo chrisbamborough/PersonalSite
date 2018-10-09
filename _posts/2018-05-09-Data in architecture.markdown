@@ -2,8 +2,8 @@
 layout: post
 title: Why Architecture needs a new definition of data.
 date: 2018-05-09
-categories: writing
-tags: 'PhD, Data'
+categories: Writing
+tags: [Architecture, Data]
 image: null
 ---
 
