@@ -2,7 +2,7 @@
 layout: post
 title: Data-book to data-base.
 date: 2018-08-31
-categories: writing
+categories: Writing
 tags: 'PhD, Data, Machine Learning'
 image: null
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Data and Standards
 date: 2018-09-03
-categories: writing
+categories: Writing
 tags: 'PhD, Data'
 image: null
 ---
