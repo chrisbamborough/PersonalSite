@@ -5,28 +5,15 @@
 
 <body>
 
-  <!-- Animation Canvas add scripts in here to run -->
+  <!-- Animation Canvas -->
   <div id="backgroundCanvas">
     <script src="/js/p5Sketches/P5perlinFlowAgentsSketch.js"></script>
+
+    {% include header.html %}
+    {% include about-home.html %}
+    {% include footer.html %}
+
   </div>
-
-
-<div class="color-background mt-1 ml-1 col-5 op8 wrapper">
-  {% include header-blank.html %}
-
-  <!-- px = Padding left and right
-py = paddding top and bottom
-mt = margin-top
-mr = margin-right
-mb = margin-bottom
-ml = margin-left
-lg = responsive margin
--->
-
-  {% include pages-inheader.html %}
-  {% include about-home.html %}
-  {% include footer.html %}
-</div>
 
 </body>
 
