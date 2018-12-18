@@ -16,10 +16,10 @@ var vectorLine = [];
 
 var panelParent = document.getElementById('backgroundCanvas');
 
-// var panel = QuickSettings.create(panelParent.offsetWidth*0.75, panelParent.offsetHeight*0.25, 'Flowfield Controls')
-//     .addRange("Noise Seed", 0, 10000, 5000, 100, seedField)
-//     .addRange('X Angle', 0, 1, 0, 0.1, seedField)
-//     .addRange('Y Angle', 0, 1, 0, 0.1, seedField);
+var panel = QuickSettings.create(panelParent.offsetWidth*0.75, panelParent.offsetHeight*0.25, 'Flowfield Controls')
+    .addRange("Noise Seed", 0, 10000, 5000, 100, seedField)
+    .addRange('X Angle', 0, 1, 0, 0.1, seedField)
+    .addRange('Y Angle', 0, 1, 0, 0.1, seedField);
 //.addRange('Field Resolution', 10, 100, 30, 1, createField);
 
 
@@ -50,16 +50,17 @@ function createField() {
 
 function seedField() {
     //clear();
-    seed = 5000;
-    xoffStart = random(0,1);
-    yoffStart = random(0,1);
-    // seed = panel.getValue('Noise Seed');
-    // xoffStart = panel.getValue('X Angle');
-    // yoffStart = panel.getValue('Y Angle');
+    seed = panel.getValue('Noise Seed');
+    xoffStart = panel.getValue('X Angle');
+    yoffStart = panel.getValue('Y Angle');
     flowfield.init(seed, xoffStart, yoffStart);
 }
 
 function draw() {
+
+    // if (debug) {
+    //     vectorLine[0] = flowfield.display();
+    // }
 
     // controld for the particles
     for (var i = 0; i < particles.length; i++) {
@@ -70,3 +71,9 @@ function draw() {
     }
 
 };
+
+// function keyPressed() {
+//     if (key == ' ') {
+//         debug = !debug;
+//     }
+// };

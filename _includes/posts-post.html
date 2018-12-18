@@ -28,17 +28,17 @@ The purpose of this snippet is to list the tags for the post
 =======================
 {% endcomment %}
 
- <div class=“post-tags">
+ <h5 class="container mx-auto px-2 py-2 clearfix">
     {% if post %}
       {% assign tags = post.tags %}
     {% else %}
       {% assign tags = page.tags %}
     {% endif %}
       {% for tag in tags %}
-        <p>Topics:<a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a></p>
+        <p>#<a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a></p>
       {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
-  </div>
+  </h5>
 
   <div class="prose" itemprop="articleBody">
     {{ content }}

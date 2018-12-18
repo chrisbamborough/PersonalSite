@@ -34,9 +34,12 @@ Collect all categories
       <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
       <!-- <a class="no-underline h5 text-accent px-2" title="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a> -->
     </h4>
-    <a class="px-4 no-underline h5 text-accent" title="{{ post.url | prepend: site.baseurl }}">{{ post.tags }}</a>
-
-
+    <!-- <a class="px-4 no-underline h5 text-accent" title="{{ post.url | prepend: site.baseurl }}">#{{ post.tags }},</a> -->
+    <div class="clear no-underline h5 text-accent px-4">
+      {% for tag in post.tags %}
+      <a title="{{ post.url | prepend: site.baseurl }}" href="{{ site.baseurl }}/tags#{{ tag | slugize }}">#{{tag}}</a>
+      {% endfor %}
+    </div>
     {% endfor %}
   </div>
   {% endfor %}
