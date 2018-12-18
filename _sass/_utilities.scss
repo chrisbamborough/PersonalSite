@@ -47,6 +47,7 @@
 .header-social-accent { fill: $color-dot-accent; }
 .header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
+.color-background { background-color: $color-background; }
 
 /* Layout utilities */
 .container { max-width: $container-width; }
@@ -63,6 +64,10 @@
 .col-10 { width: (10 / 12 * 100%); }
 .col-11 { width: (11 / 12 * 100%); }
 .col-12 { width: 100%; }
+
+/* Opacity */
+.op5 {opacity: 0.5;}
+.op8 {opacity: 0.8;}
 
 @media (max-width: $breakpoint-lg) {
   .sm-width-full { width: 100% !important; }
@@ -182,4 +187,17 @@
     color: $color-primary-link;
     text-decoration: none;
   }
+}
+
+.wrapper {
+  overflow:auto
+}
+
+.wrapper:after {
+    display:block;
+    content:".";
+    font-size:0;
+    height:0;
+    color:transparent;
+    clear:left;
 }

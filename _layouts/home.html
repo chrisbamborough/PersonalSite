@@ -5,25 +5,15 @@
 
 <body>
 
-  {% include header-blank.html %}
+  <!-- Animation Canvas -->
+  <div id="backgroundCanvas">
+    <script src="/js/p5Sketches/P5perlinFlowAgentsSketch.js"></script>
 
-  <!-- px = Padding left and right
-py = paddding top and bottom
-mt = margin-top
-mr = margin-right
-mb = margin-bottom
-ml = margin-left
-lg = responsive margin
--->
+    {% include header.html %}
+    {% include about-home.html %}
+    {% include footer.html %}
 
-  {% include pages-inheader.html %}
-  {% include about-home.html %}
-
-    <!-- Animation Canvas -->
-  <div id="backgroundCanvas" style="height:650px; width:100%">
   </div>
-
-  {% include footer.html %}
 
 </body>
 

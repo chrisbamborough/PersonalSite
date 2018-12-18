@@ -10,7 +10,7 @@ Collect all tags
 {% endcomment %}
 
 <div id="tags">
-{% for tag in site.tags %}
+  {% for tag in site.tags %}
   <div class="tag-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
     <div id="#{{ tag_name | slugize }}"></div>
@@ -36,9 +36,13 @@ Collect all tags
       <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
       <!-- <a class="no-underline h5 text-accent px-2" title="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a> -->
     </h4>
-    <a class="px-4 no-underline h5 text-accent" title="{{ post.url | prepend: site.baseurl }}">{{ post.categories }}</a>
+    <div class="clear no-underline h5 text-accent px-4">
+      {% for category in post.categories %}
+      <a title="{{ post.url | prepend: site.baseurl }}" href="{{ site.baseurl }}/category#{{ category | slugize }}">#{{category}}</a>
+      {% endfor %}
+    </div>
 
     {% endfor %}
   </div>
-{% endfor %}
+  {% endfor %}
 </div>

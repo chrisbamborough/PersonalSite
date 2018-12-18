@@ -9,4 +9,4 @@ image:
 An initial exploration of interaction with a drawing to control a Perlin noise flow field.
 
 <script src="/js/p5Sketches/P5perlinFlowFieldSketch.js" type="text/javascript"></script>
-<script src="/js/p5Objects/P5_flowField.js"></script>
+<script src="/js/p5Objects/P5_FlowField.js"></script>

@@ -7,7 +7,7 @@ permalink: /about/
 Chris Bamborough is a designer and researcher working in the field of architecture.
 <br/>
 <br/>
-This site is a collection of drawings, projects and thoughts relating to his practice and research.
+This site is an overview of his design and research interests that surround his practice.
 <br/>
 <br/>
 If you want to venture out you can read about his professional [experience](http://www.linkedin.com/in/chrisbamborough), scroll through his 42 character [musings](http://www.twitter.com/chrisbamborough){:target="_blank"}, learn about his [projects](http://www.behance.net/chrisbamborough){:target="_blank"} in more detail, check out his [coding](http://www.github.com/chrisbamborough) interests, watch some [films](http://www.vimeo.com/chrisbamborough){:target="_blank"} he's made, listen to his [musical](http://www.soundcloud.com/smoothspace){:target="_blank"} influences, browse his [visual](http://www.pinterest.com/chrisbamborough){:target="_blank"} inspirations, connect with his [research](https://uts.academia.edu/ChrisBamborough){:target="_blank"} publications, or learn about his current [interests](https://www.evernote.com/pub/bambarooga/phdreadings){:target="_blank"}.    
