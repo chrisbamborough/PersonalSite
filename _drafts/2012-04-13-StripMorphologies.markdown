@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Strip Morphologies"
+title:  "Strip Morphology"
 date:   2012-04-13
 categories: Building
 tags: [Networks, Animation]

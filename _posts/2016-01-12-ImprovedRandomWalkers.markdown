@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Agents 00
-date: 2016-01-12T00:00:00.000Z
+date: 2016-01-12
 categories: Drawing
 tags: [Agents]
 image: null
