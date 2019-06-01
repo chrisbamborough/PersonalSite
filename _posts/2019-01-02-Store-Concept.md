@@ -3,7 +3,7 @@ layout: post
 title: "Store Concept"
 date: 2019-01-02
 categories: Installation
-tags: [Digital Fabrication]
+tags: [Interior, Material Prototype]
 image:
 ---
 The design concept for a retail store used the technique of robotically fabricated bent metal rods developed by [supermanoeuvre](http://supermanoeuvre.com/) and [matter design studio](http://www.matterdesignstudio.com/). The project aimed to explore the capacity of rod bending to achieve a functional and aesthetic threshold to an existing space as previously demonstrated in the 2012 installation [Clouds Of Venice](http://papers.cumincad.org/data/works/att/acadia13_311.content.pdf). An example of how robotic rod bending is achieved is available on [Vimeo](https://vimeo.com/49283982).  

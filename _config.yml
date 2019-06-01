@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: CB >>
-description: Chris Bamborough is an architect, academic and researcher.
+description: Chris Bamborough is an architect and geographer interested in data and matter.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.chrisbamborough.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: chrisbamborough.github.io # the GitHub repo name for your project

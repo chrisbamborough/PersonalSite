@@ -2,8 +2,8 @@
 layout: post
 title: "Making Culture"
 date: 2019-01-02
-categories: Publication
-tags: [Maker Culture, Research, Byera Hadley]
+categories: Research
+tags: [Maker Culture]
 image:
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Metabolic Weave"
 date: 2019-01-02
 categories: Pavilion
-tags: [Architecture, Material Prototypes]
+tags: [Architecture, Material Prototype]
 image:
 ---
 
