@@ -2,11 +2,7 @@
 layout: page
 title: Format
 ---
-{% comment %}
-=======================
-Collect all categories
-=======================
-{% endcomment %}
+
 
 <div id="archives">
   {% for category in site.categories %}
@@ -14,33 +10,50 @@ Collect all categories
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
 
-    <h1 class="mb-2 mt-2">{{ category_name }}</h1><a name="{{ category_name | slugize }}"></a>
+    <div class="accordion border-bottom-dash">
+      <h2 class="mb-1 mt-1 ">{{ category_name }}</h2>
+      <a name="{{ category_name | slugize }}"></a>
+    </div>
 
-    {% comment %}
-    =======================
-    Loop through category names
-    =======================
-    {% endcomment %}
+    <div class="panel">
+      {% for post in site.categories[category_name] %}
 
-    {% for post in site.categories[category_name] %}
-
-    {% comment %}
-    =======================
-    Style the text of each post
-    =======================
-    {% endcomment %}
-
-    <h4 class="px-4 mt-2">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
-      <!-- <a class="no-underline h5 text-accent px-2" title="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a> -->
-    </h4>
-    <!-- <a class="px-4 no-underline h5 text-accent" title="{{ post.url | prepend: site.baseurl }}">#{{ post.tags }},</a> -->
-    <div class="clear no-underline h5 text-accent px-4">
-      {% for tag in post.tags %}
-      <a title="{{ post.url | prepend: site.baseurl }}" href="{{ site.baseurl }}/tags#{{ tag | slugize }}">#{{tag}}</a>
+      <h4 class="px-4 mt-2">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <!-- <a class="no-underline h5 text-accent px-2" title="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a> -->
+      </h4>
+      <!-- <a class="px-4 no-underline h5 text-accent" title="{{ post.url | prepend: site.baseurl }}">#{{ post.tags }},</a> -->
+      
+      <div class="clear no-underline h5 text-accent px-4">
+          Topics -
+        {% for tag in post.tags %}
+        <a
+          title="{{ post.url | prepend: site.baseurl }}"
+          href="{{ site.baseurl }}/tags#{{ tag | slugize }}"
+          >{{ tag }}</a
+        >
+        {% endfor %}
+      </div>
       {% endfor %}
     </div>
-    {% endfor %}
   </div>
   {% endfor %}
 </div>
+<!-- end of divs archive -->
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>

@@ -33,6 +33,7 @@
 /* Border utilities */
 .border-bottom-thick { border-bottom: 2px solid; border-color: currentColor; }
 .border-bottom-thin { border-bottom: 1px solid; border-color: currentColor; }
+.border-bottom-dash { border-bottom: 1px dashed; border-color: currentColor; }
 .border-top-thick { border-top: 2px solid; border-color: currentColor; }
 .border-top-thin { border-top: 1px solid; border-color: currentColor; }
 .border-0 { border: 0; }
@@ -200,4 +201,26 @@
     height:0;
     color:transparent;
     clear:left;
+}
+
+// Styling for the tags and catagories pages
+
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: $spacer-1;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+background-color:  rgb(250, 250, 250); 
+}
+
+.panel {
+padding: 0 18px;
+display: none;
+background-color: white;
+overflow: hidden;
 }
