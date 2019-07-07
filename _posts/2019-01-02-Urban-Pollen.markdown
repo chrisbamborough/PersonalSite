@@ -2,8 +2,8 @@
 layout: post
 title: "Urban Pollen"
 date: 2019-01-02
-categories: Interface
-tags: [Interaction]
+categories: Installation
+tags: [Interface]
 image:
 ---
 

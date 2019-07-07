@@ -3,7 +3,7 @@ layout: post
 title: "Animate Networks"
 date: 2019-01-02
 categories: Building
-tags: [Architecture, Algorithm]
+tags: [Architecture, Digital Theory]
 ---
 
 Animate Networks takes Le Corbusier's Mill Owners Association building in Ahmedabad as a start point to explore techniques of spatial definition and organisation through timber strands. The project, in collaboration with [Rasmus Holst](https://www.linkedin.com/in/rasmuskholst/?trk=shareTw&originalSubdomain=dk) generated geometric forms through algorithmically defined geometry using the capabilities of the [Rhino 3D](https://www.rhino3d.com/) software and the [Rhino Python](https://developer.rhino3d.com/guides/rhinopython/) programming language.   
