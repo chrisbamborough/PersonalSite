@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Museum Of Dangerous Ideas"
-date: 2019-01-02
+date: 2019-07-02
 categories: Teaching
-tags: [Strategy, Design]
+tags: [Museum, Design]
 image:
 ---
 
