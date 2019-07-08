@@ -1,0 +1,29 @@
+<div class="px-1">
+  <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h3><a href="/">Home /</a></h3>
+  <h3><a href="/about/">About /</a></h3>
+
+  <!-- add format menu   -->
+
+  {% include accordion-nav.html %}
+
+  <h3>
+    <a href="https://medium.com/{{ site.medium_username }}" target="_blank">
+      {{ site.blogname }}
+    </a>
+  </h3>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
