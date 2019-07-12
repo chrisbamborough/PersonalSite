@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Architecture Culture and Environment"
+date: 2013-02-04
+categories: Teaching
+tags: [Mapping]
+image: 
+---
+
+In the subject Architecture Culture and Environment I acted as workshop tutor with the responsibility to teach a particular approach to mapping, as a means of representing form as a product of cultural processes and environmental conditions. 
+
+“This subject is a foundational introduction to the ways in which architecture is influenced by both culture and environment. It is designed to synthesise and combine an introductory level of architectural history and theory with a variety of cultural and environmental concepts, and to critically examine boundaries between these by highlighting shifts, differences and commonalities. The subject focuses on how cultural and environmental values influence environmental, social and cultural developments in architecture. It also addresses value systems and ethical positions as they relate to and influence ecological impact and environmental design.” Gavin Perrin (Course Coordinator)
+
+The workshops practiced techniques of bitmap, vector and hybrid drawing as ways to understand and communicate how space is inhabited or ‘programmed for occupation’ by abstracting and then mapping crucial paths of movement and important junctions between different movement patterns. At the end of the three workshops students were required to produce imagery that communicated personal investigations into assigned architectural precedents. 
+
+![Mapping Examples](/images/ACE_Example.png)
+![Mapping Vectors](/images/ACE_Vector.png)
+![Mapping Bitmaps](/images/ACE_Bitmap.png)
+
