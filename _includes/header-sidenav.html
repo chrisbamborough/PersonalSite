@@ -3,22 +3,29 @@
 <!-- </div> -->
 
 <div id="mySidenav" class="sidenav">
+
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <h3><a href="/">Home /</a></h3>
-  <h3><a href="/about/">About /</a></h3>
 
-  <!-- add format menu   -->
+  <div class="sidenav-content">
+    
+    <h3><a href="/">Home /</a></h3>
+    <h3><a href="/about/">About /</a></h3>
 
-  {% include accordion-nav.html %}
+    <!-- add format menu   -->
 
-  <h3>
-    <a href="https://medium.com/{{ site.medium_username }}" target="_blank">
-      {{ site.blogname }}
-    </a>
-  </h3>
+    {% include accordion-nav.html %}
+
+    <h3>
+      <a href="https://medium.com/{{ site.medium_username }}" target="_blank">
+        {{ site.blogname }}
+      </a>
+    </h3>
+  </div>
 </div>
 
-<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="mt-2 mt-lg-2 px-2"> 
+  <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
 
 <script>
   function openNav() {
