@@ -33,15 +33,6 @@
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
 // Styling for the tags and catagories pages
 
 .accordion {
@@ -53,6 +44,14 @@
   outline: none;
   // transition: 0.4s;
 }
+
+.accordian a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
 .active,
 .accordion:hover {
   // background-color: rgb(250, 250, 250);
@@ -65,4 +64,15 @@
   // background-color: white;
   overflow: hidden;
   // color: #818181;
+}
+
+/* When the height of the screen is less than 450 pixels, change the padding and the font size*/
+
+@media screen and (max-height: 450px) {
+  .sidenav .accordian {
+    padding-top: 15px;
+  }
+  .sidenav a .accordian a{
+    font-size: 18px;
+  }
 }

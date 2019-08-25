@@ -1,6 +1,7 @@
 <div class="accordion">
   <h3>Formats /<h3>
 </div>
+
 <div class="panel">
     {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -20,6 +21,7 @@
 <div class="accordion">
   <h3>Topics /<h3>
 </div>
+
 <div class="panel">
     {% for tag in site.tags %}
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
