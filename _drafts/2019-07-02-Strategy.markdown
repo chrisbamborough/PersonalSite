@@ -3,12 +3,20 @@ layout: post
 title: "Museum Of Dangerous Ideas"
 date: 2019-07-02
 categories: Teaching
-tags: [Museum, Design]
+tags: [Museum, Computational Design]
 image:
 ---
 
+Between 2013 and 2017 I taught a studio within the second year UTS undergraduate architecture curriculum. The studio existed as one of eight studios under a wider theme of strategy in architectural design. The subject, overseen by [Gavin Perrin](https://www.uts.edu.au/staff/gavin.perin) used a design project of a museum to explore how contextual and programmatic conditions can be strategically employed to influence modes of inhabiting space. The course used maps and diagrams as means to understand relationships between context, program and spatial organisation, in order to convey important disciplinary issues of hierarchy, proximity, enclosure, permeability and transparency. Understanding atchitectural form, and being able to interrogate existing and latent spatial effects and affects, are important skills for the architect. Therefore, the curriculum focussed on the act of mappping and diagramming as a design tool towards iterative design processes capable of synthesising extracted and abstracted information into tectonic form. The subject used animated three-dimensional representations to test, critique and develop a strategic organisation and re-materialisation of spatial information, driven by an underlying thesis that process, a site of design focus for the studio, can re-presents and ‘machine’ data, through the techniques of mapping and diagramming.
 
+My response to the subject brief - The Museum of Dangerous Ideas - integrated computational design theory and practice into the process requiring a dedicated digital lab component to the teaching. The studio abstract read as follows;
 
-![Urban Pollen](/images/urbanpollen4.jpg){:class="img-responsive"}
+Sydney’s Museums are inherently conservative; both in the way they exhibit artefacts and the architectural devices
+used to control experience. When you enter any museum you step into a highly curated world where architectural
+form complicity modifies social, political, economic and cultural behaviour. This studio will search for ways to generate more progressive architectural outcomes by first understanding the conservative ideas and tactics that currently delimit the experience museum. Contentious ideas will be encouraged and you will be required you to take a position on how to subvert the museum type. This studio will be using the notion of a field (a continuous space characterised by diminishing influence over distance) to understand contextual information and generate new types of gradient spatial outcomes. You will initially investigate (map) museum precedents in order to understand their original diagrams, then visualise them as field conditions of institutional forces and constructed narratives, to propose potential context responsive outcomes. During the studio you will introduced to computational design theory and its value to architectural design processes. Students will explore the formal consequences of algorithmic thinking through generative digital techniques (diagram). This approach provides the means to produce multiple and rapid outcomes, and to understand and represent complex spatial relationships. Each week there will be a set studio workshop to guide you through specific techniques. These workshops help you develop innovative approaches between the weekly studio sessions. The map and the diagram act as the primary mechanisms by which you are to innovate, as well as the way in which to receive critical feedback from your design project.
 
-<!-- <iframe src="https://e.issuu.com/embed.html#1847533/37575623" frameborder="0" allowfullscreen="" style="margin:0px auto;display:block;width:600px;height:424px;"></iframe> -->
+Recording Data
+Representation
+Museum Metaform - Physical Model
+Digital Lab
+
