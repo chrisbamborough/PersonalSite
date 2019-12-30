@@ -3,7 +3,7 @@ layout: page
 title: About
 image:
 ---
-Chris Bamborough is a designer and researcher with a background in architecture and geography and a special interest in the influence of data on material form and space.
+Chris Bamborough is a designer and researcher with a background in architecture and geography and a special interest in data's influence on material forms and space.
 <br/>
 <br/>
 This site is an overview of his design and research interests that constitute his practice.
