@@ -1,37 +1,94 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Site/SEO settings
+email: mail@chrisbamborough.com
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+google_analytics: 
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: CB >>
-description: is an architect and researcher.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.chrisbamborough.com" # the base hostname & protocol for your site, e.g. http://example.com
+name: Chris Bamborough
+title: CB
+description: architectural design and research
+year: 2019
+  
+url: 
+twitter_username: chrisbamborough
+default_img: /assets/images/seo.jpg
+social:
+  - name: twitter
+    url: https://twitter.com/chrisbamborough
+  - name: instagram
+    url: https://www.instagram.com/chrisbamborough/
+  - name: linkedin
+    url: https://www.linkedin.com/in/chrisbamborough/
+  - name: github
+    url: https://github.com/chrisbamborough
+  # - name: codepen
+  #   url: https://codepen.io/thomasvaeth/
+
+#set up github
 github_repo: chrisbamborough.github.io # the GitHub repo name for your project
 github_username: chrisbamborough
 
-# Optional social link, you can choose from the following options:
-# twitter (default), instagram, medium, or dribbble
-social_link: twitter
-social_username: chrisbamborough
-
 # username and name for medium blog
 medium_username: making-culture
-blogname: Making Culture /
+blogname: Making Culture
 
-# Set theme color here
-# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: gray
+# Contact settings
+contact_img: /assets/images/placeholder-28.jpg
+formcarry: https://formcarry.com/s/VwKTmaXUd-M
+
+# Disqus settings
+disqus: test-apkdzgmqhj
+
+# MailChimp settings
+mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
+mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
+
+# Author settings
+author:
+  - name: Chris Bamborough
+    bio: Architectural designer and researcher
+    url: http://chrisbamborough.com
+
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts: 
+      - 'tag.html'
+    title: 'The Barber Theme'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - node_modules
+  - .DS_Store
+  - barber.jpg
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - README.md

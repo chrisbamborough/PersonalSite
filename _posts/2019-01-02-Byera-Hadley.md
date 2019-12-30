@@ -2,9 +2,10 @@
 layout: post
 title: "Making Culture"
 date: 2019-01-02
-categories: Research
-tags: [Maker Culture]
-image:
+categories: Project
+tags: Research
+topic: Maker Culture
+image: /assets/images/grid/MakingCulture_crop.png
 ---
 
 The research project [Making Culture](https://www.architects.nsw.gov.au/download/BHTS/MakingCulture_Chris_Bamborough_BHTS_2014.pdf) examined the maker movement and its associated spaces from an architectural perspective. The research, made possible through generous funding provided by the [Byera Hadley Travelling Scholarship](https://www.architects.nsw.gov.au/public-resources/byera-hadley-travelling-scholarships1), was interested in how Architecture could foster and engage communities around making and increase the cultural value of design. Specifically the research sought to consider how community making could provide a vehicle for architects to better connect the sometimes esoteric nature of architectural design and increase public appreciation of architecture.

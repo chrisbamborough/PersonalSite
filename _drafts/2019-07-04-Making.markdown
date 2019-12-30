@@ -3,7 +3,7 @@ layout: post
 title: "Making"
 date: 2019-07-04
 categories: Teaching
-tags: [Museum, Design]
+tags: Teaching
 image: 
 ---
 

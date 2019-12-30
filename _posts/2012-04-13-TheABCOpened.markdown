@@ -2,9 +2,10 @@
 layout: post
 title:  "The ABC Opened"
 date:   2012-04-13
-categories: Building
-tags: [Architecture, Public Space]
-image:
+categories: project
+tags: Architecture
+topic: Public Space
+image: /assets/images/grid/ABCOpen.jpg
 ---
 The final project for my Architecture MA at UTS was an intensive four week studio aiming to recreate an architectural competition atmosphere, it's focus the Sydney's south central creative quarter, i.e. Ultimo, and the pedestrian network in particular. The studios aim was to generate a catalyst for new material organisations through architectural thinking, and an engagement with the multiple stakeholders of the area, namely ABC, The City of Sydney, Powerhouse Museum, Sydney Harbour Foreshore Authority, Frasers Property, UTS, TAFE, Rail Corp and CitiGate Hotel.
 

@@ -2,11 +2,11 @@
 layout: post
 title: "Metabolic Weave"
 date: 2019-01-02
-categories: Pavilion
-tags: [Architecture, Material Prototype]
-image:
+categories: project
+tags: pavilion
+topic: Material Prototype
+image: assets\images\grid\Mweave_6_crop.jpg
 ---
-
 Metabolic Weave is an investigation into the form finding capabilities of weaving doubly curving 3mm plywood. The material and structural research studied the structural capacity and expressive potential of thin plywood strips.
 
 <iframe src="http://player.vimeo.com/video/44450551" frameborder="0" width="825" height="800"></iframe>
@@ -19,15 +19,20 @@ Semper's theory was concerned with the categorisation and crossover of material 
 
 From Semper's material definitions an ambition was set to explore multiple assembly techniques through the same method of physical manipulation. The outcome was a repeatable and adjustable building unit using the method of textiles, that could achieve assemblies through both tectonic and stereotomy techniques.
 
-![Urban Pollen](/images/Mweave_1.jpg){:class="img-responsive"}
-![Urban Pollen](/images/Mweave_2.jpg){:class="img-responsive"}
-![Urban Pollen](/images/Mweave_3.jpg){:class="img-responsive"}
-![Urban Pollen](/images/Mweave_4.jpg){:class="img-responsive"}
-![Urban Pollen](/images/Mweave_5.jpg){:class="img-responsive"}
-![Urban Pollen](/images/Mweave_6.jpg){:class="img-responsive"}
+![Urban Pollen](/assets/images/posts/Mweave_1.jpg){:class="img-responsive"}
+
+![Urban Pollen](/assets/images/posts/Mweave_2.jpg){:class="img-responsive"}
+
+![Urban Pollen](/assets/images/posts/Mweave_3.jpg){:class="img-responsive"}
+
+![Urban Pollen](/assets/images/posts/Mweave_4.jpg){:class="img-responsive"}
+
+![Urban Pollen](/assets/images/posts/Mweave_5.jpg){:class="img-responsive"}
+
+![Urban Pollen](/assets/images/posts/Mweave_6.jpg){:class="img-responsive"}
 
 The final design employed digital representation and physical installation to propose how a digital aesthetic associated with digital fabrication is achievable through standardised elements configured into adjustable units.  
 
-![Urban Pollen](/images/Mweave_7.jpg){:class="img-responsive"}
+![Urban Pollen](/assets/images/posts/Mweave_7.jpg){:class="img-responsive"}
 
 <iframe src="//e.issuu.com/legacy.html?documentId=120622022458-0631f61c38484f8c9e4183c35a7e7b5f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen width="825" height="800"></iframe>

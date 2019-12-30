@@ -1,7 +1,8 @@
-.bundle
-.sass-cache
-_site
+.env
 .DS_Store
-Gemfile.lock
-*.gem
-vendor/**
+.s3-website.json
+node_modules/
+
+_site
+.sass-cache
+.jekyll-metadata

@@ -1,10 +1,9 @@
 ---
 layout: page
 title: About
-permalink: /about/
+image:
 ---
-
-Chris Bamborough is a designer with a background in architecture and geography, currently researching the influence of data on architecture.
+Chris Bamborough is a designer and researcher with a background in architecture and geography, with a special interest in the influence of data on architecture.
 <br/>
 <br/>
 This site is an overview of his design and research interests that surround his practice.

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Architecture Culture and Environment"
+title: "Architecture, Culture and Environment"
 date: 2013-02-04
-categories: Teaching
-tags: [Mapping]
-image: 
+categories: teaching
+tags: Teaching
+topic: Mapping
+image: /assets/images/grid/ACE_Vector_crop.png
 ---
 
 In the subject Architecture Culture and Environment I acted as workshop tutor with the responsibility to teach a particular approach to mapping, as a means of representing form as a product of cultural processes and environmental conditions. 
@@ -13,7 +14,9 @@ In the subject Architecture Culture and Environment I acted as workshop tutor wi
 
 The workshops practiced techniques of bitmap, vector and hybrid drawing as ways to understand and communicate how space is inhabited or ‘programmed for occupation’ by abstracting and then mapping crucial paths of movement and important junctions between different movement patterns. At the end of the three workshops students were required to produce imagery that communicated personal investigations into assigned architectural precedents. 
 
-![Mapping Examples](/images/ACE_Example.png)
-![Mapping Vectors](/images/ACE_Vector.png)
-![Mapping Bitmaps](/images/ACE_Bitmap.png)
+![Mapping Examples](/assets/images/posts/ACE_Example.png)
+
+![Mapping Vectors](/assets/images/posts/ACE_Vector.png)
+
+![Mapping Bitmaps](/assets/images/posts/ACE_Bitmap.png)
 

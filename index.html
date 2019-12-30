@@ -1,6 +1,21 @@
 ---
-layout: home
+layout: default
+pagination:
+  enabled: true
 ---
+<!-- The main content area -->
+<div class="posts">
+  <div class="grid-large">
+    <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
 
-<!-- Set title and description in config.yml -->
-<!-- <script src="/js/p5Sketches/P5perlinTerrain.js" type="text/javascript"></script> -->
+      {% for post in paginator.posts %}
+
+        <!-- The tag below includes the markup for each post - partials/post-card.html -->
+        {% include post-card.html %}
+
+      {% endfor %}
+    </div>
+  </div>
+
+  {% include pagination.html %}
+</div>

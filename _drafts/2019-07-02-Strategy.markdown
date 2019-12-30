@@ -3,7 +3,7 @@ layout: post
 title: "Museum Of Dangerous Ideas"
 date: 2019-07-02
 categories: Teaching
-tags: [Museum, Computational Design]
+tags: Teaching
 image:
 ---
 
