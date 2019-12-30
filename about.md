@@ -3,10 +3,10 @@ layout: page
 title: About
 image:
 ---
-Chris Bamborough is a designer and researcher with a background in architecture and geography, with a special interest in the influence of data on architecture.
+Chris Bamborough is a designer and researcher with a background in architecture and geography and a special interest in the influence of data on material form and space.
 <br/>
 <br/>
-This site is an overview of his design and research interests that surround his practice.
+This site is an overview of his design and research interests that constitute his practice.
 <br/>
 <br/>
 If you want to venture out you can read about his professional [experience](http://www.linkedin.com/in/chrisbamborough){:target="_blank"}, scroll through his micro [blog](http://www.twitter.com/chrisbamborough){:target="_blank"}, check out his [software](http://www.github.com/chrisbamborough){:target="_blank"} interests, watch some [films](http://www.vimeo.com/chrisbamborough){:target="_blank"} he's made, listen to his [musical](http://www.soundcloud.com/smoothspace){:target="_blank"} influences, browse his [visual](http://www.pinterest.com/chrisbamborough){:target="_blank"} inspirations, connect with his [research](https://uts.academia.edu/ChrisBamborough){:target="_blank"} publications, read about his current [interests](https://www.evernote.com/pub/bambarooga/phdreadings){:target="_blank"}, or view his [are.na channels](https://www.are.na/chris-bamborough).    
