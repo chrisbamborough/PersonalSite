@@ -9,7 +9,7 @@ image: assets\images\grid\Mweave_6_crop.jpg
 ---
 Metabolic Weave is an investigation into the form finding capabilities of weaving doubly curving 3mm plywood. The material and structural research studied the structural capacity and expressive potential of thin plywood strips.
 
-<iframe src="http://player.vimeo.com/video/44450551" frameborder="0" width="825" height="800"></iframe>
+<iframe src="https://player.vimeo.com/video/44450551" frameborder="0" width="825" height="800"></iframe>
 
 The project’s ambition was to study the differentiation in visual effect and structure through the use of repetitive but adjustable elements. The project was a response to the financial inaccessibility of digital fabrication that offered variation through multiple unique elements.
 
