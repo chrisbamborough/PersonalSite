@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Animate Networks"
-date: 2019-01-02
+date: 2018-01-02
 categories: project
 tags: Architecture
 topic: Digital Theory

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Strip Morphology"
-date:   2012-04-13
+date:   2013-04-13
 categories: project
 tags: Installation
 topic: prototype

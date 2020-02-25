@@ -7,17 +7,17 @@ tags: Pavilion
 topic: Prototype
 image: /assets/images/grid/MweaveGrid.jpg
 ---
-Metabolic Weave is an investigation into the form finding capabilities of weaving doubly curving 3mm plywood. The material and structural research studied the structural capacity and expressive potential of thin plywood strips.
+Metabolic Weave is an investigation into the form finding capabilities of weaving doubly curving 3mm plywood, to understand the structural capacity and expressive potential of thin plywood strips.
 
 <iframe src="https://player.vimeo.com/video/44450551" frameborder="0" width="750" height="800"></iframe>
 
-The project’s ambition was to study the differentiation in visual effect and structure through the use of repetitive but adjustable elements. The project was a response to the financial inaccessibility of digital fabrication that offered variation through multiple unique elements.
+The project studied the differentiation in visual effects and potential structures through the use of repetitive but adjustable timber elements. The project responded to the paradigm of "mass customisation" and the financial constraints of digital fabrication access in Sydney by producing variation through assembly of identical parts.
 
-Using Gottfried Semper’s 19th Century theory of Metabolism as a departure point, that architecture was rationally reducible to the materials and processes associated with their uses. The project developed a structural unit that could modulate across an entire structure.
+Using Gottfried Semper’s 19th Century theory of Metabolism, the idea that architecture is rationally reducable to the materials and processes associated with their uses, as a departure point, the project developed a structural unit to modulate into a larger structure.
 
-Semper's theory was concerned with the categorisation and crossover of material production techniques, and he categorised materials by methods of physical manipulation - pliable (fabrics), soft (clay), stick-like elements (wood), dense (stone). These material types were further categorised into techniques of material assembly - Textiles (weaving), Ceramics (sculpting), Tectonics (connections), Stereotomy (packing).
+Semper attempted to understand architecture through a categorisation of material production techniques, materials grouped by methods of physical manipulation - pliable (fabrics), soft (clay), stick-like elements (wood), dense (stone), while these material types grouped further into techniques of material assembly - textiles (weaving), ceramics (sculpting), tectonics (connections), stereotomy (packing).
 
-From Semper's material definitions an ambition was set to explore multiple assembly techniques through the same method of physical manipulation. The outcome was a repeatable and adjustable building unit using the method of textiles, that could achieve assemblies through both tectonic and stereotomy techniques.
+The design project chose stick-like elements for material type, and set a design ambition to explore two  assembly techniques through the same method of physical manipulation and achieve a gradiation between the two states. The outcome provided a repeatable and adjustable building unit using the method of textiles, that could move between both tectonic and stereotomy assemblies.
 
 ![Urban Pollen](/assets/images/posts/Mweave_1.jpg){:class="img-responsive"}
 
@@ -30,8 +30,6 @@ From Semper's material definitions an ambition was set to explore multiple assem
 ![Urban Pollen](/assets/images/posts/Mweave_5.jpg){:class="img-responsive"}
 
 ![Urban Pollen](/assets/images/posts/Mweave_6.jpg){:class="img-responsive"}
-
-The final design employed digital representation and physical installation to propose how a digital aesthetic associated with digital fabrication is achievable through standardised elements configured into adjustable units.  
 
 ![Urban Pollen](/assets/images/posts/Mweave_7.jpg){:class="img-responsive"}
 
