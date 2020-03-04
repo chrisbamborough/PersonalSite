@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Danse Macabre"
+title: "Make Space 4 Architecture"
 date: 2019-07-02
 categories: Project
-tags: Concept
+tags: Architecture
 image:
 ---
 
