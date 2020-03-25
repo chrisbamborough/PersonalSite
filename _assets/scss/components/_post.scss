@@ -10,7 +10,7 @@
   &__header {
     @extend %text-center;
 
-    border-bottom: $border;
+    border: none;
   }
 
   &__date {
@@ -51,7 +51,7 @@
   // }
 
   &__content {
-    border-top: $border;
+    border:none;
   }
 
   &__social {

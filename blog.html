@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="post">
+
+  <div class="post__header section-padding--double">
+    <div class="grid-small">
+      <h2 itemprop="name headline">Blog</h2>
+    </div>
+  </div>
+
+  <div class="post__content section-padding">
+
+      {% for post in site.categories.blog %}
+
+      <!-- The tag below includes the markup for each post - includes/post-card.html -->
+      {% include blog-post-card.html %}
+
+      {% endfor %}
+
+  </div>
+
+  {% include pagination.html %}
+</div>
