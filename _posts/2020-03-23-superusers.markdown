@@ -6,9 +6,9 @@ categories: blog
 tags: Automation
 description: I recently read Randy Deutsch's book "Super Users", I had some subsequent thoughts.....
 ---
-![Super Users](/assets/images/posts/superusers.jpg){:class="img-responsive"}
-
 In "Super-users: design technology specialists and the future of design" Randy Deutsch argues that the Architecture Engineering Construction (AEC) industry needs a new type of professional skillset called, yes you guessed it, a "super-user". On first reading, it is clear that the adverb "super" describes the ability to achieve things outside of the normal, but the noun "user" is harder to place in an architectural context, a user of what? Deutsch's previous writings, BIM and Integrated Design, Data-Driven Design and Construction and Convergence: The redesign of design, offer some clues, they are users of digital technology.     
+
+![Super Users](/assets/images/posts/superusers.jpg){:class="img-responsive"}
 
 Deutsch argues that as technology seeps into all aspects of architectural practice, a new professional actor will solve the AEC industry's problem of optimising productivity. This actor's primary focus is to unleash the capabilities of technology and help architects navigate the future of automation. Super-Users suggests that Deutsch's version of a future architectural profession is one where Silicon Valley's techno-optimism transfers onto the workflows and processes of the AEC, this is after all where the term "user" originates. However, while the "user" in Silicon Valley shapes products around the desires or intended behaviours of people, Deutsch's "super-user" relocates the site of design onto the human. These skills involve creating and manipulating digital tools, put simply, the super-user is a designer who can code. 
 

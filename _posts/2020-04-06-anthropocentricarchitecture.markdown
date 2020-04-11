@@ -1,0 +1,20 @@
+---
+layout: blog-post
+title: "Notes on a Planthroposcene"
+date: 2020-04-06
+categories: blog
+tags: Anthropocene
+description: In my isolated state I am thinking about humanities imagination and treatment of nature, Natasha Myers provides an interesting take on this via the Planthroposcene.....
+---
+
+Although Natasha Myers wrote the article ["How to grow liveable worlds: Ten (not-so-easy) steps for life in the Planthroposcene"](https://www.abc.net.au/religion/natasha-myers-how-to-grow-liveable-worlds:-ten-not-so-easy-step/11906548?fbclid=IwAR1vs9tGmX_Sf9oi0fHUd_pWcDw2tzbbOtbc6M0H4RSmKO_tjmbmZvQ2lVw) before forced isolation hit most western countries, her argument prompts interesting ideas for those interested in a world beyond Capitalism and the Anthropocene.   
+
+Architecture is complicit in the Anthropocene's existence. Architecture as a noun started as a technological response to human survival, a response to the chaos of nature. Inhabitable material forms provided shelter from predators, weather, and other humans, and explains the centrality of human needs in architectural production. 
+
+Once humans began to congregate into large settlements nature became less of a problem. Urbanism and increased density produced a gradient of human settlement that pushed nature out onto the periphery. However, architecture within urbanism continued to place humans at the centre of concern, becoming increasingly internalised with the incorporation of mechanical environmental conditioning systems. Now shelter and environment were manageable, leaving no requirement for nature. In a desire to protect the human and enable for humanity to thrive, architecture unknowingly helped shape the Anthropocene, who's impact we are only starting to understand. 
+
+While Myers takes aim at Capitalism and Colonialism as the two human ideologies most responsible for the Anthropocencene, architecture must also hold some responsibility. However in its defence architectural production is reliant on political-economic conditions it operates within, although it sometimes helps shape it -- such as early twentieth century modernism. Additionally architecture is complicit in regimes of colonisation through construction and demolition, just look at the [colonisation of Palestine](https://thefunambulist.net/magazine/architecture-colonialism). Closer to home, in order to survive, the majority of architects have no alternative than to engage in an economic system that "sustainably" operates by balancing resources through economics. As a result, sustainable architecture imagines architecture alongside nature as a self-funding resource and therefore [commodifiable through scientific study](https://www.amazon.com/dp/B004DCBC5I?tag=duckduckgo-ffab-20&linkCode=osi&th=1&psc=1). 
+
+While Myers' suggestion that we talk to and worship plants is a stretch, especially writing this as an atheist, it does highlight that architecture works through and helps maintain the scientific worldview status-quo. But science is not the only world-view available. What would an architecture look like that engaged in re-centring plants or nature, or one that operated through economic systems promoting nature and natural resources over extracting profits? Would data generated through indigenous or non-human sensing, or an attitude to nature as an adversary rather than enemy, change the appearance of architecture? I predict not, but I would expect a change in the willingness to open up and invite nature into architecture, and for humans to gain greater opportunities to "conspire" with nature. 
+
+My biggest take away from the article is that any ideological shift away from capitalism must engage in the same mythological world-building that elites construct, particularly the alternative reality constructed by the [orange faced demagogue](https://www.blabbermouth.net/news/tom-morello-calls-donald-trump-an-orange-faced-demagogue/). 
