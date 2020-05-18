@@ -2,7 +2,7 @@
 layout: blog-post
 title: "Architecture, data and super users"
 date: 2020-03-23
-categories: blog
+categories: writing
 tags: Automation
 description: I recently read Randy Deutsch's book "Super Users", I had some subsequent thoughts.....
 ---

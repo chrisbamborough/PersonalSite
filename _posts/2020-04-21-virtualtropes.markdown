@@ -2,7 +2,7 @@
 layout: blog-post
 title: "Tropes of the Virtual"
 date: 2020-04-21
-categories: blog
+categories: writing
 tags: Virtuality
 description: My PhD research explores the influence of data on architecture, one of the topics on interest is data's role in the virtual....
 ---

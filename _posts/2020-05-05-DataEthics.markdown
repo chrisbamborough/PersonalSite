@@ -2,9 +2,10 @@
 layout: blog-post
 title: "The Ethics of Data."
 date: 2020-05-05
-categories: blog
+categories: writing
 tags: data
 image: 
+description: A series of thoughts about Thomas Fisher's data ethics.
 ---
 
 As part of Thomas Fisher's exploration of ethics in architecture, he considers the influence of data on humanity (Fisher 2018). While his conclusions offer little consideration regarding architecture as a built object, he highlights the relationship between data and humanity's relationship with nature. In doing so, though, he misses the importance of culture and human emotion on behaviour, assuming that all organisms operate through rational data processing.  

@@ -2,9 +2,9 @@
 layout: blog-post
 title: "Notes on a Planthroposcene"
 date: 2020-04-06
-categories: blog
+categories: writing
 tags: Anthropocene
-description: In my isolated state I am thinking about humanities imagination and treatment of nature, Natasha Myers provides an interesting take on this via the Planthroposcene.....
+description: In my isolated state I am thinking about human imaginations of nature, Natasha Myers provides an interesting take on this via the Planthroposcene.....
 ---
 
 Although Natasha Myers wrote the article ["How to grow liveable worlds: Ten (not-so-easy) steps for life in the Planthroposcene"](https://www.abc.net.au/religion/natasha-myers-how-to-grow-liveable-worlds:-ten-not-so-easy-step/11906548?fbclid=IwAR1vs9tGmX_Sf9oi0fHUd_pWcDw2tzbbOtbc6M0H4RSmKO_tjmbmZvQ2lVw) before forced isolation hit most western countries, her argument prompts interesting ideas for those interested in a world beyond Capitalism and the Anthropocene.   

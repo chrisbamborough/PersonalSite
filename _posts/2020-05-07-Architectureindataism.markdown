@@ -1,10 +1,11 @@
 ---
 layout: blog-post
-title: "The future of architecture in "data-ism"."
+title: "The future of architecture in data-ism"
 date: 2020-05-07
-categories: blog
+categories: writing
 tags: data
 image: 
+description: A review of Noah Yuval Harari's concept data-ism. 
 ---
 
 In Homo Deus: A Brief History of Tomorrow, Noah Yuval Harari extends the history of the human race, explored in his previous book Sapiens, into a speculative future involving humanity, nature and technology. Harari's thinking centres around a common ground introduced up by data that organisms and computing machines produce intelligence through algorithms. Harari uses a modern scientific theory that living things exist as biochemical data processors, while computers process digital data, making them comparable in experiencing and decision making. This equivalence in detecting and processing the world provides Harai' with a possible future scenario where the biochemical cannot process or absorb the scale and speed data flow required by "super intelligent" digital algorithm. While Harari concedes the assumption that life is reducible to data flow and decision-making fall short in explaining consciousness, the assumption sets up a scenario where humans understand and identify through their contribution to data flow in the "Internet of Everything" (Harari 2018). Harari's last chapter specifically explores the "religion" of data-ism which considers humanity's future in a world organised by contribution to the data flow. While Harari's explores the impact on nature, technology and humanity, there is an excuse to consider architectures role in data-ism, and the potential influence of data-ism on architecture as a way of thinking?
