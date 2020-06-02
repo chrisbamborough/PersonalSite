@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Making"
+date: 2019-07-04
+categories: teaching
+tags: Teaching
+image: https://dl.dropboxusercontent.com/s/vulbsxmg8yponme/NickDuggan_front.png?dl=0
+---
+
+The studio "Making" is part of Sydney's University of Technology architectural design first-year undergraduate course and aims to introduce students to fabrication as part of a design process. As a studio tutor under the overall coordination of [Joanne Kinniburgh](https://www.uts.edu.au/staff/joanne.kinniburgh), my role involved teaching students the design potentials of diverse structural, material and organisational approaches in architecture. 
+
+The overall course focussed on analysing the relationships between structure, materiality and performance in existing buildings to explore new architectural outcomes. The studio sat within the first-year curriculum focused on fabrication techniques and representational processes aimed at making material objects at a range of scales. The pedagogical aims within the studio involved understand the impact of structure and material on form, and to use drawing, modelling, and material investigations as part of a design process. The Making studio occurred alongside a communications course that tied the spatial thinking through making taught in the studio to technical skills required for computer-based image-making.    
+
+![Yvette Salmon](https://dl.dropboxusercontent.com/s/rrmf3lcicvq21ob/YvetteSalmon_750.png?dl=0){:class="img-responsive"}
+Yvette Salmon's intervention into the Berlin Museum.
+
+![Joel Spring](https://dl.dropboxusercontent.com/s/70s87m5csl8o0in/JoelSpring_750W.png?dl=0){:class="img-responsive"}
+Joel Spring's insertion into the Berlin Jewish Museum.
+
+![Nick Duggan](https://dl.dropboxusercontent.com/s/ydpnlevnvz4qf7h/NickDuggan_750W.png?dl=0){:class="img-responsive"}
+Nick Duggan's adaption of the Sendai Mediatheque.
+
+![Issac Harrisons](https://dl.dropboxusercontent.com/s/h6up7itorbz31mn/IssacHarrison_750.png?dl=0){:class="img-responsive"}
+Isaac Harrisons intervention into the Fondation Cartier building.
