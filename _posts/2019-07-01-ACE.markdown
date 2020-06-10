@@ -3,8 +3,7 @@ layout: post
 title: "Architecture, Culture and Environment"
 date: 2015-02-04
 categories: teaching
-tags: Teaching
-topic: Mapping
+tags: Mapping
 image: /assets/images/grid/ACE_Vector_crop.png
 ---
 
