@@ -1,9 +1,0 @@
----
-layout: post
-title: "Myola"
-date: 2019-07-02
-categories: Project
-tags: Architecture
-image:
----
-

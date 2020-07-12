@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Modelling and Fabrication"
+date: 2018-07-02
+categories: teaching
+tags: Teaching
+image:
+---
+
+In 2018 I coorindated and co-taught the 3D Modelling and Fabrication studio at the University of Sydney under the guidance of [Rizal Muslimin](https://www.sydney.edu.au/architecture/about/our-people/academic-staff/rizal-muslimin.html). The course introduced students to designing, modelling and fabricating objects and composite structures at multiple scales. A series of lectures and associated computer lab tutorials demonstrated workflows in modelling and fabrication using Rhino 3D and 3D printing and laser cutting machines within the faculty's [DMAF Lab](https://www.dmaf-lab.com/).    
+
+Materials
+Chair modelling and fabrication
+A hybrid structure - shelter

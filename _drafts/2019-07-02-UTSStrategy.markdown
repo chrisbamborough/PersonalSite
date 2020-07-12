@@ -2,7 +2,7 @@
 layout: post
 title: "Museum Of Dangerous Ideas"
 date: 2019-07-02
-categories: Teaching
+categories: teaching
 tags: Teaching
 image:
 ---
