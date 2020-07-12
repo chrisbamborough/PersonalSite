@@ -39,19 +39,3 @@ Myola existed as a full-service project within Supermanoeuvre, passing through a
 
 ![Construction Photos](https://dl.dropboxusercontent.com/s/w587tvf9747ugyz/MyolaConstruction_850x423.png?dl=0){:class="img-responsive"}
 
-
-<!-- <style>
-#panorama {
-    width: 600px;
-    height: 400px;
-}
-</style>
-
-<div id="panorama"></div>
-<script>
-pannellum.viewer('panorama', {
-    "type": "equirectangular",
-    "panorama": "https://dl.dropboxusercontent.com/s/n790b1z64myb65w/Myola360photo_850x425.png?dl=0"
-});
-</script> -->
-
