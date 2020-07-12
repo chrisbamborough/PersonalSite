@@ -9,7 +9,7 @@ image: https://dl.dropboxusercontent.com/s/om28wuf7kkb4w6m/MyolaGrid.png?dl=0
 
 ![External Appearance](https://dl.dropboxusercontent.com/s/bcalltq7f16ta8j/MyolaFacade_LARGE.png?dl=0){:class="img-responsive"}
 
-MYOLA is a three-bedroom house designed when working at the practice Supermanoeuvre. A family relative commissioned the project after they lost their farmhouse in the rural township of Trundle to fire. The new house sits within acres of sheep farming land, supports the working farm, provides energy efficiency and invites the beautiful surrounding landscape into the experience of the house. A local Cyprus pine timber workshop in Trundle provided a material direction for the house affording two opportunities, established material knowledge and the benefit of termite protection, a significant problem in that area. 
+MYOLA is a three-bedroom house designed when working at the practice [Supermanoeuvre](http://www.supermanoeuvre.com/), commissioned after a family member lost their Trundle farmhouse to fire. While the house sits within acres of sheep farming land and supports the working farm it also provides a peaceful living space by inviting the beautiful surrounding landscape into the house, and encorporating high thermal efficiency. A decision to usr locally grown and procesed Cyprus pine provided two opportunities, one of tapping into an established material knowledge and the other as a termite deterrent, a significant problem in that area. 
 
 The brief for the house centred around thermal efficiency and identified views into the landscape. As a response, MYOLA proposed to invert the traditional flat ceiling pitch roof rural farmhouse, to provide a flat roof with an undulating ceiling. This design move produced framed connections to the landscape, offered ample space in the roof for rainwater and solar harvesting while retaining an insulating ceiling cavity.
 
@@ -35,9 +35,9 @@ Myola existed as a full-service project within Supermanoeuvre, passing through a
 
 ![Timber Structure Model](https://dl.dropboxusercontent.com/s/h54sswzfl60zatn/MyolaStructure_LARGE.png?dl=0){:class="img-responsive"}
 
-![Timber Construction](https://dl.dropboxusercontent.com/s/qrlupbnznbwzkob/MyolaConstruction_2_850x423.png?dl=0){:class="img-responsive"}
+![Construction Photos](https://dl.dropboxusercontent.com/s/qrlupbnznbwzkob/MyolaConstruction_2_850x423.png?dl=0){:class="img-responsive"}
 
-![Timber Construction](https://dl.dropboxusercontent.com/s/w587tvf9747ugyz/MyolaConstruction_850x423.png?dl=0){:class="img-responsive"}
+![Construction Photos](https://dl.dropboxusercontent.com/s/w587tvf9747ugyz/MyolaConstruction_850x423.png?dl=0){:class="img-responsive"}
 
 
 <!-- <style>
