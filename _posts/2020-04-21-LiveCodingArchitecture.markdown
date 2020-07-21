@@ -4,7 +4,7 @@ title: "Live Coding Architecture"
 date: 2020-06-06
 categories: blog
 tags: data, interface
-image: 
+image: https://dl.dropboxusercontent.com/s/2a68tirpfwwq0tq/BlogGrid.png?dl=0
 description: An initial delve into improvised design using live coding.
 ---
 
