@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Architecture, data and super users"
+title: "Architecture, Data and Super Users"
 date: 2020-03-23
 categories: writing
 tags: Automation

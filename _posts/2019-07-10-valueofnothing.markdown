@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Knowing the cost of everything and the value of nothing."
+title: "Knowing the Cost of Everything and the Value of Nothing."
 date: 2019-07-10
 categories: writing
 tags: Authorship

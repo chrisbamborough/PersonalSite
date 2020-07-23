@@ -2,7 +2,7 @@
 layout: post
 title: "Making Culture"
 date: 2019-01-02
-categories: Project
+categories: project
 tags: Research
 topic: Maker Culture
 image: /assets/images/grid/MakingCulture_crop.png

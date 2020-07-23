@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Cultural architecture and the myth of the genius architect"
+title: "Cultural Architecture and the Myth of the Genius Architect"
 date: 2019-07-18
 categories: writing
 tags: Authorship

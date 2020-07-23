@@ -4,6 +4,6 @@ title: "The Architecture of Data Surveillance"
 date: 2020-03-22
 categories: writing
 tags: Misc
-description: This article looks at how data surveillance, migrating from online to offline spaces, is starting to affect the role of architecture and its tangible products.
+description: This article looks at how as data surveillance migrates from online to offline spaces data starts to influence the role of architecture and its physical products.
 link: https://medium.com/making-culture/the-architecture-of-data-surveillance-614822b7e5dd?source=collection_home---4------0-----------------------
 ---

@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Architecture and capital."
+title: "Architecture and Capital."
 date: 2019-07-03
 categories: writing
 tags: Capital

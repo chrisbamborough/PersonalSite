@@ -1,10 +1,9 @@
 ---
 layout: blog-post
-title: "The future of architecture in data-ism"
+title: "The Future of Architecture in Data-ism"
 date: 2020-05-07
 categories: writing
 tags: data
-image: 
 description: A review of Noah Yuval Harari's concept data-ism. 
 ---
 

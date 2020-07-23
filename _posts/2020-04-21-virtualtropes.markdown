@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Tropes of the Virtual"
+title: "Architectural Tropes of the Virtual"
 date: 2020-04-21
 categories: writing
 tags: Virtuality

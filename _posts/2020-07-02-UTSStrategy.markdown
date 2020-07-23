@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Museum Of Dangerous Ideas"
+title: "The Museum Of Dangerous Ideas"
 date: 2020-07-02
 categories: teaching
 tags: Digital
