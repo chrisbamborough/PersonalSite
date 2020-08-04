@@ -21,6 +21,9 @@ The house applies well established Australian thermal design principles by facin
 
 The house layout organised around the thermally driven north/south aspect, and its relationship to the working farm. The house produces three types of thermal environment, along the south wet areas offer utility spaces for transitioning from farm to house, while the western bedrooms require greater insulation and separation from the rest of the house. In contrast, the main open plan living connects low-e glazing to north, south and eastern aspects and benefits from the thermal gain of everyday use.    
 
+<!-- Panellum panorama -->
+<div id="panorama"></div>
+
 ![Plan Drawing](https://dl.dropboxusercontent.com/s/tbk9k6tbwb0xzgh/MyolaPlan_LARGE.png?dl=0){:class="img-responsive"}
 ![Section Drawing](https://dl.dropboxusercontent.com/s/u6s5m9tdbplpmjb/MyolaSection_LARGE.png?dl=0){:class="img-responsive"}
 
@@ -33,4 +36,61 @@ Myola existed as a full-service project within Supermanoeuvre, passing through a
 ![Construction Photos](https://dl.dropboxusercontent.com/s/qrlupbnznbwzkob/MyolaConstruction_2_850x423.png?dl=0){:class="img-responsive"}
 
 ![Construction Photos](https://dl.dropboxusercontent.com/s/w587tvf9747ugyz/MyolaConstruction_850x423.png?dl=0){:class="img-responsive"}
+<br>
 
+
+<style>
+#panorama {
+    width: 700px;
+    height: 350px;
+}
+</style>
+
+<script>
+    pannellum.viewer('panorama', {   
+        "default": {
+            "firstScene": "lounge",
+            "sceneFadeDuration": 1000,
+            "autoLoad": true
+        },
+
+        "scenes": {
+            "lounge": {
+                "title": "Living",
+                "hfov": 110,
+                "pitch": -1.81,
+                "yaw": 21.87,
+                "type": "equirectangular",
+                "panorama": "https://dl.dropboxusercontent.com/s/sm7vffl7zzvwms7/Myola_Interior_LoungeVray_2000x100.png?dl=0",
+                "hotSpots": [
+                    {
+                        "pitch": 0.69,
+                        "yaw": -27.51,
+                        "type": "scene",
+                        "text": "Sleeping",
+                        "sceneId": "bedroom"
+                    }
+                ]
+            },
+
+            "bedroom": {
+                "title": "Sleeping",
+                "hfov": 110,
+                "yaw": 5,
+                "type": "equirectangular",
+                "panorama": "https://dl.dropboxusercontent.com/s/5w0xzik6plb0n76/Myola_Interior_LivingVray_2000x100.png?dl=0",
+                "hotSpots": [
+                    {
+                        "pitch": -0.33,
+                        "yaw": 71.59,
+                        "type": "scene",
+                        "text": "Living",
+                        "sceneId": "lounge",
+                        "targetYaw": -23,
+                        "targetPitch": 2
+                    }
+                ]
+            }
+        }
+    });
+</script>
