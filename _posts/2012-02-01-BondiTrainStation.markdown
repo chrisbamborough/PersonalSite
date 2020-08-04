@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bondi -Hex- Train Station"
-date:   2013-12-01
+date: 2012-02-01
 categories: project
 tags: Architecture
 topic: Digital Fabrication

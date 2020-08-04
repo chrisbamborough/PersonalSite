@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Animate Networks"
-date: 2018-01-02
+date: 2011-01-02
 categories: project
 tags: Architecture
 topic: Digital Theory
@@ -10,7 +10,7 @@ image: /assets/images/grid/animatenetworks_crop.jpg
 
 The project was awarded a UTS digital innovation award and was exhibited at the RAIA digital innovation awards.  
 
-Animate Networks takes Le Corbusier's Mill Owners Association building in Ahmedabad as a start point to explore techniques of spatial definition and organisation through timber strands. The project, in collaboration with [Rasmus Holst](https://www.linkedin.com/in/rasmuskholst/?trk=shareTw&originalSubdomain=dk) generated geometric forms through algorithmically defined geometry using the capabilities of the [Rhino 3D](https://www.rhino3d.com/) software and the [Rhino Python](https://developer.rhino3d.com/guides/rhinopython/) programming language.   
+Animate Networks takes Le Corbusier's Mill Owners Association building in Ahmedabad as a start point to explore techniques of spatial definition and organisation through timber strands. The project, in collaboration with [Rasmus Holst](https://www.linkedin.com/in/rasmuskholst/?trk=shareTw&originalSubdomain=dk) generated geometric forms through algorithmically defined geometry using the capabilities of the [Rhino 3D](https://www.rhino3d.com/) software and the [Rhino Python](https://developer.rhino3d.com/guides/rhinopython/) programming language.
 
 ![Ahmadabad Site Diagram](/assets/images/posts/animatenetworks1.jpg)
 
@@ -39,5 +39,3 @@ The proposed building emerged through interaction and turbulence of strand compo
 ![Interior](/assets/images/posts/animatenetworks8.jpg)
 
 ![Exterior](/assets/images/posts/animatenetworks10.jpg)
-
-
