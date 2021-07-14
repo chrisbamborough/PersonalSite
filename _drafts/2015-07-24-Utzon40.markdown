@@ -1,0 +1,32 @@
+---
+layout: post
+title: "UTZON 40"
+date: 2015-07-23
+categories: project
+tags: Pavilion
+image: https://dl.dropboxusercontent.com/s/e6pfbrnps3fwjs5/Utzon40.png?dl=0
+---
+
+I collaborated in designing, fabricating and constructing the Utzon 40 pavilion as part of a research team involving [supermanoeuvre](http://www.supermanoeuvre.com/), [Aarhus University School of Architecture](https://aarch.dk/en/) and [UTS School of Architecture](https://www.uts.edu.au/about/faculty-design-architecture-and-building/architecture). The project took the name "Utzon 40" as the prototype celebrated the fortieth anniversary of the Opera House, and presented at the [Architecture and Design Symposium](https://www.architecture.com.au/news_media_articles/architecture-and-design-symposium-celebrates-40-years-of-sydney-opera-house/). The pavilion acted as a tribute to Utzon's design and construction principles while producing innovations in computational design and digital fabrication.
+
+![External Appearance](https://dl.dropboxusercontent.com/s/w8kneioqxb75d2v/Poster_TopView.png?dl=0){:class="img-responsive"}
+
+The project initiated through two separate material investigations, Aarhus's prefabricated concrete base structure designed to not require formwork, and supermanoeuvre / UTS reciprocal timber frame research. 
+
+Concrete Fabrication
+
+![External Appearance](https://dl.dropboxusercontent.com/s/k1y2436qjp12uew/ConcreteRig.png?dl=0){:class="img-responsive"}
+
+Timber Fabrication
+
+![External Appearance](https://dl.dropboxusercontent.com/s/zznrmq87hlmbndm/TimberCut.png?dl=0){:class="img-responsive"}
+
+Assembly
+
+![External Appearance](https://dl.dropboxusercontent.com/s/v7yscrcwlu56nxi/Build_1.png?dl=0){:class="img-responsive"}
+![External Appearance](https://dl.dropboxusercontent.com/s/v7yscrcwlu56nxi/Build_1.png?dl=0){:class="img-responsive"}
+
+Final Pavilion
+
+![External Appearance](https://dl.dropboxusercontent.com/s/tiak616idjxgxby/Pavilion%20inside.png?dl=0){:class="img-responsive"}
+![External Appearance](https://dl.dropboxusercontent.com/s/x9xe2kyfalcry40/Pavilion_Front.png?dl=0){:class="img-responsive"}
